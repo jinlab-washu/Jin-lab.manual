@@ -1,0 +1,30 @@
+# SSH
+
+## Overview
+Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over unsecured networks. You will be using it to access the compute clusters to do your work.
+
+## Compute1
+macOS/Linux/BSD:
+
+```
+ssh wustl-user@compute1-client-1.ris.wustl.edu
+```
+
+You will replace `wustl-user` with your username.
+
+Windows:
+
+You will need to use PuTTY or the Windows Subsystem for Linux (WSL). Check the [RIS IT Knowledge Base](https://confluence.ris.wustl.edu "RIS IT Knowledge Base") for recommendations and more information.
+
+## Compute0 (Legacy)
+macOS/Linux/BSD:
+
+```
+ssh wustl-user@virtual-workstation$NUMBER.gsc.wustl.edu
+```
+
+You will replace `wustl-user` with your username and `$NUMBER` with the number of the workstation you would like to access (1, 2, 3, 4, or 5). They all have access to the same filesystem and software, so you are free to choose whichever you like.
+
+Windows:
+
+You will need to use PuTTY or the Windows Subsystem for Linux (WSL). Check the [RIS IT Knowledge Base](https://confluence.ris.wustl.edu "RIS IT Knowledge Base") for recommendations and more information.
