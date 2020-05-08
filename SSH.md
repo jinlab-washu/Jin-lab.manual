@@ -21,9 +21,13 @@ macOS/Linux/BSD:
 
 ```
 ssh wustl-user@virtual-workstation$NUMBER.gsc.wustl.edu
+
+or the shorthand version
+
+ssh wustl-user@vw$NUMBER.gsc.wustl.edu
 ```
 
-You will replace `wustl-user` with your username and `$NUMBER` with the number of the workstation you would like to access (1, 2, 3, 4, or 5). They all have access to the same filesystem and software, so you are free to choose whichever you like.
+You will replace `wustl-user` with your username and `$NUMBER` with the number of the workstation you would like to access (1, 2, 3, 4, or 5). They all have access to the same filesystem and software, so you are free to choose whichever you like. You can also have mutliple workshops open at the same time.
 
 Windows:
 
