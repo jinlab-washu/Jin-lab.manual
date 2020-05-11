@@ -12,7 +12,12 @@ Setting up gms environment: https://confluence.ris.wustl.edu/display/BIO/GMS+-+D
 You will need to modify your .bashrc file located in your home directory in order to invoke the 'gsub' command to access GMS. 
 See here for more information https://confluence.ris.wustl.edu/display/BIO/GMS+-+Docker+Image+-+gsub
 
-1. Edit your .bashrc file in your home directory. Your home directory is located If you are not there now, type cd ~ into the command line. This will direct you to your home directory.
+1. Edit your .bashrc file in your home directory. Your home directory will be located at /~. If you are not there now, type
+''' 
+cd ~
+'''
+into the command line
+If you are not there now, type cd ~ into the command line. This will direct you to your home directory.
 2. 
 For users of the Genome Modeling System (GMS), the first thing you must do after logging in to a virtual-workstation (TODO: add link) at MGI is launch a docker container using the appropriate image.
 
