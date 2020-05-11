@@ -1,12 +1,27 @@
 ## Introduction
 The Genome Institute at Washington University has developed a high-throughput, fault-tolerant analysis information management system called the Genome Modeling System (GMS), capable of executing complex, interdependent, and automated genome analysis pipelines at a massive scale. The GMS framework provides detailed tracking of samples and data coupled with reliable and repeatable analysis pipelines.  The GMS code, installation instructions and usage tutorials are available at http://github.com/genome/gms.
 
-Helpful Confluence links:
-(must be connected to washU VPN to view these)
+Helpful links:
+(To access confluence pages, you must be connected to washU VPN)
 
-Overview of the GMS: https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=3637349
+ Overview of the GMS: https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=3637349
 
-Setting up gms environment: https://confluence.ris.wustl.edu/display/BIO/GMS+-+Docker+Image+-+gsub
+ Setting up gms environment: https://confluence.ris.wustl.edu/display/BIO/GMS+-+Docker+Image+-+gsub
+
+ Pipelines: https://confluence.ris.wustl.edu/display/BIO/GMS+-+CWL+Pipeline
+
+ Importing Data: https://confluence.ris.wustl.edu/display/BIO/GMS+-+Imported+Instrument+Data
+
+ A walk-through of setting up a somatic project (NOTE: skip the subject mapping steps for single-sample, germline):
+ https://confluence.ris.wustl.edu/display/CI/CWL+Somatic+Pipeline+Walkthrough
+
+ Github pipeline documentation is typically maintained on the github repo where we keep the code (CWL) for each pipeline,
+ subworkflow and tool used: https://github.com/genome/analysis-workflows
+
+ The wiki is the best place to start when looking for documentation on the CWL. Much of it is auto-generated, but there are 
+ some pages for each pipeline that include process diagrams and high-level overviews:
+ https://github.com/genome/analysis-workflows/wiki
+
 
 ## Set-up
 You will need to modify your .bashrc file located in your home directory in order to invoke the 'gsub' command to access the GMS environment. 
@@ -15,7 +30,7 @@ See here for more information https://confluence.ris.wustl.edu/display/BIO/GMS+-
 
 1. Edit the .bashrc file located in your home directory. Your home directory is located at `/~`. 
 Typing ```cd ~ ``` into the command line will take you directly to your home directory.
-*Note: The .bashrc file is hidden so you wont be able to see it by typing ```ls```*
+**Note: The .bashrc file is hidden so you wont be able to see it by typing ```ls```*
 
 2. Edit the file using emacs/vim. ```Emacs .bashrc``` 
 
