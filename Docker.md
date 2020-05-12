@@ -37,6 +37,18 @@ Replace 'local_dir' with the directory you would like to mount in the image foll
 
 For example, ```"/my_data/:/my_data/"``` will mount the local directory /my_data/ and any subsequent folders in that directory under the mounted directory /my_data/ in the docker image. You can mount mulitple local locations within the image. If you would like to mount multiple locations, there needs to be a space between the different mounts:```"/my_data/:/my_data/ my_scratch/:my_scratch/"``` all in cased in a single pair of double quotes.
 
+Example script:
+```
+DIR=my_data/
+export LSF_DOCKER_VOLUMES="local_dir:dir_dest_in_image"
+export LSF_DOCKER_NETWORK=host
+export LSF_DOCKER_IPC=host
+
+bsub -o "$DIR"output.txt -e "$DIR"error.txt -R "rusage[mem=30000]" -q research-hpc -a 'docker(mgibio/dna-alignment)' [command here]
+```
+Above, an output file and error file are created in the specified DIR variable. A job is submitted to the research-hpc queue (intenive compute queue) with 30GB of memory ("rusage[mem=30000]") in which a command will be run with the docker image specified (-a application flag).
+
+
 See here for more information: https://confluence.ris.wustl.edu/display/ITKB/WUIT+-+RIS+-+Compute+104. This page is for compute1, but the process is the same for compute0.
 
 
