@@ -29,7 +29,7 @@ Creating a bash script that uses a docker container is an easy way to use non-in
 In order to use a non-interactive container with the cluster (lsf) scheduler, bsub, you need to export a few variables within your script.
 
 ```
-export export LSF_DOCKER_VOLUMES="$local_dir:$dir_dest_in_image"
+export LSF_DOCKER_VOLUMES="$local_dir:$dir_dest_in_image"
 export LSF_DOCKER_NETWORK=host
 export LSF_DOCKER_IPC=host
 ```
