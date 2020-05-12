@@ -3,7 +3,7 @@
 ## Overview
 Docker is a tool for delivering collections of software in a package called a container. It is useful for deploying applications requiring a complex web of dependencies. The compute clusters use it to avoid having to install potentially conflicting versions of software for different users' needs.
 
-## Using a Container
+## Using an Interactive Container
 For a short, quick workflows you can use the docker-interactive queue:
 
 ```
@@ -23,6 +23,27 @@ While doing your work it is possible (and likely) that the default resource allo
 ```
 bsub -Is -q research-hpc -M 75000000 -R 'select[mem>75000] span[hosts=1] rusage[mem=75000]' -a 'docker(mgibio/dna-alignment)' /bin/bash
 ```
+## Using a Non-interactive Container
+Creating a bash script that uses a docker container is an easy way to use non-interactive containers for multiple samples.
+
+In order to use a non-interactive container with the cluster (lsf) scheduler, bsub, you need to export a few variables within your script.
+
+```
+export export LSF_DOCKER_VOLUMES="$local_dir:$dir_dest_in_image"
+export LSF_DOCKER_NETWORK=host
+export LSF_DOCKER_IPC=host
+```
+Replace 'local_dir' with the directory you would like to mount in the image followed by the destination of that directory within the docker containter. 
+
+For example, ```/my_data/:/my_data/``` will mount the local directory /my_data/ and any subsequent folders in that directory under the mounted directory /my_data/ in the docker image. 
+
+See here for more information: https://confluence.ris.wustl.edu/display/ITKB/WUIT+-+RIS+-+Compute+104. This page is for compute1, but the process is the same for compute0.
+
+
+For more information on scripting and general hpc usage, check out the RIS training workshops in the confluence page below:
+**You will need to be connected to the VNP to access.**
+Location of the 4 training workshops: https://confluence.ris.wustl.edu/display/ITKB/Workshops+and+Training
+
 
 Many other parameters can be adjusted as well; the complete documentation can be viewed in `bsub`'s manual page:
 
