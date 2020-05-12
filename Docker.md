@@ -33,9 +33,9 @@ export LSF_DOCKER_VOLUMES="local_dir:dir_dest_in_image"
 export LSF_DOCKER_NETWORK=host
 export LSF_DOCKER_IPC=host
 ```
-Replace 'local_dir' with the directory you would like to mount in the image followed by the destination of that directory within the docker containter. 
+Replace 'local_dir' with the directory you would like to mount in the image followed by the destination of that directory within the docker containter.
 
-For example, ```/my_data/:/my_data/``` will mount the local directory /my_data/ and any subsequent folders in that directory under the mounted directory /my_data/ in the docker image. 
+For example, ```"/my_data/:/my_data/"``` will mount the local directory /my_data/ and any subsequent folders in that directory under the mounted directory /my_data/ in the docker image. You can mount mulitple local locations within the image. If you would like to mount multiple locations, there needs to be a space between the different mounts:```"/my_data/:/my_data/ my_scratch/:my_scratch/"``` all in cased in a single pair of double quotes.
 
 See here for more information: https://confluence.ris.wustl.edu/display/ITKB/WUIT+-+RIS+-+Compute+104. This page is for compute1, but the process is the same for compute0.
 
