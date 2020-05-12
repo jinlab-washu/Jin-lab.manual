@@ -53,7 +53,7 @@ See here for more information: https://confluence.ris.wustl.edu/display/ITKB/WUI
 
 
 For more information on scripting and general hpc usage, check out the RIS training workshops in the confluence page below:
-**You will need to be connected to the VNP to access.**
+**You will need to be connected to the VPN to access.**
 
 Location of the 4 training workshops: https://confluence.ris.wustl.edu/display/ITKB/Workshops+and+Training
 
