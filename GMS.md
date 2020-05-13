@@ -32,7 +32,7 @@ See here for more information https://confluence.ris.wustl.edu/display/BIO/GMS+-
 Typing ```cd ~ ``` into the command line will take you directly to your home directory.
 **Note: The .bashrc file is hidden so you wont be able to see it by typing ```ls```*
 
-2. Edit the file using emacs/vim. ```Emacs .bashrc``` 
+2. Edit the file using emacs/vim. ```emacs .bashrc``` 
 
 **Nano is not installed  on the default command line in compute0*
 
@@ -72,3 +72,7 @@ There are currently two environments to choose from:
 
 Legacy - This environment will allow the execution of the Genome Modeling Tools, commands that rely on the old lucid environment, ex. feature-lists, reference sequences, etc. as well as legacy model types, ex. ReferenceAlignment, SingleSampleGenotype, SomaticVariation, SomaticValidation, RnaSeq, ClinSeq, etc.
 Modern - This environment supports both Workflow Execution Services (WES) Toil and Cromwell. The only currently supported model type is CwlPipeline. However, there are germline, somatic, RNA-seq and more pipelines to choose from soon.
+
+## Create and Run Analysis Workflow
+
+
