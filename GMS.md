@@ -74,6 +74,10 @@ Legacy - This environment will allow the execution of the Genome Modeling Tools,
 
 Modern - This environment supports both Workflow Execution Services (WES) Toil and Cromwell. The only currently supported model type is CwlPipeline. However, there are germline, somatic, RNA-seq and more pipelines to choose from soon.
 
-## Create and Run Analysis Workflow
+## Create and Run Analysis Workflow on External Data
+
+Start by creating an analysis workflow in the gms environment. Make sure you choose the correct image, either modern or legacy, depending on what time of analysis you need for your data.
+
+
 
 
