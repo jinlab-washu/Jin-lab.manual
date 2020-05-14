@@ -78,6 +78,9 @@ Modern - This environment supports both Workflow Execution Services (WES) Toil a
 
 Start by creating an analysis workflow in the gms environment. Make sure you choose the correct image, either modern or legacy, depending on what time of analysis you need for your data.
 
+Create an anlalysis project by 
+
+If the data has not yet been imported see below:
 
 First, you will need to create an individual:
 
