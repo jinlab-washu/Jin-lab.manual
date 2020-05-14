@@ -79,5 +79,50 @@ Modern - This environment supports both Workflow Execution Services (WES) Toil a
 Start by creating an analysis workflow in the gms environment. Make sure you choose the correct image, either modern or legacy, depending on what time of analysis you need for your data.
 
 
+First, you will need to create an individual:
 
+```
+genome individual create --taxon "human" 
+```
 
+To update an individual, e.g. changing their name:
+
+```
+genome individual update name --value=NAME --individual=ID
+```
+
+Where `NAME` is the name you would like to use and `ID` is the ID of the individual created previously.
+
+Next, you will need to create samples:
+
+```
+genome sample create --description=DESC --name=NAME --source=SAMPLE_ID
+```
+
+You can verify that the sample was linked correctly with:
+
+```
+genome sample list --filter individual.id=INDIVIDUAL_ID
+```
+
+Next, you will will need to create libraries for each sample:
+
+```
+genome library create --sample=SAMPLE_NAME --name=LIBRARY_NAME
+```
+
+Finally, you can import your data:
+
+```
+genome instrument-data import trusted-data --analysis-project=PROJECT_NAME --import-source-name=SOURCE_NAME --library=LIBRARY_NAME --source-directory=PATH --import-format=FORMAT --read-count=COUNT
+```
+
+The read-count can be determined by running 
+
+```
+zcat reads.fastq.gz | wc -l
+```
+
+for each read, dividing the outputs by 4, and then summing.
+
+The source-directory should only contain your read files. The import will copy all data in the source directory, even if there are unrelated files in the directory.
