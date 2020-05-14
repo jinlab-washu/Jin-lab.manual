@@ -82,11 +82,15 @@ Create an anlalysis project:
 ```
 genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
 ```
+The system will have you select what analysis pipelines you would like to run for your project. 
+
+**NOTE: GSM default settings for analyzing WES reads will produce gVCF files with standard output. In order to use "BP_RESOLUTION", you will need to run a custom pipeline from our lab that has the emit_reference_confidence="BP_RESOLUTION" selected instead of emit_reference_confidence="GVCF".
+
 Next add an environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
 ```
-disk_group_models: "jin_lab_gms"
-disk_group_alignments: "jin_lab_gms"
+disk_group_models: "jin810_gms"
+disk_group_alignments: "jin810_gms"
 lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:DOCKERVERSIONHERE)"
 cwl_runner: cromwell
 workflow_builder_backend: simple
