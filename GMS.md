@@ -76,11 +76,23 @@ Modern - This environment supports both Workflow Execution Services (WES) Toil a
 
 ## Create and Run Analysis Workflow on External Data
 
-Start by creating an analysis workflow in the gms environment. Make sure you choose the correct image, either modern or legacy, depending on what time of analysis you need for your data.
+Start by invoking the gms environment `gsub` and creating an analysis project.
 
-Create an anlalysis project by 
+Create an anlalysis project:
+```
+genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
+```
+Next add an environment file to your analysis project. This specifies what disk_group to use (which lab and what data location) and which docker image for either the modern or legacy gms environment. **To specify the modern gms docker image, replace DOCKERVERSIONHERE below with compute0-24 or compute1-2. If using the legacy gms docker image, delete ':DOCKERVERSIONHERE' (delete the semicolon and DOCKERVERSIONHERE). 
 
-If the data has not yet been imported see below:
+```
+disk_group_models: "jin_lab_gms"
+disk_group_alignments: "jin_lab_gms"
+lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:DOCKERVERSIONHERE)"
+cwl_runner: cromwell
+workflow_builder_backend: simple
+```
+
+For the tutorial on importing external data see below:
 
 First, you will need to create an individual:
 
@@ -106,6 +118,10 @@ You can verify that the sample was linked correctly with:
 
 ```
 genome sample list --filter individual.id=INDIVIDUAL_ID
+
+or
+
+genome sample list --filter individual.name=INDIVIDUAL_NAME
 ```
 
 Next, you will will need to create libraries for each sample:
