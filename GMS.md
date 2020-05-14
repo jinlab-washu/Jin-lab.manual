@@ -82,15 +82,11 @@ Create an anlalysis project:
 ```
 genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
 ```
-The system will have you select what analysis pipelines you would like to run for your project. 
-
-**NOTE: GSM default settings for analyzing WES reads will produce gVCF files with standard output. In order to use "BP_RESOLUTION", you will need to run a custom pipeline from our lab that has the emit_reference_confidence="BP_RESOLUTION" selected instead of emit_reference_confidence="GVCF".
-
 Next add an environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
 ```
-disk_group_models: "jin810_gms"
-disk_group_alignments: "jin810_gms"
+disk_group_models: "jin_lab_gms"
+disk_group_alignments: "jin_lab_gms"
 lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:DOCKERVERSIONHERE)"
 cwl_runner: cromwell
 workflow_builder_backend: simple
@@ -100,7 +96,7 @@ If using the legacy gms docker image, replace the line with starting with 'lsb_s
 
 `lsb_sub_additional: "docker(registry.gsc.wustl.edu/genome/genome_perl_environment)" `
 
-For the tutorial on importing external data see below:
+### Importing External Data
 
 First, you will need to create an individual:
 
@@ -153,3 +149,48 @@ zcat reads.fastq.gz | wc -l
 for each read, dividing the outputs by 4, and then summing.
 
 The source-directory should only contain your read files. The import will copy all data in the source directory, even if there are unrelated files in the directory.
+
+### Creating a Custom Processing Profile
+
+Depending on your intended workflow, you may need to create a custom processing profile. The provided profile hardcodes some values, meaning they cannot be changed by your configuration file. 
+
+First, you will need to clone MGI's analysis-workflows repository if it does not already exist:
+
+```
+git clone https://github.com/genome/analysis-workflows
+```
+
+Next, you will need to create a new processing profile:
+
+```
+genome processing-profile create cwl-pipeline --cwl-directory /gscmnt/gc2698/jin810/analysis-workflows/definitions --main-workflow-file pipelines/germline_exome.cwl --primary-docker-image "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:20)" --name "Germline Exome with BP Resolution" --short-pipeline-name exomeBP
+```
+
+The `cwl-directory` is the path to the cloned analysis-workflows repository and `main-workflow-file` is the path within that directory to the workflow you want to run. You should not need to change `primary-docker-image`. Finally, select a `name` and `short-pipeline-name` for your new profile.
+
+You can now make changes to the profile as needed. For example, if you need to select `BP_RESOLUTION` for generated GVCF files you will need to modify `process_inputs.pl`. If this file does not already exist you can copy it from another profile and make your modifications:
+
+```
+cat /gscmnt/gc2560/core/processing-profile/cwl-pipeline/a231384ea6724035b4c90fa50d890e7b/process_inputs.pl > process_inputs.pl
+```
+
+### Running a Project
+
+When you are ready to run your project:
+
+```
+genome analysis-project release PROJECT_NAME
+```
+
+To view the status of your project:
+
+```
+genome analysis-project view --fast PROJECT_NAME
+```
+
+### Misc
+
+Disable configurations you don't need:
+```
+genome analysis-project disable-config-file --profile-item CONFIG_ID
+```
