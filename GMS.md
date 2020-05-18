@@ -94,11 +94,11 @@ Modern - This environment supports both Workflow Execution Services (WES) Toil a
 
 Start by invoking the 'modern' gms environment using `gsub` and creating an analysis project.
 
-Create an anlalysis project:
+1. Create an anlalysis project:
 ```
 genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
 ```
-Next add an environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
+2. Next add an environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
 ```
 disk_group_models: "jin810_gms"
@@ -111,6 +111,19 @@ workflow_builder_backend: simple
 If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
 
 `lsb_sub_additional: "docker(registry.gsc.wustl.edu/genome/genome_perl_environment)" `
+
+3. Add the custom configuration file to the analysis-project. ***NOTE: THIS IS A NECESSARY STEP FOR EXTERNAL DATA***
+
+The file can be found at this location: /gscmnt/gc2698/jin810/external_data_config_example.yml.
+
+**This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". ***IF YOU ARE NOT DOING WES-alignment,THE "region_of_interest_set_name: 'xGen Lockdown Exome Panel v1 capture set" will need to be changed to reflect your target analysis pipeline. 
+
+4. Disable the original configuration file (Optional).
+
+Unless you are analyzing the data with mutliple configuration files (and thus different models), it is best to disable the configuration file you will no longer be using. See command below:
+```
+genome analysis-project disable-config-file --profile-item CONFIG_ID
+```
 
 ### Importing External Data
 
