@@ -223,6 +223,9 @@ To view the status of your project:
 ```
 genome analysis-project view --fast PROJECT_NAME
 ```
+Or you can view the status of your project with a graphical interface by typing your analysis project ID into the search bar found here:
+
+spectacle.gsc.wustl.edu/
 
 ### Misc
 
