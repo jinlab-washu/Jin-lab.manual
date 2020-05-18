@@ -92,6 +92,18 @@ Modern - This environment supports both Workflow Execution Services (WES) Toil a
 
 ## Create and Run Analysis Workflow on External Data
 
+### High Level Overview
+1. Create an analysis project
+   - add env file specifying disk info
+2. Import data
+   - Create an individual, link them to a sample, link sample to library
+   - Use instrument-data to import the library to the project
+3. If needed, create a custom processing-profile and configuration
+4. Release the project
+
+
+### Project Setup
+
 Start by invoking the 'modern' gms environment using `gsub` and creating an analysis project.
 
 1. Create an anlalysis project:
