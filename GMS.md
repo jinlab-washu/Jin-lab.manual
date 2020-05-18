@@ -129,7 +129,7 @@ Both configuration files will now show with the command:
 
 ```genome analysis-project view --fast PROJECT_ID```
 
-The confi files will be lableled based on their status.
+The config files will be lableled based on their status.
 
 
 ### Importing External Data
@@ -233,3 +233,6 @@ Disable configurations you don't need:
 ```
 genome analysis-project disable-config-file --profile-item CONFIG_ID
 ```
+### Troubleshooting
+If you cannot figure out why a pipeline is failing, shoot the MGIBIO analysis-workflows slack channel a message with the analysis project ID. They will be happy to help you out. 
+
