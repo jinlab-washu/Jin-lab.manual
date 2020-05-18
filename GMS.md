@@ -101,8 +101,8 @@ genome analysis-project create --name "Name of Analysis Project Here" --environm
 Next add an environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
 ```
-disk_group_models: "jin_lab_gms"
-disk_group_alignments: "jin_lab_gms"
+disk_group_models: "jin810_gms"
+disk_group_alignments: "jin810_gms"
 lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:DOCKERVERSIONHERE)"
 cwl_runner: cromwell
 workflow_builder_backend: simple
