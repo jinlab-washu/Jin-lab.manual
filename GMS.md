@@ -239,6 +239,18 @@ Or you can view the status of your project with a graphical interface by typing 
 
 spectacle.gsc.wustl.edu/
 
+If the build is successful, the results can be found within the model_data folder in the lab directory shown below:
+
+```/gscmnt/gc2698/jin810/model_data/MODEL_ID/BUILD_ID/results```
+
+For example:
+```/gscmnt/gc2698/jin810/model_data/10a7507ab8ca46e09567439ddfcacac3/build4b6e86de7cd243599e6e500489d5b584/results```
+
+There will be many files produced from the pipeline. 
+
+Errors and standard output will be produced in the logs folder under your build id:
+```/gscmnt/gc2698/jin810/model_data/MODEL_ID/BUILD_ID/logs```
+
 ### Misc
 
 Disable configurations you don't need:
