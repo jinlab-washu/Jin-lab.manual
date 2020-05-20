@@ -246,10 +246,20 @@ If the build is successful, the results can be found within the model_data folde
 For example:
 ```/gscmnt/gc2698/jin810/model_data/10a7507ab8ca46e09567439ddfcacac3/build4b6e86de7cd243599e6e500489d5b584/results```
 
+### Output
+
+It is important to QC the sequencing results to ensure there is enough coverage of your targets for quality analysis.
+
+There will be HsMetrics files created for 2 different gene databases (ClinVAR and ACMG) with statistics per base (".base"),  per target (".target"), and a summary (".summary"). Right now, it is a good idea to check the ".target" HsMetrics files for both databases to ensure at least 90% of all targets have at least 10X coverage. This is a column in the file. 
+
+
+
 There will be many files produced from the pipeline. 
 
 Errors and standard output will be produced in the logs folder under your build id:
 ```/gscmnt/gc2698/jin810/model_data/MODEL_ID/BUILD_ID/logs```
+
+
 
 ### Misc
 
