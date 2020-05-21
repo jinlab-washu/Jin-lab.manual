@@ -63,6 +63,11 @@ Many other parameters can be adjusted as well; the complete documentation can be
 ```
 man bsub
 ```
+## Creating a Docker Image
+See below for tutorials on creating a new docker image
 
+https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=61073925
+https://docs.docker.com/get-started/part2/
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#volume
 ## Recommended Images
 [https://hub.docker.com/u/mgibio](https://hub.docker.com/u/mgibio)
