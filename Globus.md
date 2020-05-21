@@ -22,10 +22,18 @@ Finally, to transfer a file you just need to select the directory or file you wo
 
 Globus also allows you to download files to your personal machine. To do this you will need to install the Globus Connect Personal application and create an endpoint for your machine. 
 
-*I don't have screenshots because I already did all of this, but if someone could add some that would be great.*
+Globus Connect Personal (GCP) [Installation Guide](https://www.globus.org/globus-connect-personal): (Choose OS version to see details)
+
+![Globus Connect Personal downloading page](/media/globus/globus4.PNG "Globus Connect Personal downloading page")
 
 1. In the Globus web application select "ENDPOINTS" in the left menu.
-2. Click the "Create a personal endpoint" button and follow the steps.
+
+![ENDPOINTS](/media/globus/globus6.PNG "ENDPOINTS")
+
+2. Click the "Create a personal endpoint" button and follow the steps. [link](https://app.globus.org/file-manager/gcp)
+
+![Download Application](/media/globus/globus5.PNG "Download Application")
+
 3. Specify which directories Globus should have access to on your machine.
 
 ![Globus Preferences](./media/globus/globus3.png "Globus Preferences")
