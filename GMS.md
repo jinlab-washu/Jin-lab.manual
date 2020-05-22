@@ -259,7 +259,10 @@ There will be many files produced from the pipeline.
 Errors and standard output will be produced in the logs folder under your build id:
 ```/gscmnt/gc2698/jin810/model_data/MODEL_ID/BUILD_ID/logs```
 
+### Intrepreting Results
+Helpful links for intrepreting results:
 
+VCF file: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
 
 ### Misc
 
