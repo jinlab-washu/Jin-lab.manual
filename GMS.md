@@ -165,7 +165,7 @@ Where `NAME` is the name you would like to use and `ID` is the ID of the individ
 Next, you will need to create samples:
 
 ```
-genome sample create --description=DESC --name=NAME --source=SAMPLE_ID
+genome sample create --description=DESC --name=NAME --source=INDIVIDUAL_ID
 ```
 
 You can verify that the sample was linked correctly with:
