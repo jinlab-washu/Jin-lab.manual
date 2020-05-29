@@ -110,7 +110,9 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
 ```
 genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
 ```
-2. Next add an environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
+2. Next add an .yml environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
+
+File format:
 
 ```
 disk_group_models: "jin810_gms"
@@ -119,6 +121,10 @@ lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_env
 cwl_runner: cromwell
 workflow_builder_backend: simple
 ```
+Command:
+
+```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" jinlab_environment_config.yaml```
+
 **If using the modern gms docker image (most likely using this one), repalce DOCKERVERSIONHERE with compute0-24 or compute1-2.
 If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
 
