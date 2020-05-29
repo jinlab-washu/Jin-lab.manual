@@ -126,7 +126,7 @@ If using the legacy gms docker image, replace the line with starting with 'lsb_s
 
 3. Add the custom configuration file to the analysis-project. ***NOTE: THIS IS A NECESSARY STEP FOR EXTERNAL DATA***
 
-The file can be found at this location: /gscmnt/gc2698/jin810/external_data_config_example.yml.
+The file can be found at this location: /gscmnt/gc2698/jin810/jinlab_environment_config.yaml.
 
 **This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". ***IF YOU ARE NOT DOING WES-alignment,
 the "region_of_interest_set_name: 'xGen Lockdown Exome Panel v1 capture set" line will need to be changed to reflect the regions you will be comparing against and for what type of analysis (WGS or RNA-seq). 
