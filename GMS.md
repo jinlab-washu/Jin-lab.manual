@@ -274,7 +274,7 @@ VCF file: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Var
 
 ### Misc
 
-Disable configurations you don't need:
+#### Disable configurations you don't need:
 ```
 genome analysis-project disable-config-file --profile-item CONFIG_ID
 ```
@@ -286,7 +286,12 @@ Re-process instrument data with new configuration file:
 
 ```genome analysis-project add-config-file --reprocess PROJ_ID NEW_CONFIG_YAML_FILE```
 
+#### Queue new builds for models
 
+**This can happen when trying a new pipeline and the builds fail. See command below:
+
+ ```genome model build queue --reason 'added process_inputs.pl' MODELID```
+ 
 ### Troubleshooting
 If you cannot figure out why a pipeline is failing, shoot the MGIBIO analysis-workflows slack channel a message with the analysis project ID. They will be happy to help you out. 
 
