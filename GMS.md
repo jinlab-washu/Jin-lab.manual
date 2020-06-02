@@ -123,7 +123,7 @@ workflow_builder_backend: simple
 ```
 Command:
 
-```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" jinlab_environment_config.yaml```
+```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/jinlab_environment_config.yaml```
 
 **If using the modern gms docker image (most likely using this one), repalce DOCKERVERSIONHERE with compute0-24 or compute1-2.
 If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
