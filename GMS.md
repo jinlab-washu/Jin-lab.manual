@@ -291,7 +291,15 @@ Re-process instrument data with new configuration file:
 **This can happen when trying a new pipeline and the builds fail. See command below:
 
  ```genome model build queue --reason 'added process_inputs.pl' MODELID```
- 
+
+#### Show configuration file location
+
+```genome analysis-project show-config <ANALYSIS_PROJ_NAME/ID>```
+
+#### Show genome models for an analysis project
+
+```genome model list --show=id --filter "analysis_project.id=$analysis_ID"```
+
 ### Troubleshooting
 If you cannot figure out why a pipeline is failing, shoot the MGIBIO analysis-workflows slack channel a message with the analysis project ID. They will be happy to help you out. 
 
