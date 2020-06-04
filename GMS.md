@@ -304,6 +304,8 @@ Re-process instrument data with new configuration file:
 
 ```genome instrument-data list --filter  "library.name ~ <Part of library names, e.g. KCM>"```
 
+~ : "like" operator
+
 ### Troubleshooting
 If you cannot figure out why a pipeline is failing, shoot the MGIBIO analysis-workflows slack channel a message with the analysis project ID. They will be happy to help you out. 
 
