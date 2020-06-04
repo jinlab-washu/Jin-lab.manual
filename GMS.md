@@ -4,7 +4,7 @@
 
 [Invoke GMS environment](#invoke-gms-environment)
 
-[Create and Run Analysis Workflow on External Data](#create-and-run-analysis-workflow-on-external-data)
+[Create and Configure Analysis Workflow on External Data](#create-and-run-analysis-workflow-on-external-data)
 
 [Importing External Data](#importing-external-data)
 
@@ -90,7 +90,7 @@ Legacy - This environment will allow the execution of the Genome Modeling Tools,
 
 Modern - This environment supports both Workflow Execution Services (WES) Toil and Cromwell. The only currently supported model type is CwlPipeline. However, there are germline, somatic, RNA-seq and more pipelines to choose from soon.
 
-## Create and Run Analysis Workflow on External Data
+## Create and Configure Analysis Workflow on External Data
 
 ### High Level Overview
 1. Create an analysis project
@@ -136,7 +136,7 @@ Configuration files for specific workflows can be found here: ```/gscmnt/gc2698/
 
 See the GATK4-cwl-wdl repository for more specific config files. https://github.com/jinlab-washu/GATK4-cwl-wdl
 
-For the GATK4 pipeline use this file:
+The default GATK4 pipeline to be produce files for downstream joint-calling:
 
 ```/gscmnt/gc2698/jin810/configuration_files/human_germline_exome_bp_gatk4.yml```
 
