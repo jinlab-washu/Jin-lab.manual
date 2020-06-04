@@ -123,7 +123,7 @@ workflow_builder_backend: simple
 ```
 Command:
 
-```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/jinlab_environment_config.yaml```
+```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config.yaml```
 
 **If using the modern gms docker image (most likely using this one), repalce DOCKERVERSIONHERE with compute0-24 or compute1-2.
 If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
@@ -132,7 +132,13 @@ If using the legacy gms docker image, replace the line with starting with 'lsb_s
 
 3. Add the custom configuration file to the analysis-project. ***NOTE: THIS IS A NECESSARY STEP FOR EXTERNAL DATA***
 
-The file can be found at this location: /gscmnt/gc2698/jin810/human_germline_exome_bp.yml
+Configuration files for specific workflows can be found here: ```/gscmnt/gc2698/jin810/configuration_files```
+
+See the GATK4-cwl-wdl repository for more specific config files. https://github.com/jinlab-washu/GATK4-cwl-wdl
+
+For the GATK4 pipeline use this file:
+
+```/gscmnt/gc2698/jin810/configuration_files/human_germline_exome_bp_gatk4.yml```
 
 ```genome analysis-project add-config-file --reprocess-existing ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/human_germline_exome_bp.yml```
 
