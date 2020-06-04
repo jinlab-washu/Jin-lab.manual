@@ -300,6 +300,10 @@ Re-process instrument data with new configuration file:
 
 ```genome model list --show=id --filter "analysis_project.id=$analysis_ID"```
 
+#### Find instrument data ids with library names
+
+```genome instrument-data list --filter  "library.name ~ <Part of library names, e.g. KCM>"```
+
 ### Troubleshooting
 If you cannot figure out why a pipeline is failing, shoot the MGIBIO analysis-workflows slack channel a message with the analysis project ID. They will be happy to help you out. 
 
