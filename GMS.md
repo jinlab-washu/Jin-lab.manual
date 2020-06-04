@@ -272,6 +272,8 @@ Helpful links for intrepreting results:
 
 VCF file: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
 
+Picard Metrics: https://broadinstitute.github.io/picard/picard-metric-definitions.html
+
 ### Misc
 
 #### Disable configurations you don't need:
