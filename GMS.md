@@ -202,6 +202,10 @@ Finally, you can import your data:
 genome instrument-data import trusted-data --analysis-project=PROJECT_NAME --import-source-name=SOURCE_NAME --library=LIBRARY_NAME --source-directory=PATH --import-format=FORMAT --read-count=COUNT
 ```
 
+Specific Example:
+
+``` genome instrument-data import trusted-data --analysis-project=chiari_GATK4_exome_test import-source-name=https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_indexes/NA12878/sequence.index.NA12878_Illumina_HiSeq_Exome_Garvan_fastq_09252015 --library=NA12878-HG001-extlibs --source-directory=/gscmnt/gc2698/jin810/fastq/benchmark/NA12878 —import-format=fastq —read-count=20203002```
+
 The read-count can be determined by running 
 
 ```
