@@ -195,6 +195,9 @@ Next, you will will need to create libraries for each sample:
 ```
 genome library create --sample=SAMPLE_NAME --name=LIBRARY_NAME
 ```
+***IF YOU HAVE MORE THAN 2 FASTQ.GZ Files, you will need to consolidate them into two final fastq.gz files. GMS looks for 2 fastq files, forward (R1) and Reverse (R2). If you ingest more, your pipeline will fail!!!
+
+```cat *R1* > Sample_HG001_all_R1.fastq.gz``` and ```cat *R2* > Sample_HG001_all_R2.fastq.gz```
 
 Finally, you can import your data:
 
