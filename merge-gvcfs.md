@@ -1,4 +1,4 @@
-# Joint-Calling
+# Merge-gvcfs
 
 ***WORK IN PROGRESS***
 
