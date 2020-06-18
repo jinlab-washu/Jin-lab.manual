@@ -10,4 +10,3 @@
 	  * [SCP](./SCP.md "SCP")
   * [Docker](./Docker.md "Docker")
   * [Genome Modeling System](./GMS.md "GMS")
-  * [Joint-Calling](./joint-call-cohort.md "JCC")
