@@ -82,7 +82,7 @@ source /gscmnt/gc2560/core/env/v1/bashrc
 Restart your ssh session and you should be good to go!
 
 ## Invoke GMS environment
-To start the genome modeling system environment from which you can launch pipelines and run `genome` commands, enter `gsub` for the modern docker version or `gsub -l` for the legacy version. See below for more information.
+To start the genome modeling system environment from which you can launch pipelines and run `genome` commands, enter `gsub` for the modern docker version or `gsub -l` for the legacy version. See below for more information. On compute1 you will need to use `gsub -G compute-jin810` in order to have access to our lab space.
 
 For users of the Genome Modeling System (GMS), the first thing you must do after logging in to a virtual-workstation (TODO: add link) at MGI is launch a docker container using the appropriate image.
 
