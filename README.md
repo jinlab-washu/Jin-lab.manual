@@ -8,5 +8,6 @@
   * Transferring Files
 	  * [Globus](./Globus.md "Globus")
 	  * [SCP](./SCP.md "SCP")
+  * [Git](./Git.md "Git")
   * [Docker](./Docker.md "Docker")
   * [Genome Modeling System](./GMS.md "GMS")
