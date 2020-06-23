@@ -4,7 +4,7 @@
 
 Git is a widely used utility for versioning files and projects. Most people associate it with GitHub, however git can also be used independently or on other platforms.
 
-There are many GUI applications for interfacing with git (GitHub Desktop, Sourcetree, etc.), however will not be able to use these on a remote server (compute1 and compute0) so you might as well just learn git.
+There are many GUI applications for interfacing with git (GitHub Desktop, Sourcetree, etc.), however you will not be able to use these on a remote server (compute1 and compute0) so you might as well just learn git.
 
 ## Getting Started
 
@@ -120,10 +120,17 @@ You will need to either delete one of those chunks or manually combine them into
 
 **TODO**
 
-Talk about rebasing
+Talk about rebasing, changing remote repositories
 
 ## Best Practices
 
 **TODO**
 
 Commit messages, pulling, tagging
+
+## Other Software
+
+**TODO**
+Discuss TUI clients for use on compute0/compute1, e.g. magit
+
+If someone uses a GUI client (GitHub Desktop, Sourcetree, etc.) maybe add some info here
