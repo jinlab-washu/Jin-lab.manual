@@ -14,8 +14,6 @@
 
 [Running a Project](#running-a-project)
 
-[Pipeline Testing Environment Set-Up](#Pipeline-Testing-Environment)
-
 [Misc](#misc)
 
 ## Introduction
@@ -106,30 +104,71 @@ Modern - This environment supports both Workflow Execution Services (WES) Toil a
 4. Release the project
 
 
-### Project Setup
+### Project Setup on compute0 (MGI Legacy)
 
 Start by invoking the 'modern' gms environment using `gsub` and creating an analysis project.
 
 1. Create an anlalysis project:
-```
-genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
-```
-2. Next add an .yml environment file to your analysis project. Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
-File format:
+    #### Pipeline Testing
 
-```
-disk_group_models: "jin810_gms"
-disk_group_alignments: "jin810_gms"
-lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:DOCKERVERSIONHERE)"
-cwl_runner: cromwell
-workflow_builder_backend: simple
-```
+    1a. If you are testing a new pipeline, it is best to use the ad-hoc environment instead of the prod-builder. This enables more control over the builds (read-write permissions and start/stop builds) and the data that is produced by the experimental pipeline. See below.
+
+     ```
+     genome analysis-project create --name "Name of Analysis Project Here" --environment ad-hoc
+     ```
+
+    #### Using througly tested pipeline
+    
+    1b. If you are using a pipeline that has been throughly tested or is known to run successfully,
+    
+     ```
+     genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder
+     ```
+     
+2. Check for Environment file .yml file
+
+    #### Ad-hoc environment (for pipeline testing)
+    
+    2a. If you set up your analysis project to use the ad-hoc environment, use the ad-hoc jin-lab environment file below: 
+    
+    /gscmnt/gc2698/jin810/configuration_files/jinlab_ad-hoc_environment_config.yaml
+   
+   The file contains the following text
+        
+        ```
+        disk_group_models: "jin810_gms"
+        disk_group_alignments: "jin810_gms"
+        disk_group_scratch: "jin810_gms"
+        lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
+        cwl_runner: cromwell
+        workflow_builder_backend: simple
+        ```
+
+    2b. If you are using the prod-builder environment, use the jin-lab environment file below:
+    
+    /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config.yaml
+    
+    Make sure to replace DOCKERVERSIONHERE with the correct notation.
+
+    The file contains the text below
+
+    ```
+    disk_group_models: "jin810_gms"
+    disk_group_alignments: "jin810_gms"
+    lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
+    cwl_runner: cromwell
+    workflow_builder_backend: simple
+    ```
+
 Command:
 
-```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config.yaml```
+```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/configuration_files/$ENV_FILE```
 
-**If using the modern gms docker image (most likely using this one), repalce DOCKERVERSIONHERE with compute0-24 or compute1-2.
+Where $ENV_FILE is the file based on the environment you chose in step 1 during the analysis-project creation
+
+*compute1-2 can be used instead of compute0-24 as well if you are using the modern gms image.*
+
 If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
 
 `lsb_sub_additional: "docker(registry.gsc.wustl.edu/genome/genome_perl_environment)" `
@@ -290,12 +329,6 @@ Helpful links for intrepreting results:
 VCF file: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
 
 Picard Metrics: https://broadinstitute.github.io/picard/picard-metric-definitions.html
-
-
-### Pipeline Testing Environment
-
-If you are testing a new pipeline, it is best to use the ad-hoc environment instead of the prod-builder. This enables more control over the builds (read-write permissions and start/stop builds) and the data that is produced by the experimental pipeline.
-
 
 ### Misc
 
