@@ -179,30 +179,30 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
 
 3. Add the custom configuration file to the analysis-project. ***NOTE: THIS IS A NECESSARY STEP FOR EXTERNAL DATA***
 
-Configuration files for specific workflows can be found here: ```/gscmnt/gc2698/jin810/configuration_files```
+   Configuration files for specific workflows can be found here: ```/gscmnt/gc2698/jin810/configuration_files```
 
-See the GATK4-cwl-wdl repository for more specific config files. https://github.com/jinlab-washu/GATK4-cwl-wdl
+   See the GATK4-cwl-wdl repository for more specific config files. https://github.com/jinlab-washu/GATK4-cwl-wdl
 
-The default GATK4 pipeline to be produce files for downstream joint-calling:
+   The default GATK4 pipeline to be produce files for downstream joint-calling:
 
-```/gscmnt/gc2698/jin810/configuration_files/human_germline_exome_bp_gatk4.yml```
+   ```/gscmnt/gc2698/jin810/configuration_files/human_germline_exome_bp_gatk4.yml```
 
-```genome analysis-project add-config-file --reprocess-existing ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/configuration_files/human_germline_exome_bp.yml```
+   ```genome analysis-project add-config-file --reprocess-existing ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/configuration_files/human_germline_exome_bp.yml```
 
-**This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". ***IF YOU ARE NOT DOING WES-alignment,
-the "region_of_interest_set_name: 'xGen Lockdown Exome Panel v1 capture set" line will need to be changed to reflect the regions you will be comparing against and for what type of analysis (WGS or RNA-seq). 
+   **This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". ***IF YOU ARE NOT DOING WES-alignment,
+   the "region_of_interest_set_name: 'xGen Lockdown Exome Panel v1 capture set" line will need to be changed to reflect the regions you will be comparing against and for what type of analysis (WGS or RNA-seq). 
 
 4. Disable the original configuration file (Optional).
 
-Unless you are analyzing the data with mutliple configuration files (and thus different models), it is best to disable the configuration file you will no longer be using. See command below:
-```
-genome analysis-project disable-config-file --profile-item CONFIG_ID
-```
-Both configuration files will now show with the command:
+   Unless you are analyzing the data with mutliple configuration files (and thus different models), it is best to disable the configuration file you will no longer be using. See command below:
+   ```
+   genome analysis-project disable-config-file --profile-item CONFIG_ID
+   ```
+   Both configuration files will now show with the command:
 
-```genome analysis-project view --fast PROJECT_ID```
+   ```genome analysis-project view --fast PROJECT_ID```
 
-The config files will be lableled based on their status.
+   The config files will be lableled based on their status.
 
 
 ### Importing External Data
