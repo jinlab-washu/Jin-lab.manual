@@ -136,18 +136,19 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
     
     /gscmnt/gc2698/jin810/configuration_files/jinlab_ad-hoc_environment_config.yaml
    
-   The file contains the following text
+    The file contains the text below
         
-        ```
-        disk_group_models: "jin810_gms"
-        disk_group_alignments: "jin810_gms"
-        disk_group_scratch: "jin810_gms"
-        lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
-        cwl_runner: cromwell
-        workflow_builder_backend: simple
-        ```
+    ```
+     disk_group_models: "jin810_gms"
+     disk_group_alignments: "jin810_gms"
+     disk_group_scratch: "jin810_gms"
+     lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
+     cwl_runner: cromwell
+     workflow_builder_backend: simple
+    ```
     
     #### prod-builder environment
+    
     2b. If you are using the prod-builder environment, use the jin-lab environment file below:
     
     /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config.yaml
@@ -164,17 +165,17 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
     workflow_builder_backend: simple
     ```
 
-Command:
+   Command:
 
-```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/configuration_files/$ENV_FILE```
+   ```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/configuration_files/$ENV_FILE```
 
-Where $ENV_FILE is the file based on the environment you chose in step 1 during the analysis-project creation
+   Where $ENV_FILE is the file based on the environment you chose in step 1 during the analysis-project creation
 
-*compute1-2 can be used instead of compute0-24 as well if you are using the modern gms image.*
+   *compute1-2 can be used instead of compute0-24 as well if you are using the modern gms image.*
 
-If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
+   If using the legacy gms docker image, replace the line with starting with 'lsb_sub_additional' with the line below:
 
-`lsb_sub_additional: "docker(registry.gsc.wustl.edu/genome/genome_perl_environment)" `
+   ```lsb_sub_additional: "docker(registry.gsc.wustl.edu/genome/genome_perl_environment)" ```
 
 3. Add the custom configuration file to the analysis-project. ***NOTE: THIS IS A NECESSARY STEP FOR EXTERNAL DATA***
 
