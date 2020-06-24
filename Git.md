@@ -124,11 +124,45 @@ Talk about rebasing, changing remote repositories
 
 ## Best Practices
 
-**TODO**
+### Commit Messages
 
-Commit messages, pulling, tagging
+Commit messages should be short, but descriptive. Generally, a message like "Updated FILE" is not helpful.
+
+## Tagging
+
+Each version of a project should be tagged so that we can easily identify which commits were used in which experiments or analysis projects. That being said, this should not turn into tagging every single commit as a new version.
+
+To view existing tags you can run:
+
+```
+git tag
+```
+
+To add a tag to the most recent commit:
+
+```
+git tag TAG_NAME
+```
 
 ## Other Software
+
+As mentioned previously, there are numerous graphical clients for interacting with git. The only one of these you will be able to run in your terminal on the clusters is magit, which is built on top of emacs. Generally speaking, learning plain git (and arguably magit) will be a much more worthwhile investment of your time than learning one of the desktop options. Git will be available and work exactly the same on pretty much any platform you will encounter; the same cannot be said for other options.
+
+### magit
+
+[Magit](https://magit.vc) is a git client built on top of emacs. Unfortunately, compute1 ships emacs 24.3.1 and compute0 ships emacs 24.5.1. To install magit from the emacs package archive you need to be running 25.1 or greater. 
+
+However, an older version of magit (v2.3.0) is able to be built from source on compute0. Unfortunately, compute1 will require an even older version.
+
+If you're going to be doing any significant development or git work on the clusters you should just make a Docker image with a more recent version of emacs and use that instead. If, for some reason, you really do want to use the default emacs feel free to build from source. 
+
+### GitHub Desktop
+
+https://desktop.github.com
+
+### Sourcetree
+
+https://sourcetreeapp.com
 
 **TODO**
 Discuss TUI clients for use on compute0/compute1, e.g. magit
