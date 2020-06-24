@@ -8,7 +8,7 @@
 
 [Create and Configure Analysis Workflow on External Data](#create-and-configure-analysis-workflow-on-external-data)
 
-   - [Project Setup on compute0 (MGI Legacy)](####Project-Setup-on-compute0)
+   - [Project Setup on compute0 (MGI Legacy)](#Project-Setup-on-compute0)
 
 [Importing External Data](#importing-external-data)
 
