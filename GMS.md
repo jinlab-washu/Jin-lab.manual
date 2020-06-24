@@ -146,7 +146,8 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
         cwl_runner: cromwell
         workflow_builder_backend: simple
         ```
-
+    
+    #### prod-builder environment
     2b. If you are using the prod-builder environment, use the jin-lab environment file below:
     
     /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config.yaml
