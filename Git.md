@@ -124,6 +124,19 @@ Talk about rebasing, changing remote repositories
 
 ## Best Practices
 
+### gitignore
+
+If you have files in your working directory you do not want to accidentally commit you should add their names to file named `.gitignore`. This will prevent them from showing up in `git status` making it difficult to accidentally add them to a repository.
+
+For example, let's say we've copied `PHI.txt` and some FASTQ files to our working directory to more easily test a script we're writing. Obviously we do not want to push PHI to a public repository and the FASTQ files aren't really part of the project so they shouldn't be included either. Our `.gitignore` would look something like:
+
+```
+PHI.txt
+*.fastq
+```
+
+This will explicitly ignore `PHI.txt` and all files with the extension `.fastq`. 
+
 ### Commit Messages
 
 Commit messages should be short, but descriptive. Generally, a message like "Updated FILE" is not helpful.
@@ -162,9 +175,4 @@ https://desktop.github.com
 
 ### Sourcetree
 
-https://sourcetreeapp.com
-
-**TODO**
-Discuss TUI clients for use on compute0/compute1, e.g. magit
-
-If someone uses a GUI client (GitHub Desktop, Sourcetree, etc.) maybe add some info here
+https://sourcetreeapp.com 
