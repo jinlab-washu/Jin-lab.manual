@@ -14,6 +14,8 @@
 
 [Running a Project](#running-a-project)
 
+[Pipeline Testing](#pipeline-Testing)
+
 [Misc](#misc)
 
 ## Introduction
@@ -288,6 +290,12 @@ Helpful links for intrepreting results:
 VCF file: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
 
 Picard Metrics: https://broadinstitute.github.io/picard/picard-metric-definitions.html
+
+
+### Pipeline Testing 
+
+If you are testing a new pipeline, it is best to use the ad-hoc environment instead of the prod-builder. This enables more control over the builds (read-write permissions and start/stop builds) and the data that is produced by the experimental pipeline.
+
 
 ### Misc
 
