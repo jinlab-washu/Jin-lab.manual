@@ -348,6 +348,14 @@ Re-process instrument data with new configuration file:
 
 ```genome analysis-project add-config-file --reprocess PROJ_ID NEW_CONFIG_YAML_FILE```
 
+#### Abandon all builds and re-queue models
+
+```genome model build abandon-and-queue --reason=disk_quota $ANALYSIS_PROJ_ID```
+
+#### Get all failed builds for an analysis project
+
+``` genome model.analysis_project.id=XXX,status=Failed```
+
 #### Queue new builds for models
 
 **This can happen when trying a new pipeline and the builds fail. See command below:
