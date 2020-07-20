@@ -134,7 +134,7 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
     
     2a. If you set up your analysis project to use the ad-hoc environment, use the ad-hoc jin-lab environment file below: 
     
-    /gscmnt/gc2698/jin810/configuration_files/jinlab_ad-hoc_environment_config.yaml
+    /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config_user_specfic.yaml
    
     The file contains the text below
         
@@ -145,13 +145,14 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
      lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
      cwl_runner: cromwell
      workflow_builder_backend: simple
+     cromwell_server: "hsqldb:tmp"
     ```
     
     #### prod-builder environment
     
     2b. If you are using the prod-builder environment, use the jin-lab environment file below:
     
-    /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config.yaml
+    /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config_prod-builder.yaml
     
     Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
