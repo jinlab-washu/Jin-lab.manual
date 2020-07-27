@@ -2,7 +2,7 @@
 
 Notes:
 
-- Protocol based on wustl confluence protocol
+- Protocol based on wustl confluence protocol: https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=52635520
 - This protocol uses an interactive docker image with lftp installed: minidocks/lftp:latest@sha256:5923b4f2383c1cc2fe9a1134433431fd1c8a1e7a20c9640313df8411ee09fe15
     - https://hub.docker.com/r/minidocks/lftp
 
@@ -13,4 +13,12 @@ Notes:
 
     ```bsub -Is -q research-hpc -a 'docker(minidocks/lftp:latest@sha256:5923b4f2383c1cc2fe9a1134433431fd1c8a1e7a20c9640313df8411ee09fe15)' -R "select[mem>5000] rusage[mem=5000]" /bin/bash```
 
-2. Load the lftp program
+2. Load the lftp program using wustl email and password:
+
+    ```lftp -u $wustl.email,$password -p 990 ftps://ftp.box.com```
+    
+3. Change the current working directory to the target directory you wish to download the data to:
+
+    ```lcd $target_directory```
+    
+    *lcd changes the current working directory to the one specified following the command*
