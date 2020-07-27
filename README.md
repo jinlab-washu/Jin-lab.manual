@@ -8,7 +8,7 @@
   * Transferring Files
 	  * [Globus](./Globus.md "Globus")
 	  * [SCP](./SCP.md "SCP")
-	  * [Box-lftp](./box_lftp)
+	  * [Box-lftp](./box_lftp.md)
   * [Git](./Git.md "Git")
   * [Docker](./Docker.md "Docker")
   * [Genome Modeling System](./GMS.md "GMS")
