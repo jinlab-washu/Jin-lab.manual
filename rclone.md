@@ -41,14 +41,11 @@ Notes:
     E.g. 1-Full access
 
 8. Leave blank for "root_folder_id" and "service_account_file" (unless you know what you are doing)
-
-    > service_account_file> 
-    
-    > Edit advanced config? (y/n)
-    
-    > y) Yes
-    
-    > n) No (default)
+      
+       service_account_file> 
+       Edit advanced config? (y/n)
+       y) Yes
+       n) No (default)
     
 9. Select ```n``` for edit advanced config (unless you know what you are doing)
     
