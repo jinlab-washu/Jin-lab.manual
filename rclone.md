@@ -28,4 +28,4 @@ Notes:
   
 4. Select n for new remote and name the new drive.
 
-    [!select_remote.png](./select_remote.png)
+    ![select_remote.png](./select_remote.png)
