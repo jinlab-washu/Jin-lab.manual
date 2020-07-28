@@ -36,7 +36,7 @@ Notes:
     
 6. Enter client id and secret (if applicable)
 
-7. Enter value for acess type from selection that appears.
+7. Enter value for access type from selection that appears.
 
     E.g. 1-Full access
 
