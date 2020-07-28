@@ -59,4 +59,12 @@ Notes:
 
 12. Check overview of drive information and select ```y``` if it looks okay.
 
+------
+
 Now you should be able to use rclone commands to transfer files to hpc clusters or local locations via the command line
+
+```rclone copy rclone_remote:file dest:destpath``` 
+
+If the files are under your "shared with me" folder, use the ```--drive-shared-with-me``` flag
+
+```rclone copy rclone_remote:file dest:destpath --drive-shared-with-me```
