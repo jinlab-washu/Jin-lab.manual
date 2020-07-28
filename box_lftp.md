@@ -22,3 +22,5 @@ Notes:
     ```lcd $target_directory```
     
     *lcd changes the current working directory to the one specified following the command*
+    
+4. Tansfer files from box using get for a specific file or mirror to transfer all files in the lftp directory to the target directory
