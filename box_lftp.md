@@ -1,4 +1,4 @@
-# Transferring Files from Wustl Box to Compute0
+# Transferring Files from Wustl Box to Compute0 using lftp
 
 Notes:
 
