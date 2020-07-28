@@ -42,7 +42,17 @@ Notes:
 
 8. Leave blank for "root_folder_id" and "service_account_file" (unless you know what you are doing)
 
+    > service_account_file> 
+    
+    > Edit advanced config? (y/n)
+    
+    > y) Yes
+    
+    > n) No (default)
+    
 9. Select ```n``` for edit advanced config (unless you know what you are doing)
+    
+    
 
 10. Select ```n``` for remote config as we are working on a headless machine
 
