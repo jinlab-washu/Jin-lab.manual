@@ -29,3 +29,27 @@ Notes:
 4. Select n for new remote and name the new drive.
 
     ![select_remote.png](./select_remote.png)
+
+5. (Optional) Create a client id and secret according to the following page: https://rclone.org/drive/#making-your-own-client-id 
+
+    Creating a client id and secret improves performance, but is not necessary.
+    
+6. Enter client id and secret (if applicable)
+
+7. Enter value for acess type from selection that appears.
+
+    E.g. 1-Full access
+
+8. Leave blank for "root_folder_id" and "service_account_file" (unless you know what you are doing)
+
+9. Select ```n``` for edit advanced config (unless you know what you are doing)
+
+10. Select ```n``` for remote config as we are working on a headless machine
+
+    - A link will appear in order to authorize access for rclone to your google drive account. Click the link and authorize access.
+    
+11. Select ```n``` for ```Configure this as a team drive```
+
+12. Check overview of drive information and select ```y``` if it looks okay.
+
+Now you should be able to use rclone commands to transfer files to hpc clusters or local locations via the command line
