@@ -134,7 +134,7 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
     
     2a. If you set up your analysis project to use the ad-hoc environment, use the ad-hoc jin-lab environment file below: 
     
-    /gscmnt/gc2698/jin810/configuration_files/jinlab_environment_config_user_specfic.yaml
+    /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/jinlab_environment_config_user_specfic.yaml
    
     The file contains the text below
         
