@@ -148,7 +148,7 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
      cromwell_server: "hsqldb:tmp"
     ```
     
-    #### prod-builder environment
+    #### prod-builder environment (default)
     
     2b. If you are using the prod-builder environment, use the jin-lab environment file below:
     
