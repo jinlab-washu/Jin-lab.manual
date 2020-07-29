@@ -188,20 +188,24 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
    
    Command to add configuration file:
    
-   ```genome analysis-project add-config-file ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/human_germline_exome_bp_gatk4.yml```
+   ```
+   genome analysis-project add-config-file ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/human_germline_exome_bp_gatk4.yml
+   ```
    
    *IF you are changing the configuration of an analysis project that has already run, use the command below to reprocess the fastq files*
    
-       ```genome analysis-project add-config-file --reprocess-existing ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/human_germline_exome_bp_gatk4.yml```
+    ```
+    genome analysis-project add-config-file --reprocess-existing ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/human_germline_exome_bp_gatk4.yml
+    ```
 
-   **This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". **
+   **This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION".**
    
-   *IF YOU ARE NOT DOING WES-alignment,
-   the "region_of_interest_set_name: 'xGen Lockdown Exome Panel v1 capture set" line will need to be changed to reflect the regions you will be comparing against and for what type of analysis (WGS or RNA-seq). 
+   *IF YOU ARE NOT DOING WES-alignment, the "region_of_interest_set_name: xGen Lockdown Exome Panel v1 capture set" line will need to be changed to reflect the regions you will be comparing against and for what type of analysis (WGS or RNA-seq).*
 
 4. Disable the original configuration file (Optional).
 
    Unless you are analyzing the data with mutliple configuration files (and thus different models), it is best to disable the configuration file you will no longer be using. See command below:
+   
    ```
    genome analysis-project disable-config-file --profile-item CONFIG_ID
    ```
@@ -249,7 +253,7 @@ Next, you will will need to create libraries for each sample:
 ```
 genome library create --sample=SAMPLE_NAME --name=LIBRARY_NAME
 ```
-***IF YOU HAVE MORE THAN 2 FASTQ.GZ Files, you will need to consolidate them into two final fastq.gz files. GMS looks for 2 fastq files, forward (R1) and Reverse (R2). If you ingest more, your pipeline will fail!!!
+***IF YOU HAVE MORE THAN 2 FASTQ.GZ Files, you will need to consolidate them into two final fastq.gz files. GMS looks for 2 fastq files, forward (R1) and Reverse (R2). If you ingest more, your pipeline will fail!!!***
 
 ```cat *R1* > Sample_HG001_all_R1.fastq.gz``` and ```cat *R2* > Sample_HG001_all_R2.fastq.gz```
 
@@ -261,7 +265,9 @@ genome instrument-data import trusted-data --analysis-project=PROJECT_NAME --imp
 
 Specific Example:
 
-``` genome instrument-data import trusted-data --analysis-project=chiari_GATK4_exome_test import-source-name=https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_indexes/NA12878/sequence.index.NA12878_Illumina_HiSeq_Exome_Garvan_fastq_09252015 --library=NA12878-HG001-extlibs --source-directory=/gscmnt/gc2698/jin810/fastq/benchmark/NA12878 —import-format=fastq —read-count=20203002```
+```
+genome instrument-data import trusted-data --analysis-project=chiari_GATK4_exome_test import-source-name=https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_indexes/NA12878/sequence.index.NA12878_Illumina_HiSeq_Exome_Garvan_fastq_09252015 --library=NA12878-HG001-extlibs --source-directory=/gscmnt/gc2698/jin810/fastq/benchmark/NA12878 —import-format=fastq —read-count=20203002
+```
 
 The read-count can be determined by running 
 
@@ -365,7 +371,7 @@ Re-process instrument data with new configuration file:
 
 #### Queue new builds for models
 
-**This can happen when trying a new pipeline and the builds fail. See command below:
+**This can happen when trying a new pipeline and the builds fail. See command below:**
 
  ```genome model build queue --reason 'added process_inputs.pl' MODELID```
 
