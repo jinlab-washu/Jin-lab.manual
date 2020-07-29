@@ -194,7 +194,9 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
    
        ```genome analysis-project add-config-file --reprocess-existing ANALYSIS_PROJECT_ID /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/human_germline_exome_bp_gatk4.yml```
 
-   **This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". ***IF YOU ARE NOT DOING WES-alignment,
+   **This file enables the use of external data that is not in the same format as sequencing data produced internally at WashU. In addition, it changes the processing profile for the Whole-Exome-Sequencing alignment to our custom pipeline so that the emit_reference_confidence (ERC) variable is changed to "BP_RESOLUTION". **
+   
+   *IF YOU ARE NOT DOING WES-alignment,
    the "region_of_interest_set_name: 'xGen Lockdown Exome Panel v1 capture set" line will need to be changed to reflect the regions you will be comparing against and for what type of analysis (WGS or RNA-seq). 
 
 4. Disable the original configuration file (Optional).
