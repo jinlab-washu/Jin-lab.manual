@@ -153,8 +153,6 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
     2b. If you are using the prod-builder environment, use the jin-lab environment file below:
     
     /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/jinlab_environment_config_prod-builder.yaml
-    
-    Make sure to replace DOCKERVERSIONHERE with the correct notation.
 
     The file contains the text below
 
