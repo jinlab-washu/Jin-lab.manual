@@ -24,4 +24,4 @@
 
 **Genome Modeling System**
 
-  * [Helpful_commands](./gms_commands)
+  * [Helpful_commands](./gms_commands.md)
