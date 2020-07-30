@@ -20,3 +20,4 @@
 
 **Tools**
   * [Docker](./Docker.md "Docker")
+    * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
