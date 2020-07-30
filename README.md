@@ -1,7 +1,7 @@
 # 
 ## Table of Contents
 **Getting Started in the Lab**
-  * [Create Git Account](./Git.md "Git")
+  * [Git Account Creation and Basics](./Git.md "Git")
   * [Log Into WashU Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./gms_set_up.md)
   * [Create and Run New Analysis Project](./GMS.md "GMS")
