@@ -8,6 +8,8 @@
   * [Logging In Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Create and Run New Analysis Project](./GMS.md "GMS")
   
+**Sequencing Analysis**
+
 **Transferring Files**
 * [Globus](./Globus.md "Globus")
   * Large File Transfers from compute0 to compute1 or compute0/1 to external clusters
