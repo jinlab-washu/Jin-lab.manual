@@ -1,26 +1,13 @@
-## Contents
-
-[Create and Configure Analysis Workflow on External Data](#create-and-configure-analysis-workflow-on-external-data)
-
-   - [Project Setup on compute0 (MGI Legacy)](#project-setup-on-compute0-mgi-legacy)
-
-[Importing External Data](#importing-external-data)
-
-[Creating a Custom Processing Profile](#creating-a-custom-processing-profile)
-
-[Running a Project](#running-a-project)
-
 ## Create and Configure Analysis Workflow on External Data
 
 ### High Level Overview
-1. Create an analysis project
+1. Create an analysis project-[Project Setup on compute0 (MGI Legacy)](#project-setup-on-compute0-mgi-legacy)
    - add env file specifying disk info
-2. Import data
+2. Import data-[Importing External Data](#importing-external-data)
    - Create an individual, link them to a sample, link sample to library
    - Use instrument-data to import the library to the project
-3. If needed, create a custom processing-profile and configuration
-4. Release the project
-
+3. If needed, create a custom processing-profile and configuration-[Creating a Custom Processing Profile](#creating-a-custom-processing-profile)
+4. Release the project-[Running a Project](#running-a-project)
 
 ### Project Setup on compute0 (MGI Legacy)
 
