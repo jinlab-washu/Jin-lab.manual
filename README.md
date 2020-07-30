@@ -1,6 +1,6 @@
 # 
 ## Table of Contents
-**Getting Started**
+**Getting Started in the Lab**
   * [Git](./Git.md "Git")
   * [Logging In Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./gms_set_up.md)
