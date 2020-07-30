@@ -5,7 +5,7 @@
 ## Table of Contents
 1. Getting Started
   * [Logging In (SSH)](./SSH.md "Logging In (SSH)")
-  * [Create new analysis project](./GMS.md "GMS")
+  * [Create and Run New Analysis Project](./GMS.md "GMS")
   * Transferring Files
 	  * [Globus](./Globus.md "Globus")
 	  * [SCP](./SCP.md "SCP")
