@@ -10,10 +10,6 @@
 
 [Running a Project](#running-a-project)
 
-[Helpful commands](#misc)
-
-[Helpful Links](#helpful-links)
-
 ## Create and Configure Analysis Workflow on External Data
 
 ### High Level Overview
