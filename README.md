@@ -4,7 +4,7 @@
 
 ## Table of Contents
 1. Getting Started
-  * [Logging In (SSH)](./SSH.md "Logging In (SSH)")
+  * [Logging In Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Create and Run New Analysis Project](./GMS.md "GMS")
   * Transferring Files
 	  * [Globus](./Globus.md "Globus")
