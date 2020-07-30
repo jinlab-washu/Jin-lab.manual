@@ -124,16 +124,8 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
 First, you will need to create an individual:
 
 ```
-genome individual create --taxon "human" 
+genome individual create --taxon "human" --name=$NAME
 ```
-
-To update an individual, e.g. changing their name:
-
-```
-genome individual update name --value=NAME --individual=ID
-```
-
-Where `NAME` is the name you would like to use and `ID` is the ID of the individual created previously.
 
 Next, you will need to create samples:
 
