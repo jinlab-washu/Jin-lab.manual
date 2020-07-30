@@ -37,3 +37,11 @@ Re-process instrument data with new configuration file:
 ```genome instrument-data list --filter  "library.name ~ <Part of library names, e.g. KCM>"```
 
 ~ : "like" operator
+
+#### Update an individual, e.g. changing their name:
+
+```
+genome individual update name --value=NAME --individual=ID
+```
+
+Where `NAME` is the name you would like to use and `ID` is the ID of the individual created previously.
