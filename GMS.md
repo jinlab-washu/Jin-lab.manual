@@ -1,7 +1,5 @@
 ## Contents
 
-[Invoke GMS environment](#invoke-gms-environment)
-
 [Create and Configure Analysis Workflow on External Data](#create-and-configure-analysis-workflow-on-external-data)
 
    - [Project Setup on compute0 (MGI Legacy)](#project-setup-on-compute0-mgi-legacy)
@@ -15,17 +13,6 @@
 [Helpful commands](#misc)
 
 [Helpful Links](#helpful-links)
-
-## Invoke GMS environment
-To start the genome modeling system environment from which you can launch pipelines and run `genome` commands, enter `gsub` for the modern docker version or `gsub -l` for the legacy version. See below for more information. On compute1 you will need to use `gsub -G compute-jin810` in order to have access to our lab space.
-
-For users of the Genome Modeling System (GMS), the first thing you must do after logging in to a virtual-workstation (TODO: add link) at MGI is launch a docker container using the appropriate image.
-
-There are currently two environments to choose from:
-
-Legacy - This environment will allow the execution of the Genome Modeling Tools, commands that rely on the old lucid environment, ex. feature-lists, reference sequences, etc. as well as legacy model types, ex. ReferenceAlignment, SingleSampleGenotype, SomaticVariation, SomaticValidation, RnaSeq, ClinSeq, etc.
-
-Modern - This environment supports both Workflow Execution Services (WES) Toil and Cromwell. The only currently supported model type is CwlPipeline. However, there are germline, somatic, RNA-seq and more pipelines to choose from soon.
 
 ## Create and Configure Analysis Workflow on External Data
 
