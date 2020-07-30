@@ -1,7 +1,4 @@
 # 
-
-## Overview
-
 ## Table of Contents
 **Getting Started**
   * [Git](./Git.md "Git")
