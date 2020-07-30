@@ -21,10 +21,14 @@
 [Helpful Links](#helpful-links)
 
 ## Introduction
-The Genome Institute at Washington University has developed a high-throughput, fault-tolerant analysis information management system called the Genome Modeling System (GMS), capable of executing complex, interdependent, and automated genome analysis pipelines at a massive scale. The GMS framework provides detailed tracking of samples and data coupled with reliable and repeatable analysis pipelines.  The GMS code, installation instructions and usage tutorials are available at http://github.com/genome/gms.
+We will be using WashU's Genome Modeling System (GMS) to run whole pipelines and parts of pipelines for sequencing analysis. This system has a steep learning curve, but the protocol below demonstrates how to create, configure, and run a new analysis project on external Whole Exome Sequencing data. It is good to be familiar with this system as it is used as an integral part in our Whole Exome Sequencing analysis pipeline.
 
+For an overview of the GMS, see here: https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=3637349
+
+**Note: Any link that has confluence in the name, can only be accessed if you are connected to the WashU VPN**
 
 ## Set-up
+Right now, there are two clusters at Washu that are used for sequecing analysis. The legacy cluster, compute0 , and the new cluster, compute1. Everything on compute0 is slowly being moved to compute1 so that copute0 can be discontinued in a few years. This means *MOST OF OUR ANALYSIS ONLY WORKS ON COMPUTE0* 
 You will need to modify your .bashrc file located in your home directory in order to invoke the 'gsub' command to access the GMS environment. 
 
 See here for more information https://confluence.ris.wustl.edu/display/BIO/GMS+-+Docker+Image+-+gsub
