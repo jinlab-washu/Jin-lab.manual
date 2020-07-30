@@ -13,7 +13,17 @@
 
 Start by invoking the 'modern' gms environment using `gsub` and creating an analysis project.
 
-1. Create an anlalysis project:
+1. Create an analysis project:
+
+    *Below we are using the --no-config parameter. We have our own lab specific configuration files we will add to the analyis project instead of choosing defaults provided in the gms system.
+
+    #### Using Througly Tested pipeline
+    
+    1b. If you are using a pipeline that has been throughly tested or is known to run successfully,
+    
+     ```
+     genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder --no-config
+     ```
 
     #### Pipeline Testing
 
@@ -22,20 +32,27 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
      ```
      genome analysis-project create --name "Name of Analysis Project Here" --environment ad-hoc --no-config
      ```
-
-    #### Using througly tested pipeline
-    
-    1b. If you are using a pipeline that has been throughly tested or is known to run successfully,
-    
-     ```
-     genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder --no-config
-     ```
      
 2. Check for Environment file .yml file
+    
+    #### prod-builder environment (default)
+    
+    2a. If you are using the prod-builder environment, use the jin-lab environment file below:
+    
+    /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/jinlab_environment_config_prod-builder.yaml
 
+    The file contains the text below
+
+    ```
+    disk_group_models: "jin810_gms"
+    disk_group_alignments: "jin810_gms"
+    lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
+    cwl_runner: cromwell
+    workflow_builder_backend: simple
+    ```
     #### Ad-hoc environment (for pipeline testing)
     
-    2a. If you set up your analysis project to use the ad-hoc environment, use the ad-hoc jin-lab environment file below: 
+    2b. If you set up your analysis project to use the ad-hoc environment, use the ad-hoc jin-lab environment file below: 
     
     /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/jinlab_environment_config_user_specfic.yaml
    
@@ -51,23 +68,7 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
      cromwell_server: "hsqldb:tmp"
     ```
     
-    #### prod-builder environment (default)
-    
-    2b. If you are using the prod-builder environment, use the jin-lab environment file below:
-    
-    /gscmnt/gc2698/jin810/analysis-workflows/configuration_files/jinlab_environment_config_prod-builder.yaml
-
-    The file contains the text below
-
-    ```
-    disk_group_models: "jin810_gms"
-    disk_group_alignments: "jin810_gms"
-    lsb_sub_additional: "docker(registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute0-24)"
-    cwl_runner: cromwell
-    workflow_builder_backend: simple
-    ```
-
-   Command:
+  Universal Command for either environment chosen:
 
    ```genome analysis-project add-environment-file "ANALYSIS_PROJ_NAME OR ANALYSIS_PROJ_ID" /gscmnt/gc2698/jin810/configuration_files/$ENV_FILE```
 
