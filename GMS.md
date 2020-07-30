@@ -19,7 +19,7 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
 
     #### Using Througly Tested pipeline
     
-    1b. If you are using a pipeline that has been throughly tested or is known to run successfully,
+    1a. If you are using a pipeline that has been throughly tested or is known to run successfully,
     
      ```
      genome analysis-project create --name "Name of Analysis Project Here" --environment prod-builder --no-config
@@ -27,7 +27,7 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
 
     #### Pipeline Testing
 
-    1a. If you are testing a new pipeline, it is best to use the ad-hoc environment instead of the prod-builder. This enables more control over the builds (read-write permissions and start/stop builds) and the data that is produced by the experimental pipeline. See below.
+    1b. If you are testing a new pipeline, it is best to use the ad-hoc environment instead of the prod-builder. This enables more control over the builds (read-write permissions and start/stop builds) and the data that is produced by the experimental pipeline. See below.
 
      ```
      genome analysis-project create --name "Name of Analysis Project Here" --environment ad-hoc --no-config
