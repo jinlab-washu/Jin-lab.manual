@@ -6,6 +6,7 @@
 **Getting Started**
   * [Git](./Git.md "Git")
   * [Logging In Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
+  * [Set up GMS Environment]
   * [Create and Run New Analysis Project](./GMS.md "GMS")
   
 **Sequencing Analysis**
