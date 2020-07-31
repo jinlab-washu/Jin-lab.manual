@@ -29,3 +29,6 @@
   * [Create Custom Processing Profile](./custom_processing_profile.md)
   * [Helpful Commands](./gms_commands.md)
   * [Helpful Information](./gms_info.md)
+
+**Yale Ruddle HPC**
+  * [Convert BAM/CRAM to FASTQ]
