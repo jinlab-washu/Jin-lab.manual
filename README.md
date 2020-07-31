@@ -6,8 +6,10 @@
   * [Set up GMS Environment](./gms_set_up.md)
   * [Create and Run New Analysis Project](./GMS.md "GMS")
   
-**Sequencing Analysis**
-  * [Yale Ruddle rms Whole Exome Sequencing]
+**Sequencing Analysis Protocols**
+  * [WashU GMS]
+  * [Yale Ruddle]
+    * [Whole Exome Sequencing]
 
 **Transferring Files**
 * [Globus](./transferring_files/Globus.md "Globus")
