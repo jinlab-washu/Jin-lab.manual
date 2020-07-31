@@ -2,9 +2,9 @@
 ## Table of Contents
 **Getting Started in the Lab**
   * [Git Account Creation and Basics](./Git.md "Git")
+  * [Computation Environments]
   * [Log Into WashU Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./gms_set_up.md)
-  * [Computation Environments]
   
 **Sequencing Analysis Protocols**
   * [WashU GMS]
@@ -33,5 +33,5 @@
   * [Helpful Information](./gms_info.md)
 
 **Yale Ruddle HPC**
-  * [Set Up RMS for Script Execution (Start Here)]
+  * [Set Up .bashrc for RMS Script Execution (Start Here)]
   * [Convert BAM/CRAM to FASTQ]
