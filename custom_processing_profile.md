@@ -1,11 +1,24 @@
 ### Creating a Custom Processing Profile
 
-Depending on your intended workflow, you may need to create a custom processing profile. The provided profile hardcodes some values, meaning they cannot be changed by your configuration file. 
+Depending on your intended workflow, you may need to create a custom processing profile. A custom processing profile specifies the analysis pipeline and parameters that you will be using. The default profiles on the GMS have some hardcoded values, meaning they cannot be changed by your configuration file.
+We already have created custom processing profiles for analysis. See the Genome Modeling System Chapter of the Jin-lab manual.
 
-First, you will need to clone MGI's analysis-workflows repository if it does not already exist:
+#### If you need to create a new processing profile, see the steps below.
+
+A fork of the analysis-workflows repository from the GMS/genome repository exisits on compute0 here: `/gscmnt/gc2698/jin810/analysis-workflows`
+
+It is a good idea to create a new branch if you will be modifying cwl files within exisiting workflows. You can test these files out in the new branch before merging them back to our "GATK4" branch.
+
+If you are adding new files, you can go ahead and add them to the GATK4 branch.
+
+To ensure you are on the GATK4 branch, use the command `git checkout GATK4` while under `/gscmnt/gc2698/jin810/analysis-workflows`
+
+If you need to clone the repository into a different location, use the command below: 
 
 ```
-git clone https://github.com/genome/analysis-workflows
+git clone https://github.com/jinlab-washu/analysis-workflows/tree/GATK4 for the jinlab specific branch
+
+git clone https://github.com/genome/analysis-workflows for the master genome branch updated by the WashU MGIBio group
 ```
 
 Next, you will need to create a new processing profile:
