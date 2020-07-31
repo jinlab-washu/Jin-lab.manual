@@ -4,6 +4,7 @@
   * [Git Account Creation and Basics](./Git.md "Git")
   * [Log Into WashU Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./gms_set_up.md)
+  * [Computation Environments]
   * [Create and Run New Analysis Project](./GMS.md "GMS")
   
 **Sequencing Analysis Protocols**
