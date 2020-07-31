@@ -33,4 +33,5 @@
   * [Helpful Information](./gms_info.md)
 
 **Yale Ruddle HPC**
+  * [Set Up RMS for Script Execution (Start Here)]
   * [Convert BAM/CRAM to FASTQ]
