@@ -5,7 +5,6 @@
   * [Log Into WashU Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./gms_set_up.md)
   * [Computation Environments]
-  * [Create and Run New Analysis Project](./GMS.md "GMS")
   
 **Sequencing Analysis Protocols**
   * [WashU GMS]
@@ -27,6 +26,8 @@
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
 
 **Genome Modeling System**
+  * [Create, Configure, and Run New Analysis Project](./GMS.md "GMS")
+  * [Import External Data]
   * [Create Custom Processing Profile](./custom_processing_profile.md)
   * [Helpful Commands](./gms_commands.md)
   * [Helpful Information](./gms_info.md)
