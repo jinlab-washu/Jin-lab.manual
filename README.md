@@ -20,7 +20,7 @@
   * Command line file transfers from google Drive to computing cluster
 
 **Tools**
-  * [Docker](./Docker.md "Docker")
+  * [Docker](./tools/Docker.md "Docker")
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
 
 **Genome Modeling System**
