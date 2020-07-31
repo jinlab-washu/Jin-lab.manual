@@ -7,7 +7,7 @@
   * [Create and Run New Analysis Project](./GMS.md "GMS")
   
 **Sequencing Analysis**
-  * [Ruddle rms Whole Exome Sequencing]
+  * [Yale Ruddle rms Whole Exome Sequencing]
 
 **Transferring Files**
 * [Globus](./Globus.md "Globus")
