@@ -10,13 +10,13 @@
   * [Yale Ruddle rms Whole Exome Sequencing]
 
 **Transferring Files**
-* [Globus](./Globus.md "Globus")
+* [Globus](./transferring_files/Globus.md "Globus")
   * Large File Transfers from compute0 to compute1 or compute0/1 to external clusters
-* [SCP](./SCP.md "SCP")
+* [SCP](./transferring_files/SCP.md "SCP")
   * Command line file transfers from local computer to compute0/1
-* [Box-lftp](./box_lftp.md)
+* [Box-lftp](./transferring_files/box_lftp.md)
   * Command line file transfers from wustl BOX to compute0/1
-* [rclone](./rclone.md)
+* [rclone](./transferring_files/rclone.md)
   * Command line file transfers from google Drive to computing cluster
 
 **Tools**
