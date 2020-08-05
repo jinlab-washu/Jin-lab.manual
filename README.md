@@ -26,7 +26,7 @@
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
 
 **Genome Modeling System**
-  * [Create, Configure, and Run New Analysis Project](./GMS.md "GMS")
+  * [Create, Configure, and Run New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
   * [Import External Data]
   * [Create Custom Processing Profile](./Genome_Modeling_System/custom_processing_profile.md)
   * [Helpful Commands](./Genome_Modeling_System/gms_commands.md)
