@@ -28,9 +28,9 @@
 **Genome Modeling System**
   * [Create, Configure, and Run New Analysis Project](./GMS.md "GMS")
   * [Import External Data]
-  * [Create Custom Processing Profile](./custom_processing_profile.md)
-  * [Helpful Commands](./gms_commands.md)
-  * [Helpful Information](./gms_info.md)
+  * [Create Custom Processing Profile](./Genome_Modeling_System/custom_processing_profile.md)
+  * [Helpful Commands](./Genome_Modeling_System/gms_commands.md)
+  * [Helpful Information](./Genome_Modeling_System/gms_info.md)
 
 **Yale Ruddle HPC**
   * [Set Up .bashrc for RMS Script Execution (Start Here)]
