@@ -45,3 +45,33 @@ genome individual update name --value=NAME --individual=ID
 ```
 
 Where `NAME` is the name you would like to use and `ID` is the ID of the individual created previously.
+
+#### Delete analyis-project and associated model data
+
+- Mark the analysis project for deprecation
+
+    ```genome analysis-project deprecate $ANALYSIS_PROJECT_ID```
+
+   This marks the project so that no new builds can be built. 
+
+    Currently, there is no automated process to delete cwl builds. Therefore, the data will have to be manually deleted by you, the user who created the project or a person from MGI. See below.
+
+- Delete analysis project and model data
+
+     If the analysis project was ran using the **prod-builder** environment, you will have to have someone from mgi delete the analysis-project model data for you. On the MGI Slack channel, send them the analysis project ids you would like the model data deleted for.
+ 
+     If the project was ran using the **ad-hoc** environment, whomever created the project will have to delete it. If you created the analysis project, you will be able to delete the analysis-project and model data with the command/s below.
+ 
+     To get a quick check of the builds that will be deleted, run the command:
+ 
+     ```ANALYSIS_PROJECT_ID=a420e0496a14459594740b816b6f9479; genome model build list -f model.analysis_project.id=$ANALYSIS_PROJECT_ID --show id --nohead | xargs | tr ' ' '/' | xargs -I BUILD_IDS echo genome disk allocation purge --reason "deprecation of Analysis Project $ANALYSIS_PROJECT_ID" owner_id:BUILD_IDS```
+     
+     (this will echo the builds to be deleted back to the terminal)
+ 
+     To actually delete the builds, run the command:
+ 
+     ```ANALYSIS_PROJECT_ID=$ANALYSIS_PROJECT_ID genome model build list -f model.analysis_project.id=$ANALYSIS_PROJECT_ID --show id --nohead | xargs | tr ' ' '/' | xargs -I BUILD_IDS genome disk allocation purge --reason "deprecation of Analysis Project $ANALYSIS_PROJECT_ID" owner_id:BUILD_IDS```
+     
+     To determine the owner of the analysis project,
+     
+     ```genome model build list -f model.analysis_project.id=$ANALYSIS_PROJECT_ID --show run_by --nohead | sort | uniq -c```
