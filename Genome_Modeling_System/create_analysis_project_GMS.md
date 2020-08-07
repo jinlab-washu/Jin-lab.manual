@@ -1,5 +1,7 @@
 ## Create and Configure Analysis Workflow on External Data
 ![gsm_diagram](./gms_diagram.png)
+Diagram of Genome Modeling System Analysis Project and it's associated objects. In this protocol, we will create the analysis project that will eventually be linked to samples for analysis. The GMS was optimized with internal data produced by the LIMS system at WashU. External data is a little harder to work with.
+
 ### High Level Overview
 1. Create an analysis project-[Project Setup on compute0 (MGI Legacy)](#project-setup-on-compute0-mgi-legacy)
    - add env file specifying disk info
