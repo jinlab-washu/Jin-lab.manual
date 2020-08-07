@@ -3,7 +3,7 @@
 **Getting Started in the Lab**
   * [Git Account Creation and Basics](./getting_started/Git.md "Git")
   * [Computation Environments](./getting_started/computation_environments.md)
-  * [Log Into WashU Compute Clusters (SSH)](./getting_started/SSH.md "Logging In (SSH)")
+  * [Log Into Compute Clusters (SSH)](./getting_started/SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./getting_started/gms_set_up.md)
   * [Set up Ruddle .bashrc]
 
