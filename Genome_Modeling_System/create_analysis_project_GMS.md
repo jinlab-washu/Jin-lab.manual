@@ -1,5 +1,5 @@
 ## Create and Configure Analysis Workflow on External Data
-
+![gsm_diagram](./gms_diagram.png)
 ### High Level Overview
 1. Create an analysis project-[Project Setup on compute0 (MGI Legacy)](#project-setup-on-compute0-mgi-legacy)
    - add env file specifying disk info
