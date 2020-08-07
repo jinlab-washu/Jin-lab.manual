@@ -1,5 +1,5 @@
 ## Introduction
-We will be using WashU's Genome Modeling System (GMS) to run whole pipelines and parts of pipelines for sequencing analysis. This system has a steep learning curve, but the protocol below demonstrates how to create, configure, and run a new analysis project on external Whole Exome Sequencing data. It is good to be familiar with this system as it is used as an integral part in our Whole Exome Sequencing analysis pipeline.
+We will be using WashU's Genome Modeling System (GMS) to run whole pipelines and parts of pipelines for sequencing analysis. This system has a steep learning curve. It is good to be familiar with this system as it is used as an integral part in our Whole Exome Sequencing analysis pipeline.
 
 For an overview of the GMS, see here: https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=3637349
 
