@@ -3,6 +3,9 @@
 
 For genomics analysis, you will be using three main high performance computing clusters. Compute0 and Compute1 at WashU and the Ruddle hpc at Yale University.
 
+In order to use any of the hpc's remotely, you will have to have Cisco's AnyConnect Secure Mobility Client for VPN service.  
+See here for downloading: https://vpn.net.wustl.edu/+CSCOE+/logon.html#form_title_text
+
 ## WashU Compute0 and Compute1
 The main difference between Compute0 and Compute1 is Compute0 is the "MGI" legacy server. It is being phased out in favor of moving to the newer Compute1 cluster.
 Genomics and sequencing analysis has mainly been used on Compute0 with a system called the Genome Modeling System (GMS). 
