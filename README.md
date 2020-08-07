@@ -28,7 +28,7 @@
 **Genome Modeling System**
   * [Create, Configure, and Run New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
   * [Import of External Data - Automated]
-  * [Import External Data - Manual]
+  * [Import External Data - Manual](./Genome_Modeling_System/import_external_data_manually.md)
   * [Create Custom Processing Profile](./Genome_Modeling_System/custom_processing_profile.md)
   * [Helpful Commands](./Genome_Modeling_System/gms_commands.md)
   * [Helpful Information](./Genome_Modeling_System/gms_info.md)
