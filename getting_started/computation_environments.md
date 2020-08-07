@@ -22,5 +22,10 @@ You will be using a mix of the two until the kinks have been fully worked out on
 
 Note: Compute0 and Compute1 are slightly different and some commands will have to be slightly changed when using one or the other.
 
-For Ruddle,
+## Yale Ruddle
+The yale ruddle hpc is more of a traditional hpc in a sense that there are pre-downloaded programs to cluster that are maintained by the hpc group.
+
+See here for getting started and logging in: https://docs.ycrc.yale.edu/clusters-at-yale/ **You will need to be a sponsored identity in order to access ruddle**
+
+*Currently, all downstream variant analysis will be conducted on the yale cluster as WashU's hpc's do not support hail**
 
