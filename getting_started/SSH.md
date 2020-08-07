@@ -32,3 +32,13 @@ You will replace `wustl-user` with your username and `$NUMBER` with the number o
 Windows:
 
 You will need to use PuTTY or the Windows Subsystem for Linux (WSL). Check the [RIS IT Knowledge Base](https://confluence.ris.wustl.edu "RIS IT Knowledge Base") for recommendations and more information.
+
+## Yale Ruddle
+macOS/Linux/BSD:
+
+You will need to create an ssh key-pair and upload your public key to your net id to be able to acess the cluster. See here for directions: https://docs.ycrc.yale.edu/clusters-at-yale/access/
+
+```
+ssh yale-net-id@ruddle.hpc.yale.edu
+```
+
