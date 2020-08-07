@@ -19,7 +19,7 @@ You will be using a mix of the two until the kinks have been fully worked out on
 ### Differences between Compute0 and Compute1
 - Compute0 storage for jinlab is /gscmnt/gc2698/jin810
 - Syntax for submitting jobs is slighlty different between each cluster
-- For compute1, you have to submit jobs with the group parameter -G. The group for our lab is `-G compute-jin810`
+- For compute1, you have to submit jobs with the group parameter -G. The group for our lab is `compute-jin810`
 
 ## Yale Ruddle
 The yale ruddle hpc is more of a traditional hpc in a sense that there are pre-downloaded programs to cluster that are maintained by the hpc group.
