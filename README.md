@@ -6,11 +6,6 @@
   * [Log Into WashU Compute Clusters (SSH)](./SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./gms_set_up.md)
   * [Set up Ruddle .bashrc]
-  
-**Sequencing Analysis Protocols**
-  * [WashU GMS]
-  * [Yale Ruddle]
-    * [Whole Exome Sequencing]
 
 **Transferring Files**
 * [Globus](./transferring_files/Globus.md "Globus")
@@ -25,7 +20,12 @@
 **Tools**
   * [Docker](./tools/Docker.md "Docker")
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
-
+    
+**Sequencing Analysis Protocols**
+  * [WashU GMS]
+  * [Yale Ruddle]
+    * [Whole Exome Sequencing]
+    
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
   * [Import of External Data - Automated]
