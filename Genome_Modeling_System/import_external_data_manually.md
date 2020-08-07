@@ -1,5 +1,7 @@
 ### Importing External Data
 
+*If you only have a few samples for import, you can use this protocol to manually import your samples. If you have over 3 samples, we recommend using the automated protocol found here: [Import External Data - Automated](./import_external_data_automated)*
+
 First, you will need to create an individual:
 
 ```
