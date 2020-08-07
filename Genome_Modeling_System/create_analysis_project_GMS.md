@@ -124,50 +124,5 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
    The config files will be lableled based on their status.
    
 
-### Running a Project
-
-When you are ready to run your project:
-
-```
-genome analysis-project release PROJECT_NAME
-```
-
-To view the status of your project:
-
-```
-genome analysis-project view --fast PROJECT_NAME
-```
-Or you can view the status of your project with a graphical interface by typing your analysis project ID into the search bar found here:
-
-spectacle.gsc.wustl.edu/
-
-If the build is successful, the results can be found within the model_data folder in the lab directory shown below:
-
-```/gscmnt/gc2698/jin810/model_data/MODEL_ID/BUILD_ID/results```
-
-For example:
-```/gscmnt/gc2698/jin810/model_data/10a7507ab8ca46e09567439ddfcacac3/build4b6e86de7cd243599e6e500489d5b584/results```
-
-### Output
-
-It is important to QC the sequencing results to ensure there is enough coverage of your targets for quality analysis.
-
-There will be HsMetrics files created for 2 different gene databases (ClinVAR and ACMG) with statistics per base (".base"),  per target (".target"), and a summary (".summary"). Right now, it is a good idea to check the ".target" HsMetrics files for both databases to ensure at least 90% of all targets have at least 10X coverage. This is a column in the file. 
-
-
-
-There will be many files produced from the pipeline. 
-
-Errors and standard output will be produced in the logs folder under your build id:
-```/gscmnt/gc2698/jin810/model_data/MODEL_ID/BUILD_ID/logs```
-
-### Intrepreting Results
-Helpful links for intrepreting results:
-
-VCF file: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
-
-Picard Metrics: https://broadinstitute.github.io/picard/picard-metric-definitions.html
-
-### Troubleshooting
-If you cannot figure out why a pipeline is failing, shoot the MGIBIO analysis-workflows slack channel a message with the analysis project ID. They will be happy to help you out. 
+## Next Step: Import Files and link file to an Analysis Project
 
