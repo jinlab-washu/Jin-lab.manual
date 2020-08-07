@@ -124,5 +124,5 @@ Start by invoking the 'modern' gms environment using `gsub` and creating an anal
    The config files will be lableled based on their status.
    
 
-## Next Step: Import Files and link file to an Analysis Project
+**Next Step: Import Files and link file to an Analysis Project**
 
