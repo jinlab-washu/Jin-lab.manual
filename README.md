@@ -30,6 +30,7 @@
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
   * [Import of External Data - Automated]
   * [Import External Data - Manual](./Genome_Modeling_System/import_external_data_manually.md)
+  * [Import Instrument Data from Lims system](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/Genome_Modeling_System/import_instrument_data_from_lims_system.md)
   * [Create Custom Processing Profile](./Genome_Modeling_System/custom_processing_profile.md)
   * [Helpful Commands](./Genome_Modeling_System/gms_commands.md)
   * [Helpful Information](./Genome_Modeling_System/gms_info.md)
