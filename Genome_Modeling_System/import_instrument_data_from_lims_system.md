@@ -38,37 +38,78 @@ ID           SAMPLE_NAME                    LIBRARY_NAME                        
 ...
 ```
 If DISK_ALLOCATION.ABSOLUTE_PATH is <NULL>, it means the file is in archive folder. But when you import it, system should automatically handle unarchiving the data for you.
+ 
+ But most important, you get instrument data ID!
 
 
-## Import Data From Lims system:
+## Import Data by instrument data ID:
 
-**`/gsc/scripts/opt/genome/bin/genome-site-tgi import-data-from-lims --analysis-project=$projectID --instrument-data=$id`**
+**`genome config analysis-project add-instrument-data $projectID $id`**
 
-You only need $projectID and instrument data $id.
+You only need **`$projectID`** and instrument data **`$id`**.
 
 ```
-~$ /gsc/scripts/opt/genome/bin/genome-site-tgi import-data-from-lims --help
+~$ genome analysis-project add-instrument-data --help
 
 USAGE
- genome-site-tgi import-data-from-lims --analysis-project=? --instrument-data=?[,?]
+ genome config analysis-project add-instrument-data ANALYSIS-PROJECT INSTRUMENT-DATA
 
+SYNOPSIS
+genome config analysis-project add-instrument-data <analysis-project> <instrument-data>
 REQUIRED INPUTS
-  analysis-project
-    The Analysis Project for which this instrument data is being imported 
-  instrument-data
-    The data to look up in the LIMS 
-...
+  INSTRUMENT-DATA
+    instrument data to add to this analysis project 
+
+REQUIRED PARAMS
+  ANALYSIS-PROJECT
+    the analysis project on which to operate--must be in one of the following statuses: Pending,
+    Hold, In Progress 
+
+DESCRIPTION
+    This will associate instrument data with an analysis project.
+
 ```
 
 For example:
 
 ```
-/gsc/scripts/opt/genome/bin/genome-site-tgi import-data-from-lims --analysis-project=80cef865bf23467f87b6ace3a77799e4 --instrument-data=2896688903
+~$ genome config analysis-project add-instrument-data 80cef865bf23467f87b6ace3a77799e4 2896651370
 'instrument_data', and 'analysis_project' may require verification...
-Resolving parameter 'instrument_data' from command argument '2896688903'... found 1
+Resolving parameter 'instrument_data' from command argument '2896651370'... found 1
 Resolving parameter 'analysis_project' from command argument '80cef865bf23467f87b6ace3a77799e4'... found 1
-Created allocation b97e5163ff574245979598a26548a3f8 at /gscmnt/gc2698/jin810/instrument_data/2896688903
-RUN: rsync -rlHt '--chmod=Dug=rx,Fug=r' '--chown=:info' /gscmnt/gc13037/archive/2017-03/csf_157193108/ /gscmnt/gc2698/jin810/instrument_data/2896688903
+Asked to assign (1) of which (0) were already assigned. Proceeding to assign (1)
+Analysis Project is in a "Pending" state. Assigned Instrument Data will not be processed until it has been released.
+
+```
+
+Before release project, check your import data:
+
+```
+~$ genome analysis-project view --fast 80cef865bf23467f87b6ace3a77799e4
+'analysis_project' may require verification...
+Resolving parameter 'analysis_project' from command argument '80cef865bf23467f87b6ace3a77799e4'... found 1
+=== Analysis Project ===
+ID: 80cef865bf23467f87b6ace3a77799e4                                        Name: hydrocephalus_GBD_32_38_53_55
+Run as: prod-builder                                                        Created: 2020-08-07 20:53:39
+Updated: 2020-08-07 20:53:39                                                Created by: fup
+Status: Pending
+
+    ** Analysis Project is PENDING **
+
+=== Instrument Data ===
+Genome::InstrumentData::Solexa
+             new 106
+           Total 106
+
+=== Configuration Items ===
+Custom configuration item
+    ID: 2299a11ae76d450282f3d6879e4be433                                        Concrete: Yes
+    Created by: fup                                                             Status: active
+    Created: 2020-08-07 20:59:06                                                Updated: 2020-08-07 20:59:06
+    Tags: 
+
+Environment config: /gscmnt/gc2560/core/analysis_project/80cef865bf23467f87b6ace3a77799e4
+
 ```
 
 
