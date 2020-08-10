@@ -8,7 +8,7 @@
 
 > replace `-R /gscmnt/gc2698/jin810/references/Homo_sapiens_assemblyb37_gatk.fasta` with `-R /gscmnt/gc2698/jin810/references/hg19.fa`
 
-Docker Protocol on Compute0
+#### Docker Protocol on Compute0
 
 1. Load the broad institute gatk4 docker image 
 
