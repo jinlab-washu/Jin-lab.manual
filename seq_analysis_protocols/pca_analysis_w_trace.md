@@ -10,9 +10,9 @@ TRACE is a sub-utility that uses genotype data instead of sequencing data to tra
 [Laser Documentation](http://csg.sph.umich.edu/chaolong/LASER/) - Information Regarding TRACE and LASER pca analysis
 
 ## Requirements
-- VCF with genotype calls
+- *VCF with genotype calls
   - Jinlab whole exome sequencing pipeline produces this after joint-calling
-  - **NOTE: VCF must have coordinates aligned to b37. b37 is broad insitutes version of GRCh37. hg19 contigs are not compatible.**
+  - ***Your VCF must have coordinates aligned to b37. b37 is broad insitutes version of GRCh37. hg19 contigs are not compatible. If you have a vcf produced with hg38 or hg19, you will have to convert the coordinates to b37. See the protocol below**
 - TRACE
   - You will need to create an account in order to run pca analysis on your target vcf
   - After you login, select the TRACE button under dropdown menu labeled "RUN" at the top of the screen.
