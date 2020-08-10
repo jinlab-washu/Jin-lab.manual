@@ -26,12 +26,12 @@ Your VCF must have coordinates aligned to b37. b37 is broad insitutes version of
 
 **If you have a vcf that was aligned to a reference other than b37 (broad institute version of GRCh37), you will have to convert the coordinates to b37. If you used hg19, you will first have to convert to hg38 before b37.**
 
-Conversion of hg38 to b37 [Convert coordinates to b37](./liftover_hg38_to_b37.md).
+Conversion of hg38/h19 to b37 [Convert hg38/hg19 to b37](./liftover_hg38_to_b37.md).
 
 Differences between GRCh37 builds: [GRCh37 Builds and their Naming Conventions](https://gatk.broadinstitute.org/hc/en-us/articles/360035890711-GRCh37-hg19-b37-humanG1Kv37-Human-Reference-Discrepancies) *The naming convention of hg19 and hg38 differs from b37.
 
 *There doesn't seem to be a chain file that converts hg19 to b37 coordinates. If your vcf was produced with alignment to hg19, you will have to do two liftOvers.*
   - Liftover hg19 to hg38
-  - Liftover hg38 to b37-[Convert coordinates to b37](./liftover_hg38_to_b37.md)
+  - Liftover hg38 to b37
 
 ## Protocol
