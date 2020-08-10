@@ -22,6 +22,7 @@
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
     
 **Sequencing Analysis Protocols**
+  * [PCA Analysis with LASER]
   * [WashU GMS]
   * [Yale Ruddle]
     * [Whole Exome Sequencing]
