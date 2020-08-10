@@ -31,7 +31,7 @@ Docker Protocol on Compute0
         --REJECT /gscmnt/gc2698/jin810/jointcalling/4c2a1cef13954e8c99ee6edb48a21139/cromwell-executions/JointGenotyping/8c3337c8-7c90-4df8-b2cb-0b0f072ae7a3/call-FinalGatherVcf/execution/hg38_to_b37_rejected.vcf.gz
         
         
-If you have a vcf with alignment to the hg19 reference, you will need the following:
+**If you have a vcf with alignment to the hg19 reference, you will need the following:**
 - The correct chain file for conversion to hg38
 - The hg19 reference fasta with an accompanying `.dict` file
   - If you can only find the fasta online, you can create a sequnce dict with GATK's CreateSequenceDictionary tool. See here [GATK4 CreateSequence Dictionary](https://gatk.broadinstitute.org/hc/en-us/articles/360047217371-CreateSequenceDictionary-Picard-)
