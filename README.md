@@ -22,7 +22,7 @@
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
     
 **Sequencing Analysis Protocols***  
-  * [PCA Analysis with LASER]
+  * [PCA Analysis with LASER](./seq_analysis_protocols/pca_analysis_w_trace)
   * [Whole Exome Sequencing with alignment to hg38] (C0)
   * [Whole Exome Sequencing with alignment to hg19] (R)
     
