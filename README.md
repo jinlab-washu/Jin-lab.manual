@@ -23,8 +23,8 @@
     
 **Sequencing Analysis Protocols***  
   * [PCA Analysis with LASER]
-  * [Whole Exome Sequencing using hg38] (C0)
-  * [Whole Exome Sequencing using hg19] (C0)
+  * [Whole Exome Sequencing with alignment to hg38] (C0)
+  * [Whole Exome Sequencing with alignment to hg19] (R)
     
 **HPC specific protocols denoted with a C0 for WashU-Compute0, C1 for WashU-Comptue1, or R for Ruddle*
     
