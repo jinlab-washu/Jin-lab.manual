@@ -20,4 +20,14 @@ TRACE is a sub-utility that uses genotype data instead of sequencing data to tra
   
 ## Protocol
 
-If you have a file produced by GRCh38
+**If you have a vcf that was aligned to a reference other than b37 (broad institute version of GRCh37), you will have to liftOver the coordinates to the correct reference. The naming convention of hg19 and hg38 differs from b37. See here for more details: [GRCh37 Builds and their Naming Conventions](https://gatk.broadinstitute.org/hc/en-us/articles/360035890711-GRCh37-hg19-b37-humanG1Kv37-Human-Reference-Discrepancies)**
+
+There doesn't seem to be a chain file that converts hg19 to b37 coordinates. If your vcf was produced with alignment to hg19, you will have to do two liftOvers.
+  - Liftover hg19 to hg38
+  - Liftover hg38 to b37
+
+### Convert hg38 variant coordinates to b37 coordinates using GATK LiftoverVCF
+
+*The default WES pipeline used in the jinlab on the WashU clusters uses hg38 for alignment*
+
+
