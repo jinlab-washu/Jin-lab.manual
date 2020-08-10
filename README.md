@@ -21,11 +21,12 @@
   * [Docker](./tools/Docker.md "Docker")
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
     
-**Sequencing Analysis Protocols**
+**Sequencing Analysis Protocols***  
   * [PCA Analysis with LASER]
-  * [WashU GMS]
-  * [Yale Ruddle]
-    * [Whole Exome Sequencing]
+  * [Whole Exome Sequencing using hg38] (C0)
+  * [Whole Exome Sequencing using hg19] (C0)
+    
+**HPC specific protocols denoted with a C0 for WashU-Compute0, C1 for WashU-Comptue1, or R for Ruddle*
     
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
