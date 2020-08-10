@@ -15,5 +15,9 @@ TRACE is a sub-utility that uses genotype data instead of sequencing data to tra
   - **NOTE: VCF must have coordinates aligned to b37. b37 is broad insitutes version of GRCh37. hg19 contigs are not compatible.**
 - TRACE
   - You will need to create an account in order to run pca analysis on your target vcf
-  - After you login, go to the TRACE webpage to upload and run data. https://laser.sph.umich.edu/index.html#!run/trace%401.03
+  - After you login, select the TRACE button under dropdown menu labeled "RUN" at the top of the screen.
   
+  
+## Protocol
+
+If you have a file produced by GRCh38
