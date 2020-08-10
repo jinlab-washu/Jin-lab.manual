@@ -7,7 +7,7 @@ TRACE is a sub-utility that uses genotype data instead of sequencing data to tra
 
 [LASER Server](https://laser.sph.umich.edu/index.html#!run/trace%401.03)
 
-[Laser Info](http://csg.sph.umich.edu/chaolong/LASER/)
+[Laser Documentation](http://csg.sph.umich.edu/chaolong/LASER/)
 
 ## Requirements
 - VCF with genotype calls
