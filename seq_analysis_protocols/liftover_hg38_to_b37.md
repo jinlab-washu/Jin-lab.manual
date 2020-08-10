@@ -4,9 +4,9 @@
 
 > If you are converting hg19 to hg38, replace the following lines in the code below:
 
-> replace `-C /gscmnt/gc2698/jin810/references/Hg38Tob37.over.chain` with `/gscmnt/gc2698/jin810/references/hg19ToHg38.over.chain.gz` 
+> replace `-C /gscmnt/gc2698/jin810/references/Hg38Tob37.over.chain` with `-C /gscmnt/gc2698/jin810/references/hg19ToHg38.over.chain.gz` 
 
-> replace `-R /gscmnt/gc2698/jin810/references/Homo_sapiens_assemblyb37_gatk.fasta` with `/gscmnt/gc2698/jin810/references/hg19.fa`
+> replace `-R /gscmnt/gc2698/jin810/references/Homo_sapiens_assemblyb37_gatk.fasta` with `-R /gscmnt/gc2698/jin810/references/hg19.fa`
 
 Docker Protocol on Compute0
 
