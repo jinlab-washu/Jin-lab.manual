@@ -2,6 +2,12 @@
 
 *The default WES pipeline used in the jinlab on the WashU clusters uses hg38 for alignment*
 
+> If you are converting hg19 to hg38, replace the following lines in the code below:
+
+> replace `-C /gscmnt/gc2698/jin810/references/Hg38Tob37.over.chain` with `/gscmnt/gc2698/jin810/references/hg19ToHg38.over.chain.gz` 
+
+> replace `-R /gscmnt/gc2698/jin810/references/Homo_sapiens_assemblyb37_gatk.fasta` with `/gscmnt/gc2698/jin810/references/hg19.fa`
+
 Docker Protocol on Compute0
 
 1. Load the broad institute gatk4 docker image 
