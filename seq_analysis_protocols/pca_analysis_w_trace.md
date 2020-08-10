@@ -16,6 +16,8 @@ TRACE is a sub-utility that uses genotype data instead of sequencing data to tra
 - TRACE
   - You will need to create an account in order to run pca analysis on your target vcf
   - After you login, select the TRACE button under dropdown menu labeled "RUN" at the top of the screen.
+- USCS Chain file, reference `.fasta`, and reference `.dict` 
+  - We have the necessary files for conversion of hg38 to b37 and hg19 to hg38 on compute0
   
 ## Notes
 
