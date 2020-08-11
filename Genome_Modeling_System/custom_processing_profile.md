@@ -2,7 +2,7 @@
 
 The default profiles on the GMS have some hardcoded values, meaning they cannot be changed by your configuration file. If you want to make a custom pipeline not already in the GMS, you will need to create a custom processing profile. A custom processing profile specifies the analysis pipeline main workflow file, cwl files for that workflow, and parameters that you will be using.
 
-We already have created a custom processing profile for joint-call genotyping of Whole-exome-sequencing data. See the Genome Modeling System Chapter of the Jin-lab manual.
+We already have created a custom processing profile for joint-call genotyping of Whole exome sequencing data. See the Genome Modeling System Chapter of the Jin-lab manual.
 
 #### If you need to create a new processing profile, see the steps below.
 
