@@ -5,7 +5,7 @@
   * [Computation Environments](./getting_started/computation_environments.md)
   * [Log Into Compute Clusters (SSH)](./getting_started/SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./getting_started/gms_set_up.md)
-  * [Set up Ruddle .bashrc]
+  * [Set up Ruddle .bashrc File](./getting_started/set_up_ruddle_bashrc.md)
 
 **Transferring Files**
 * [Globus](./transferring_files/Globus.md "Globus")
