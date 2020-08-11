@@ -27,7 +27,7 @@
 
 
 - Open interactive session on the cluster
-`srun --pty -t 2:00:00 --mem=8G -p interactive bash`
+`srun --pty -t 8:00:00 --mem=8G -p interactive bash`
 
 - Open a new tmux seesion
 `tmux new -s $myproject` where `$myproject` is the name you give it
