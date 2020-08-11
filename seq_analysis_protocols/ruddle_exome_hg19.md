@@ -9,6 +9,11 @@
 >> Variant Processing: Base Recalibration-BQSR, HaplotypeCaller, Variant Filtering-VQSR, Cohort Joint-Call Genotyping-GenotypeGVCFs<br>
 >> GATK Version: GATK3
 
+
+### Workflow Versions
+- Newest: 
+- 
+
 ### Requirements:
 - Yale Ruddle hpc
 - rms path added to .bashrc
@@ -27,9 +32,7 @@
 
 1. Create data structure required for rms GATKExome.rms
 
-
-- Open interactive session on the cluster
-`srun --pty -t 8:00:00 --mem=8G -p interactive bash`
+- can use ycga Fastq and provide a text sample. 
 
 - Open a new tmux seesion
 `tmux new -s $myproject` where `$myproject` is the name you give it
