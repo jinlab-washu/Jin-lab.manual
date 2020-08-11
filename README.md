@@ -41,3 +41,4 @@
 **Yale Ruddle HPC**
   * [Set Up .bashrc for RMS Script Execution (Start Here)]
   * [Convert BAM/CRAM to FASTQ]
+  * [Install Hail on Ruddle](./yale_ruddle/Hail_Installation.md)
