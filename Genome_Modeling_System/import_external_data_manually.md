@@ -1,4 +1,4 @@
-### Importing External Data
+### Importing External Data with or without Analysis Project
 
 *If you only have a few samples for import, you can use this protocol to manually import your samples. If you have over 3 samples, we recommend using the automated protocol found here: [Import External Data - Automated](./import_external_data_automated)*
 
@@ -35,6 +35,7 @@ genome library create --sample=SAMPLE_NAME --name=LIBRARY_NAME
 
 Finally, you can import your data:
 
+*If you want your data added to your analysis-project, you will need to use the `--analysis-project` parameter shown below. If you want to import without an attached analysis-project, omit the `--analysis-project` parameter.
 ```
 genome instrument-data import trusted-data --analysis-project=PROJECT_NAME --import-source-name=SOURCE_NAME --library=LIBRARY_NAME --source-directory=PATH --import-format=FORMAT --read-count=COUNT
 ```
