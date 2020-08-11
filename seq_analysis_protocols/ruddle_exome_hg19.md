@@ -4,6 +4,7 @@
 > Purpose: To produce a multi-sample vcf ready for downstream variant analysis<br>
 
 > Workflow:
+>> Pre-processing: FASTQ preprocessing
 >> Alignment: bwa-mem to hg19 reference<br>
 >> Variant Processing: Base Recalibration-BQSR, HaplotypeCaller, Variant Filtering-VQSR, Cohort Joint-Call Genotyping-GenotypeGVCFs<br>
 >> GATK Version: GATK3
@@ -11,6 +12,7 @@
 ### Requirements:
 - Yale Ruddle hpc
 - rms path added to .bashrc
+- Compressed fastq files with bgzip (.fastq.gz) or qp (.qp)
 
 ## Notes
 - Fastq files have to follow a naming convention.
