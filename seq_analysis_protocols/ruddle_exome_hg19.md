@@ -10,7 +10,11 @@
 - Name of samples cannot have periods to separate
 ## Protocol
 
-1. Create Structure data structure required for rms GATKExome.rms
+1. Create data structure required for rms GATKExome.rms
 
 
 - Open interactive session on the cluster
+`srun --pty -t 2:00:00 --mem=8G -p interactive bash`
+
+- Open a new tmux seesion
+`tmux new -s $myproject` where `$myproject` is the name you give it
