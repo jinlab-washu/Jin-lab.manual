@@ -17,7 +17,7 @@
   - Such as `mDZ038_74777_R1_001.fastq.gz` or `KMM_5-2_AHW3JKDSXX_L001_R1_001`
   - Common Error:  `rms /home/jk2269/pipelines/gatkExome.rms -19 /home/sp2349/scratch60/moyamoya_texas_scratch/rms_dir/* ERROR - FASTQ file name not in a parsable format: GVD_44_37789_R1.fastq.gz`
 - Data must have a particular structure
-  - <sample>/ <sample.bam> <sample.bai> Unaligned/<sample.fastq.gz>
+  - $sample/ $sample.bam $sample.bai Unaligned/ $sample.fastq.gz
     - Where sample is a directory possibly containing bam files and/or an Unaligned folder containing fastq.gz or fastq.qp files.
   - Either move data to fit correct structure or link files from a different location
   
