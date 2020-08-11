@@ -2,7 +2,7 @@
 
 ## Note:
 
-You should login into **`gsbu`** system!
+You should login into **`gsub`** system!
 
 You can simply typing `gsub` to login in both **computer0** and **computer1**.
 
