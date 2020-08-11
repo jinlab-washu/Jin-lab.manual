@@ -29,5 +29,9 @@ The yale ruddle hpc is more of a traditional hpc in a sense that there are pre-d
 
 See here for getting started and logging in: https://docs.ycrc.yale.edu/clusters-at-yale/ **You will need to be a sponsored identity in order to access ruddle**
 
+To use modules already installed on the cluster, you will have to use ```module load $my_module```
+
+To view available modules, use ```module avail```
+
 *Currently, all downstream variant analysis will be conducted on the yale cluster as WashU's hpc's do not support hail**
 
