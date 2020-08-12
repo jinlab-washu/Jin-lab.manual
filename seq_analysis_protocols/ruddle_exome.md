@@ -17,11 +17,10 @@
 - Fastq files have to follow a naming convention.
   - Such as `mDZ038_74777_R1_001.fastq.gz` or `KMM_5-2_AHW3JKDSXX_L001_R1_001`
   - Common Error:  `rms /home/jk2269/pipelines/gatkExome.rms -19 /home/sp2349/scratch60/moyamoya_texas_scratch/rms_dir/* ERROR - FASTQ file name not in a parsable format: GVD_44_37789_R1.fastq.gz`
-- Data must have a particular structure
-  - $sample/ $sample.bam $sample.bai Unaligned/ $sample.fastq.gz
-    - Where sample is a directory possibly containing bam files and/or an Unaligned folder containing fastq.gz or fastq.qp files.
+- Data must have a particular structure. Bam and fastq files have unique data structures, that must not be mixed.
+  - FASTQ: $sample/Unaligned/$sample.fastq.gz or $sample.fastq.qp
+  - BAM: $sample/$sample.bam,$sample.bai
   - Either move data to fit correct structure or link files from a different location
-- Protocol for conversion of bams to fastq is listed below
   
 ## Protocol
 
