@@ -4,8 +4,8 @@
 > Purpose: To produce a multi-sample vcf ready for downstream variant analysis<br>
 
 > Workflow:
->> Pre-processing: FASTQ preprocessing
->> Alignment: bwa-mem to hg19 reference<br>
+>> Pre-processing: FASTQ/bam preprocessing<br>
+>> Alignment: bwa-mem<br>
 >> Variant Processing: Base Recalibration-BQSR, HaplotypeCaller, Cohort Joint-Call Genotyping-GenotypeGVCFs, Variant Filtering-VQSR<br>
 
 ### Workflow Versions as of 7-12-20
