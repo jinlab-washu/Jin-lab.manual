@@ -6,18 +6,12 @@
 > Workflow:
 >> Pre-processing: FASTQ preprocessing
 >> Alignment: bwa-mem to hg19 reference<br>
->> Variant Processing: Base Recalibration-BQSR, HaplotypeCaller, Variant Filtering-VQSR, Cohort Joint-Call Genotyping-GenotypeGVCFs<br>
->> GATK Version: GATK3
+>> Variant Processing: Base Recalibration-BQSR, HaplotypeCaller, Cohort Joint-Call Genotyping-GenotypeGVCFs, Variant Filtering-VQSR<br>
 
-
-### Workflow Versions
-- Newest: 
-- 
-
-### Requirements:
-- Yale Ruddle hpc
-- rms path added to .bashrc
-- Compressed fastq files with bgzip (.fastq.gz) or qp (.qp)
+### Workflow Versions as of 7-12-20
+- GATK3 Newest: /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms
+  - Should work with fastq and bam files
+- GATK4 Newest: /home/jk2269/pipelines/gatkExome4.rms
 
 ## Notes
 - Fastq files have to follow a naming convention.
@@ -32,7 +26,13 @@
 
 1. Create data structure required for rms GATKExome.rms
 
-- can use ycga Fastq and provide a text sample. 
+    - can use ycga Fastq and provide a text sample. 
 
-- Open a new tmux seesion
-`tmux new -s $myproject` where `$myproject` is the name you give it
+2. Run rms script in data directory
+
+    2a. Open a new tmux session `tmux new -s $myproject` where `$myproject` is the name you give it<br>
+    2b. Move to the directory containing your data `cd /path_to_data`<br>
+    2c. Run `rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms $-19 $sample_dir` where `$-19` specifies the reference and `$sample_dir` tells the script where to look for the data. If you are in the directory containing your data (followed step 2b), you should use a `*` here to tell the script to look at everything in the current directory.<br>
+    
+      - For example, `rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms -19 *` will run the script on every sample in your current directory<br>
+      - Use `-38` for hg38 reference instead of hg19
