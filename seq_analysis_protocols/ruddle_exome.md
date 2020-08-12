@@ -1,4 +1,4 @@
-# Whole Exome Sequencing Processing with Alignment to hg19
+# Whole Exome Sequencing Processing on Ruddle
 >WORK IN PROGRESS
 
 > Purpose: To produce a multi-sample vcf ready for downstream variant analysis<br>
