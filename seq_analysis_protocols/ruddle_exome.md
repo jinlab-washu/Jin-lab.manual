@@ -21,14 +21,26 @@
   - $sample/ $sample.bam $sample.bai Unaligned/ $sample.fastq.gz
     - Where sample is a directory possibly containing bam files and/or an Unaligned folder containing fastq.gz or fastq.qp files.
   - Either move data to fit correct structure or link files from a different location
+- Protocol for conversion of bams to fastq is listed below
   
 ## Protocol
 
-1. Create data structure required for rms GATKExome.rms
+1. Create the data structure required for rms GATKExome.rms
 
-    - can use ycga Fastq and provide a text sample. 
+    Bams and Fastq file inputs have different data structures that are required for input into Exome rms scripts. *Bam and fastq files should have separate data structures. DO NOT MIX*
+    
+    **FASTQ FILE INPUT**<br>
+    If you are using Fastq files, the data structure format is `$sample/Unaligned/$sample.fastq.gz or $sample.fastq.qp` where each sample has its own directory. Each sample directory should have an `unaligned` folder that contains the fastq.gz or fastq.qp reads. Fastq names must have a specific format. 
+    
+    - If you need to convert bam's to fastq, use /home/jk2269/pipelines/bam2splitfastq.rms . 
+      - bam2splitfastq.rms creates the data structure for you in your current working directory
+    - If you have fastq files, the data structure can be created with /home/jk2269/binpy/ycgaFastq
+    
+    **BAM FILE INPUT**<br>
+    If you are using Bam Files, data structure format is `$sample/$sample.bam,$sample.bai` where each sample has its own directory, `$sample`, containing a bam file and its index.
+    
 
-2. Run rms script in data directory
+2. Run the rms script in your directory containing the data structure
 
     2a. Open a new tmux session `tmux new -s $myproject` where `$myproject` is the name you give it<br>
     2b. Move to the directory containing your data `cd /path_to_data`<br>
