@@ -45,5 +45,5 @@
     2b. Move to the directory containing your data `cd /path_to_data`<br>
     2c. Run `rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms $-19 $sample_dir` where `$-19` specifies the reference and `$sample_dir` tells the script where to look for the data. If you are in the directory containing your data (followed step 2b), you should use a `*` here to tell the script to look at everything in the current directory.<br>
     
-      - For example, `rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms -19 *` will run the script on every sample in your current directory<br>
+      - For example, `rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms -19 ./*` will run the script on every sample in your current directory<br>
       - Use `-38` for hg38 reference instead of hg19
