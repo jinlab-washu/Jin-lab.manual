@@ -25,6 +25,7 @@
   * [PCA Analysis using LASER](./seq_analysis_protocols/pca_analysis_w_trace.md)
   * [Whole Exome Sequencing with alignment to hg38] (C0)
   * [Whole Exome Sequencing Processing (R)](./seq_analysis_protocols/ruddle_exome.md)
+  * [Joint-Call Genotyping (R)](./seq_analysis_protocols/joint_call_genotyping_ruddle.md)
     
 **HPC specific protocols denoted with a C0 for WashU-Compute0, C1 for WashU-Comptue1, or R for Ruddle*
     
