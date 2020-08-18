@@ -29,3 +29,7 @@ See protocol [here](./ruddle_exome.md)
     ```rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExomeCall.rms ./*```
     
     *This command will output the RMS logs in the current working directory.*
+    
+4. Check for exome_calls.vcf.gz and exome_calls.vcf.gz.tbi output
+
+    If the pipeline ran successfully, you should have the files, exome_calls.vcf.gz and exome_calls.vcf.gz.tbi, in the directory which you ran the command in step 3.
