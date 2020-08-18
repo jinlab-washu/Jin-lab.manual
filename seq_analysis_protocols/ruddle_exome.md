@@ -47,3 +47,9 @@
     
       - For example, `rms /home/bioinfo/software/knightlab/bin_Apr2019/gatkExome.rms -19 ./*` will run the script on every sample in your current directory<br>
       - Use `-38` for hg38 reference instead of hg19
+      
+3. Check for exome_calls.vcf.gz and exome_calls.vcf.gz.tbi output
+
+    If the pipeline ran successfully, you should have the files, exome_calls.vcf.gz and exome_calls.vcf.gz.tbi, in the directory which you ran the command in step 2. 
+    
+    Additionally, each sample directory should have the following files: .g.vcf.gz, .bam, .bai, exomMetrics.txt
