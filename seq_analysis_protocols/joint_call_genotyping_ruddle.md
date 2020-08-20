@@ -7,6 +7,9 @@ As of 8-17-2020
 * Script locations 
   * GATK4: /home/jk2269/pipelines/gatkExomeCall4.rms
   * GATK3: /home/bioinfo/software/knightlab/bin_Apr2019/gatkExomeCall.rms
+* gatkExomeCall will **NOT** produce an exomeMetrics summary file for all samples. gatkExome does produce a an exomeMetrics summary file for all samples. 
+  * If you add samples only at the Joint-Genotyping step, these will not be added to the ExomeMetrics summary produced from gatkExome. 
+    * You can run statsmerge_v2.py standalone to produce a new summary exomeMetrics file of all samples ran through the Joint-Genotyping Pipeline
 ## Protocol
 
 *If you have fastq files or unaligned bams, you will need to run the pre-processing steps necessary to produce the aligned, base recalibrated `bam` and the haplotypecalled `.g.vcf` file.
