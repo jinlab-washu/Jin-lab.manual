@@ -21,6 +21,7 @@
   - FASTQ: $sample/Unaligned/$sample.fastq.gz or $sample.fastq.qp
   - BAM: $sample/$sample.bam,$sample.bai
   - Either move data to fit correct structure or link files from a different location
+- Will produce an exome_metrics.txt summary file for all samples
   
 ## Protocol
 
