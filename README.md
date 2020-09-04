@@ -38,7 +38,7 @@
   * [Create Custom Processing Profile](./Genome_Modeling_System/custom_processing_profile.md)
   * [Helpful Commands](./Genome_Modeling_System/gms_commands.md)
   * [Helpful Information](./Genome_Modeling_System/gms_info.md)
-  * [Deleting Model Data for Analysis Projects]
+  * [Deleting Analysis Projects and Associated Model Data](./Genome_Modeling_System/delete_model_data.md)
 
 **Yale Ruddle HPC**
   * [Set Up .bashrc for RMS Script Execution (Start Here)]
