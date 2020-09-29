@@ -1,4 +1,4 @@
-# PCA Analysis Using TRACE
+# PCA Analysis Using TRACE (Laser Web Tool)
 8-10-20
 
 This protocol uses the LASER web utility produced at the University of Michigan. 
