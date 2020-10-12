@@ -40,4 +40,6 @@ Differences between GRCh37 builds: [GRCh37 Builds and their Naming Conventions](
 
 2. Click the run tab at the top of the screen and select TRACE from the dropdown menu
 ![Trace Dropdown](./trace_dropdwn.png)
-3. 
+3. Give your job a name and upload the vcf. 
+  - If you would like to visualize groups of variants, you can create a "study groups" file and upload it. If you do this, **EVERY** individual in the study must have a group. See the website instructions for more information on the format.
+4. Submit the job by clicking the button at the bottom of the screen. This can take up to several hours to run, depending upon the size of your vcf and number of individuals in the study.
