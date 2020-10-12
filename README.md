@@ -20,9 +20,14 @@
 **Tools**
   * [Docker](./tools/Docker.md "Docker")
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
-    
+
+**Quality Control Analyses**
+* [PCA Analysis using LASER](./seq_analysis_protocols/pca_analysis_w_trace.md)
+* Sex Check (Hail)
+* Identity By Descent (Hail)
+* PC Relatedness (Hail)
+
 **Sequencing Analysis Protocols***  
-  * [PCA Analysis using LASER](./seq_analysis_protocols/pca_analysis_w_trace.md)
   * [Whole Exome Sequencing with alignment to hg38] (C0)
   * [Whole Exome Sequencing Processing (R)](./seq_analysis_protocols/ruddle_exome.md)
   * [Joint-Call Genotyping (R)](./seq_analysis_protocols/joint_call_genotyping_ruddle.md)
