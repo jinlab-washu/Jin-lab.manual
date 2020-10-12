@@ -35,3 +35,9 @@ Differences between GRCh37 builds: [GRCh37 Builds and their Naming Conventions](
   - Liftover hg38 to b37
 
 ## Protocol
+
+1. Create an account (if you have not already done so)
+
+2. Click the run tab at the top of the screen and select TRACE from the dropdown menu
+
+3. 
