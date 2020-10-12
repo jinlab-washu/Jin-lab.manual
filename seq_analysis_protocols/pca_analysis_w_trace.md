@@ -42,4 +42,7 @@ Differences between GRCh37 builds: [GRCh37 Builds and their Naming Conventions](
 ![Trace Dropdown](./trace_dropdwn.png)
 3. Give your job a name and upload the vcf. 
   - If you would like to visualize groups of variants, you can create a "study groups" file and upload it. If you do this, **EVERY** individual in the study must have a group. See the website instructions for more information on the format.
-4. Submit the job by clicking the button at the bottom of the screen. This can take up to several hours to run, depending upon the size of your vcf and number of individuals in the study.
+4. Change the number of principal components from 3 to 10. 
+  - This increases the number of ways the data can be visualized. Sometimes ethnicities overlap and it is hard to determine which background a sample belongs too. By increasing the number of principal components, you can separate closely populated ethnicities by displaying different variations of the principal components (e.g. PC1 vs PC7 instead of PC1 vs PC2)
+5. Submit the job by clicking the button at the bottom of the screen. This can take up to several hours to run, depending upon the size of your vcf and number of individuals in the study.
+6. You can view the results of your study by selecting the "Jobs" tab at the top of the screen. Then select your job of interest.
