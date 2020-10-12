@@ -39,5 +39,5 @@ Differences between GRCh37 builds: [GRCh37 Builds and their Naming Conventions](
 1. Create an account (if you have not already done so)
 
 2. Click the run tab at the top of the screen and select TRACE from the dropdown menu
-
+![Trace Dropdown](./trace_dropdwn.png)
 3. 
