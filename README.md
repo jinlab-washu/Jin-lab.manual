@@ -23,9 +23,7 @@
 
 **Quality Control Analyses**
 * [PCA Analysis using LASER](./seq_analysis_protocols/pca_analysis_w_trace.md)
-* Sex Check (Hail)
-* Identity By Descent (Hail)
-* PC Relatedness (Hail)
+* See [Yale.CMG.Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
 
 **Sequencing Analysis Protocols***  
   * [Whole Exome Sequencing with alignment to hg38] (C0)
