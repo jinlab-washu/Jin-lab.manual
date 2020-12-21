@@ -45,8 +45,6 @@
   * [Deleting Analysis Projects and Associated Model Data](./Genome_Modeling_System/delete_model_data.md)
 
 **Yale Ruddle HPC**
-  * [Set Up .bashrc for RMS Script Execution (Start Here)]
-  * [Convert BAM/CRAM to FASTQ]
   * [Install Hail on Ruddle](./yale_ruddle/Hail_Installation.md)
 
 **Hail**
