@@ -65,4 +65,4 @@ Notes:
     False positive Checks:  
        * Bad alignments: 60 is max alignment score. Many alignments of 40 or less can indicate a redundant region  (See left side of text plots)  
        * Variants in homopolymers and repeat regions. (If the variant is in this region, it is most likely a false positive).  
-       * Variants only ocurring in single orientation (forward or reverse). Denoted by carrot symbols in both image and text plots. `">": forward`,  `"<" reverse` in both the image plots and text plots
+       * Variants only ocurring in single orientation (forward or reverse). Denoted by carrot symbols in both image and text plots. `">": forward`,  `"<" reverse`
