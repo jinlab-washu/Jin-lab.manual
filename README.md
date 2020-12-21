@@ -26,14 +26,12 @@
 * See [Yale.CMG.Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
 
 **Sequencing Analysis Protocols***  
-  * [Whole Exome Sequencing with alignment to hg38 - Compute 0](./seq_analysis_protocols/whole_exome_compute0.md)
+  * [Whole Exome Sequencing with alignment to hg38 - Compute0](./seq_analysis_protocols/whole_exome_compute0.md)
   * [Whole Exome Sequencing Processing - Ruddle](./seq_analysis_protocols/ruddle_exome.md)
   * [Joint-Call Genotyping - Ruddle](./seq_analysis_protocols/joint_call_genotyping_ruddle.md)
-    
-**HPC specific protocols denoted with a C0 for WashU-Compute0, C1 for WashU-Comptue1, or R for Ruddle*
 
-**Genomics Tools**
-  * [Variant Visualization using Plot Reads](./genomics_tools/plot_reads.md)
+**Downstream Variant Analysis**
+  * [Variant Visualization using Plot Reads](./downstream_variant_analysis/plot_reads.md)
   
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
