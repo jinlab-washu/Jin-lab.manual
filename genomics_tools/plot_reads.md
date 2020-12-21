@@ -35,7 +35,7 @@ Protocols:
     
     Ruddle:
     `tmux new -s plotReads`
-    Once in your new window run: `srun --pty -t 4:00:00 --mem=8G -p interactive bash`
+    Once in your new window run: `srun --pty -t 4:00:00 --mem=8G -p interactive bash` (Time limits can be modified based on needs)
     Wait for the node to start. Then run the follwing line:
     ``cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
     
@@ -43,5 +43,8 @@ Protocols:
     `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
     
     This will output all sequence context plots in the current working directory.
+    
+    Example below:
+    [!NA12878_chr13_18174454.png]
     
 5. Create 
