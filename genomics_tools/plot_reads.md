@@ -39,12 +39,17 @@ Protocols:
     Wait for the node to start. Then run the follwing line:
     ``cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
     
-4. Create the sequence context plots at every position in pos.txt for every sample in samples.txt.
+4. Create image plots at every position in pos.txt for every sample in samples.txt.
     `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
     
-    This will output all sequence context plots in the current working directory.
+    This will output all image plots in the current working directory.
     
-    Example below:
-    [!NA12878_chr13_18174454.png]
+    Example image plot below:
+    ![image1](./NA12878_chr13_18174454.png)
     
-5. Create 
+5. Create text plots at every position in pos.txt for every sample in samples.txt.
+
+    This will output all text plots in the current working directory
+    
+    Example text plot below:
+    ![image2](./NA12878_chr13_18174454_partial.txt)
