@@ -33,7 +33,7 @@
 **HPC specific protocols denoted with a C0 for WashU-Compute0, C1 for WashU-Comptue1, or R for Ruddle*
 
 **Genomics Tools**
-  * [Variant Visualization using Plot Reads](./genomics_tools/plot_reads)
+  * [Variant Visualization using Plot Reads](./genomics_tools/plot_reads.md)
   
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
