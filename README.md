@@ -25,7 +25,7 @@
 * [PCA Analysis using LASER](./seq_analysis_protocols/pca_analysis_w_trace.md)
 * See [Yale.CMG.Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
 
-**Sequencing Analysis Protocols***  
+**Sequencing Analysis Protocols (Upstream Processing)**  
   * [Whole Exome Sequencing with alignment to hg38 - Compute0](./seq_analysis_protocols/whole_exome_compute0.md)
   * [Whole Exome Sequencing Processing - Ruddle](./seq_analysis_protocols/ruddle_exome.md)
   * [Joint-Call Genotyping - Ruddle](./seq_analysis_protocols/joint_call_genotyping_ruddle.md)
