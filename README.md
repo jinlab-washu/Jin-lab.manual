@@ -6,7 +6,7 @@
   * [Log Into Compute Clusters (SSH)](./getting_started/SSH.md "Logging In (SSH)")
   * [Set up GMS Environment](./getting_started/gms_set_up.md)
   * [Set up Ruddle .bashrc File](./getting_started/set_up_ruddle_bashrc.md)
-  * [Running your first whole exome sequencing]
+  * [Running your first whole exome sequencing](./getting_started/first_exome_run.md)
 
 **Transferring Files**
 * [Globus](./transferring_files/Globus.md "Globus")
@@ -20,7 +20,7 @@
 
 **Software**
   * [Docker](./tools/Docker.md "Docker")
-    * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
+    * Washu Compute clusters use Docker containers that come pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
 
 **Quality Control Analyses**
 * [PCA Analysis using LASER](./quality_control_analyses/pca_analysis_w_trace.md)
@@ -34,7 +34,8 @@
 
 **Downstream Variant Analysis**
   * [Variant Visualization using Plot Reads](./downstream_variant_analysis/plot_reads.md)
-  
+	* [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)
+
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
   * [Import of External Data - Automated]
@@ -51,3 +52,4 @@
 
 **Hail**
   * [Examples](./hail/examples)
+	* [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master)
