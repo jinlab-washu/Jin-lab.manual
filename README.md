@@ -22,7 +22,7 @@
     * Washu Compute clusters use Docker containers that pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
 
 **Quality Control Analyses**
-* [PCA Analysis using LASER](./seq_analysis_protocols/pca_analysis_w_trace.md)
+* [PCA Analysis using LASER](./quality_control_analyses/pca_analysis_w_trace.md)
 * See [here](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
 * [Relatedness and Kinship Analysis using PLINK]
 
