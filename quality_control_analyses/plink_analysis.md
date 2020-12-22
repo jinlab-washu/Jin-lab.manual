@@ -11,21 +11,21 @@ Interactive:
 
 1. Load PLINK
 
-  WashU Cluster: 
+    WashU Cluster: 
     
-    Use Docker image: `sam16711/plink:latest`
+      Use Docker image: `sam16711/plink:latest`
 
-    ```bsub -Is -q research-hpc -a 'docker(sam16711/plink:latest)' -R "select[mem>15000] rusage[mem=15000]" /bin/bash```
+      ```bsub -Is -q research-hpc -a 'docker(sam16711/plink:latest)' -R "select[mem>15000] rusage[mem=15000]" /bin/bash```
   
-  Yale Ruddle:
+    Yale Ruddle:
    
-    Start new tmux window with: `tmux attach -s new PLINK`
+      Start new tmux window with: `tmux attach -s new PLINK`
     
-    Run interactive node in new window with: `srun srun --pty -t 4:00:00 --mem=8G -p interactive bash`
+      Run interactive node in new window with: `srun srun --pty -t 4:00:00 --mem=8G -p interactive bash`
 
-    *NOTE Time and memory limits may have to be modified based on input data size
+      *NOTE Time and memory limits may have to be modified based on input data size
 
-    Load Plink: `module load PLINK`
+      Load Plink: `module load PLINK`
 
 2. Run plink command for kinship
 
@@ -39,15 +39,15 @@ Interactive:
 
 1. Load VCFTools
 
-  WashU Cluster:
+    WashU Cluster:
 
-    Load Docker Image biocontainers/vcftools:v0.1.16-1-deb_cv1
+      Load Docker Image biocontainers/vcftools:v0.1.16-1-deb_cv1
 
-    ```bsub -Is -q research-hpc -R "select[mem>15000] rusage[mem=15000]" -a 'docker(biocontainers/vcftools:v0.1.16-1-deb_cv1@sha256:caa02f1a00f18e1509ff3097cabaebb37b3ab884082ca983b3d7b7b7d13c6744)' /bin/bash```
+      ```bsub -Is -q research-hpc -R "select[mem>15000] rusage[mem=15000]" -a 'docker(biocontainers/vcftools:v0.1.16-1-deb_cv1@sha256:caa02f1a00f18e1509ff3097cabaebb37b3ab884082ca983b3d7b7b7d13c6744)' /bin/bash```
   
-  Yale Ruddle:
+    Yale Ruddle:
     
-    Load VCFtools with module: `moduel load VCFTools`
+      Load VCFtools with module: `moduel load VCFTools`
 
 2. Run relatedness2
 
