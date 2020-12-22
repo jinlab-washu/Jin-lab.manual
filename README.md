@@ -9,23 +9,23 @@
   * [Running your first whole exome sequencing](./getting_started/first_exome_run.md)
 
 **Transferring Files**
-* [Globus](./transferring_files/Globus.md "Globus")
-  * Large File Transfers from compute0 to compute1 or compute0/1 to external clusters
-* [SCP](./transferring_files/SCP.md "SCP")
-  * Command line file transfers from local computer to compute0/1
-* [Box-lftp](./transferring_files/box_lftp.md)
-  * Command line file transfers from wustl BOX to compute0/1
-* [rclone](./transferring_files/rclone.md)
-  * Command line file transfers from google Drive to computing cluster
+  * [Globus](./transferring_files/Globus.md "Globus")
+    * Large File Transfers from compute0 to compute1 or compute0/1 to external clusters
+  * [SCP](./transferring_files/SCP.md "SCP")
+    * Command line file transfers from local computer to compute0/1
+  * [Box-lftp](./transferring_files/box_lftp.md)
+    * Command line file transfers from wustl BOX to compute0/1
+  * [rclone](./transferring_files/rclone.md)
+    * Command line file transfers from google Drive to computing cluster
 
 **Software**
   * [Docker](./tools/Docker.md "Docker")
     * Washu Compute clusters use Docker containers that come pre-installed with all the necessary packages for analysis instead of downloading individual programs to the cluster
 
 **Quality Control Analyses**
-* [PCA Analysis using LASER](./quality_control_analyses/pca_analysis_w_trace.md)
-* See [here](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
-* [Relatedness and Kinship Analysis using PLINK](./quality_control_analyses/plink_analysis.md)
+  * [PCA Analysis using LASER](./quality_control_analyses/pca_analysis_w_trace.md)
+  * See [here](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
+  * [Relatedness and Kinship Analysis using PLINK](./quality_control_analyses/plink_analysis.md)
 
 **Sequencing Analysis Protocols (Upstream Processing)**  
   * [Whole Exome Sequencing with alignment to hg38 - Compute0](./seq_analysis_protocols/whole_exome_compute0.md)
@@ -34,7 +34,7 @@
 
 **Downstream Variant Analysis**
   * [Variant Visualization using Plot Reads](./downstream_variant_analysis/plot_reads.md)
-	* [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)
+  * [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)
 
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
@@ -52,8 +52,8 @@
 
 **Hail**
   * [Examples](./hail/examples)
-	* [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master)
+  * [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master)
 
 **Other Protocols**
-	* [Benchmarking](./other_protocols/benchmarking_WES.md)
-	* [Custom Intervals File Creation](./other_protocols/custom-interval-creation.md)
+  * [Benchmarking](./other_protocols/benchmarking_WES.md)
+  * [Custom Intervals File Creation](./other_protocols/custom-interval-creation.md)
