@@ -31,15 +31,15 @@ Load Plink: `module load PLINK`
 
 ### 1. Load VCFTools
 
-WashU Cluster:
+#### WashU Cluster:
 
-  Load Docker Image biocontainers/vcftools:v0.1.16-1-deb_cv1
+Load Docker Image biocontainers/vcftools:v0.1.16-1-deb_cv1
 
-  ```bsub -Is -q research-hpc -R "select[mem>15000] rusage[mem=15000]" -a 'docker(biocontainers/vcftools:v0.1.16-1-deb_cv1@sha256:caa02f1a00f18e1509ff3097cabaebb37b3ab884082ca983b3d7b7b7d13c6744)' /bin/bash```
+```bsub -Is -q research-hpc -R "select[mem>15000] rusage[mem=15000]" -a 'docker(biocontainers/vcftools:v0.1.16-1-deb_cv1@sha256:caa02f1a00f18e1509ff3097cabaebb37b3ab884082ca983b3d7b7b7d13c6744)' /bin/bash```
 
-Yale Ruddle:
+#### Yale Ruddle:
 
-  Load VCFtools with module: `moduel load VCFTools`
+Load VCFtools with module: `module load VCFTools`
 
 ### 2. Run relatedness2
 
