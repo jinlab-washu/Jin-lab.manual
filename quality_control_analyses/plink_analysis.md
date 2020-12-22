@@ -49,3 +49,32 @@ Load VCFtools with module: `module load VCFTools`
 
 - out.relatedness2
 - out.log
+
+## Running Plink for gender check
+
+### 1. Load PLINK  
+
+#### WashU Cluster: 
+
+Use Docker image: `sam16711/plink:latest`
+
+```bsub -Is -q research-hpc -a 'docker(sam16711/plink:latest)' -R "select[mem>15000] rusage[mem=15000]" /bin/bash```
+
+#### Yale Ruddle 
+
+Start new tmux window with: `tmux attach -s new PLINK`
+
+Run interactive node in new window with: `srun srun --pty -t 4:00:00 --mem=8G -p interactive bash`
+
+*NOTE Time and memory limits may have to be modified based on input data size
+
+Load Plink: `module load PLINK`
+
+
+### 2. Run the following commands:
+
+```plink --vcf ../exome_calls.vcf --out exome_calls_data```
+
+```plink --bfile exome_calls_data --split-x b38 --make-bed --out exome_calls_data_split```
+
+```plink --bfile exome_calls_data_split --impute-sex ycount --make-bed --out exome_calls_out```
