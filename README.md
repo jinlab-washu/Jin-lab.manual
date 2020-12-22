@@ -53,3 +53,7 @@
 **Hail**
   * [Examples](./hail/examples)
 	* [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master)
+
+**Other Protocols**
+	* [Benchmarking](./other_protocols/benchmarking_WES.md)
+	* [Custom Intervals File Creation](./other_protocols/custom-interval-creation.md)
