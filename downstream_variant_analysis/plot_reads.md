@@ -19,10 +19,11 @@ Notes:
     chr4:80000  
     chr4:457832
     
-2. Create a `.txt file` with each sample on a new line.
-    Example samples.txt
-    Sample1
-    Sample2
+2. Create a `samples.txt` file with each sample on a new line.
+    
+    Example samples.txt:  
+    Sample1  
+    Sample2  
     Sample3
     
 3. Submit an interactive job to run the plot_reads docker image:
