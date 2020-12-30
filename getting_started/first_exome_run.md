@@ -1,4 +1,4 @@
-# Guide for Starting your First Exome Analysis
+# Guide for Starting your First Whole Exome Sequence Analysis
 
 Tasks
 - [ ] Gather fastq and/or bam files
