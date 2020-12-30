@@ -7,7 +7,7 @@
 > * Python2.7
 >   * Use `module load Python` on Ruddle
 >   * Find a docker image with python2.7 on WashU Compute0/1
-> * exomeMetrics.txt per sample
+> * Per sample exomeMetrics.txt files produced by bamMetrics program (see [here](https://github.com/jinlab-washu/bamMetrics) for more details on bamMetrics)
 >   * exomeMetrics files are produced by the `rms gatkExome` pipelines on Ruddle as well as the `fastq to merged gvcf` pipeline on Compute0/1
 
 
