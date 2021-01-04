@@ -6,7 +6,7 @@ For an overview of the GMS, see here: https://confluence.ris.wustl.edu/pages/vie
 **Note: Any link that has confluence in the name, can only be accessed if you are connected to the WashU VPN**
 
 ## Set-up
-Right now, there are two clusters at Washu that are used for sequencing analysis. The legacy cluster, compute0 , and the new cluster, compute1. Everything on compute0 is slowly being moved to compute1 so that compute0 can be discontinued in a few years. *AS OF NOW, MOST OF OUR ANALYSIS ONLY WORKS ON COMPUTE0* 
+Right now, there are two clusters at Washu that are used for sequencing analysis. The legacy cluster, compute0 , and the new cluster, compute1. Everything on compute0 is slowly being moved to compute1 so that compute0 can be discontinued in a few years.
 
 1. Log into compute0 using ssh.
 
@@ -53,7 +53,7 @@ Right now, there are two clusters at Washu that are used for sequencing analysis
     PATH=$PATH:/gscmnt/gc2560/core/env/v1/bin
     source /gscmnt/gc2560/core/env/v1/bashrc
     ```
-4. Restart your ssh session.
+4. Reload your `.bashrc` file using: `source ~/.bashrc`
 
 5. Test your access to the GMS environemnt
   
