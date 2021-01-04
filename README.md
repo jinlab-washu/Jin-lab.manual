@@ -24,7 +24,7 @@
 
 **Quality Control Analyses**
   * [PCA Analysis using LASER](./quality_control_analyses/pca_analysis_w_trace.md)
-  * See [here](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md) for Sex Check (Hail), Identity By Descent (Hail), and PC Relatedness (Hail)
+  * [Kinship, Relatedness, and Sex-Check using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md)
   * [Kinship, Relatedness, and Sex-Check using PLINK](./quality_control_analyses/plink_analysis.md)
   * [Coverage Metrics with statsmergev2](./quality_control_analyses/statsmerge_v2.md)
 
