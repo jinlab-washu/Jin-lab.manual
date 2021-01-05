@@ -53,7 +53,7 @@
 
 **Hail**
   * [Examples](./hail/examples)
-  * [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master)
+  * [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows)
 
 **Other Protocols**
   * [Benchmarking](./other_protocols/benchmarking_WES.md)
