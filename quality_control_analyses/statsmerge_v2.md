@@ -66,3 +66,8 @@ The statsmerge_v2 program merges all per sample exomeMetrics files produced from
         50x target base coverage:	57.80%	57.00%	48.20%	42.70%	28.20%	53.60%	58.50%	67.30%	44.00%	44.50%
         100x target base coverage:	2.90%	3.90%	2.30%	2.30%	1.00%	6.30%	3.80%	8.80%	2.20%	2.50%
         Targets:	IDT	IDT	IDT	IDT	IDT	IDT	IDT	IDT	IDT	IDT
+        
+        
+4. (Optional) Run check_exomeMetrics_8x.py to analyze exomeMetricsSummary.txt produced in Step 3. check_exomeMetrics_8x.py will output any sample that does not have at least 90% of targets with 8X coverage to a new falled called `8x_fail_qc_samples.txt`. If no samples are found that fit such criteria, no output file will be produced. 
+
+    Usage: `python ../programs/check_exomeMetrics_8x.py exomeMetricsSummary.txt`
