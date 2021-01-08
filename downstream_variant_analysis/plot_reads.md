@@ -12,6 +12,8 @@ Notes:
 
 ## Interactive Protocol
 
+**READ: There are many ways to use this program and the protocol might have to be adjusted for the user's specific scenario. The protocol below is used when you have a list positions you would like to visualize for all samples.**  
+
 1. Gather list of all chromosomes and positions you want to visualize. Create a text document with each position on a new line.
 
     Example pos.txt:  
@@ -19,14 +21,14 @@ Notes:
     chr4:80000  
     chr4:457832
     
-2. Create a `samples.txt` file with each sample on a new line.
+2. Create a `samples.txt` file with each sample's `.bam or .cram` file on a new line.
     
     Example samples.txt:  
-    Sample1  
-    Sample2  
-    Sample3
+    path/Sample1.cram  
+    path/Sample2.cram  
+    path/Sample3.cram  
     
-3. Submit an interactive job to run the plot_reads docker image:
+3. Submit an interactive job on a compute node to run plot_reads:
 
     Compute0:
     
@@ -37,14 +39,15 @@ Notes:
     `bsub -Is -G compute-jin810 -q general-interactive -M 8GB -R "select[mem>8GB] rusage[mem=8GB]" -a 'docker(sam16711/plot_reads:v1)' /bin/bash`
     
     Ruddle:
-    `tmux new -s plotReads`
+    `tmux new -s plotReads` : opens a new tmux window to run plotReads in the background
     
-    Once in your new window run: `srun --pty -t 4:00:00 --mem=8G -p interactive bash` (Time limits can be modified based on needs)
+    Once in your new window run: `srun --pty --mem=8G -p interactive bash`
+    
     Wait for the node to start. Then run the follwing line:
     
-    ``cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
+        cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done
     
-4. Create image plots at every position in pos.txt for every sample in samples.txt (Good for checking false positives based on sequence context).
+4. Create image plots at every position in pos.txt for every sample in samples.txt (Good for checking false positives based on sequence context).  
     
     `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
     
@@ -55,7 +58,7 @@ Notes:
     
 5. Create text plots at every position in pos.txt for every sample in samples.txt (Good for checking bad alignments).
     
-    `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads -t $chr:$pos >> ./$(basename $sample)_"$chr"_"$pos".txt $sample;done; done`
+        `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads -t $chr:$pos >> ./$(basename $sample)_"$chr"_"$pos".txt $sample;done; done`
     
     This will output all text plots in the current working directory
     
