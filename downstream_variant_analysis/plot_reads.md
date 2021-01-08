@@ -12,23 +12,57 @@ Notes:
 
 ## Interactive Protocol
 
-**READ: There are many ways to use this program and the protocol might have to be adjusted for the user's specific scenario. The protocol below is used when you have a list positions you would like to visualize for all samples.**  
+**READ: There are many ways to use this program and you might have to adjust the protocol below for your own specific needs. The protocol below is used when you have a list positions you would like to visualize for all samples.**  
 
-1. Gather list of all chromosomes and positions you want to visualize. Create a text document with each position on a new line.
 
-    Example pos.txt:  
-    chr1:5000  
-    chr4:80000  
-    chr4:457832
+1. Create necessary files that will contain positions and samples you want to visualize.
+
+    1a. You have a list of positions you would like to visualize for several samples
     
-2. Create a `samples.txt` file with each sample's `.bam or .cram` file on a new line.
+      Create a new file called `pos.txt` with each position on a new line in the format, `chr:position`. **Do not include a header!**. See below.  
+        
+        GRCh38/hg38 Positions Example         GRCh37/hg19 Positions Example  
+        chr1:5000                             1:5000
+        chr4:80000                            4:80000
+        chr4:457832                           4:457832
     
-    Example samples.txt:  
-    path/Sample1.cram  
-    path/Sample2.cram  
-    path/Sample3.cram  
+      Create a `samples.txt` file with each sample's `.bam or .cram` file on a new line. See below for example.
     
-3. Submit an interactive job on a compute node to run plot_reads:
+        Example samples.txt:  
+        path/Sample1.cram  
+        path/Sample2.cram  
+        path/Sample3.cram  
+    
+    1b. You have a list of unique positions for each sample. 
+    
+      Create a new file  called `pos_visualizations.txt`. This file will have two columns separated by a tab (tab delimited). Position`<tab>`path_to_Sample_bam_or_cram. **Do not include a header!**
+      
+        Example GRCh38/hg38               Example GRCh37/hg19
+        chr1:5000   path/Sample1.cram     1:5000    path/Sample1.cram
+        chr4:80000  path/Sample2.cram     4:80000   path/Sample2.cram 
+        chr4:457832 path/Sample3.cram     4:457832  path/Sample3.cram
+        
+    Example for finding sample paths on Ruddle:
+    
+    If your samples are on ruddle, they will most likely be organized with each sample having its own folder. See below:
+    
+            [sp2349@ruddle1 project1]$ ls -d */
+            KAVM10-1/  KAVM10-2/  KAVM10-3/
+            
+    One way to find all of the crams is to to use the command below. This will output the paths of all the crams for a project into a file called `paths`
+            
+            Command: ls path_to_project_folder/*/*.cram
+            
+            Example: ls /gpfs/ycga/home/sp2349/project1/*/*.cram > paths
+            
+            Output: [sp2349@ruddle1 project1]$ cat paths 
+                    /gpfs/ycga/home/sp2349/project1/KAVM10-1/KAVM10-1.cram
+                    /gpfs/ycga/home/sp2349/project1/KAVM10-2/KAVM10-2.cram
+                    /gpfs/ycga/home/sp2349/project1/KAVM10-3/KAVM10-3.cram
+      
+    
+    
+2. Submit an interactive job on a compute node to run plot_reads:
 
     Compute0:
     
@@ -48,8 +82,10 @@ Notes:
         cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done
     
 4. Create image plots at every position in pos.txt for every sample in samples.txt (Good for checking false positives based on sequence context).  
-    
-    `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
+        
+        Example command when you have a list of positions you would like to visualize for several samples
+        
+        cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
     
     This will output all image plots in the current working directory.
     
@@ -58,7 +94,9 @@ Notes:
     
 5. Create text plots at every position in pos.txt for every sample in samples.txt (Good for checking bad alignments).
     
-        `cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads -t $chr:$pos >> ./$(basename $sample)_"$chr"_"$pos".txt $sample;done; done`
+        Example command when you have a list of positions you would like to visualize for several samples
+        
+        cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads -t $chr:$pos >> ./$(basename $sample)_"$chr"_"$pos".txt $sample;done; done
     
     This will output all text plots in the current working directory
     
