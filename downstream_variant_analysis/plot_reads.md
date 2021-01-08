@@ -77,9 +77,7 @@ Notes:
     
     Once in your new window run: `srun --pty --mem=8G -p interactive bash`
     
-    Wait for the node to start. Then run the follwing line:
-    
-        cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done
+    Wait for the node to start.
     
 4. Create image plots at every position in pos.txt for every sample in samples.txt (Good for checking false positives based on sequence context).  
         
