@@ -23,6 +23,8 @@ Load Plink: `module load PLINK`
 
 ### 2. Run plink command for kinship
 
+Move to a location where you want to store the plink kinship: `cd $your_path_here`
+
 ```plink --vcf ./IDT_WES_hg38.vcf.gz --geno 0.01 --hwe 0.001 --maf 0.05 --genome --snps-only```
 
 ![plink_running](https://github.com/jinlab-washu/Plink/blob/master/plink_kinship.png)
@@ -42,6 +44,8 @@ Load Docker Image biocontainers/vcftools:v0.1.16-1-deb_cv1
 Load VCFtools with module: `module load VCFTools`
 
 ### 2. Run relatedness2
+
+Move to a location where you want to store the plink relatedness results: `cd $your_path_here`
 
 ```vcftools --gzvcf $vcf.gz --relatedness2```
     
@@ -70,9 +74,9 @@ Run interactive node in new window with: `srun --pty -t 4:00:00 --mem=8G -p inte
 
 Load Plink: `module load PLINK`
 
-Move to a location where you want to store the plink results: `cd $your_path_here`
-
 ### 2. Run the following commands:
+
+Move to a location where you want to store the plink gender results: `cd $your_path_here`
 
 `plink --vcf your_path/exome_calls.vcf.gz --out exome_calls_data`
 
