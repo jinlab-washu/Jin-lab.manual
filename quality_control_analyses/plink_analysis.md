@@ -13,7 +13,7 @@ Use Docker image: `sam16711/plink:latest`
   
 #### Yale Ruddle:
    
-Start new tmux window with: `tmux attach -s new PLINK`
+Start new tmux window with: `tmux new -s PLINK`
 
 Run interactive node in new window with: `srun srun --pty -t 4:00:00 --mem=8G -p interactive bash`
 
@@ -62,7 +62,7 @@ Use Docker image: `sam16711/plink:latest`
 
 #### Yale Ruddle 
 
-Start new tmux window with: `tmux attach -s new PLINK`
+Start new tmux window with: `tmux new -s gender_check`
 
 Run interactive node in new window with: `srun srun --pty -t 4:00:00 --mem=8G -p interactive bash`
 
