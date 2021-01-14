@@ -75,6 +75,6 @@ Load Plink: `module load PLINK`
 
 ```plink --vcf ../exome_calls.vcf.gz --out exome_calls_data```
 
-```plink --bfile exome_calls_data --split-x b38 --make-bed --out exome_calls_data_split```
+```plink --bfile exome_calls_data --split-x b37 --make-bed --out exome_calls_data_split```
 
 ```plink --bfile exome_calls_data_split --impute-sex ycount --make-bed --out exome_calls_out```
