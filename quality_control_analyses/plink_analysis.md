@@ -74,21 +74,21 @@ Move to a location where you want to store the plink results: `cd $your_path_her
 
 ### 2. Run the following commands:
 
-```plink --vcf ../exome_calls.vcf.gz --out exome_calls_data```
+`plink --vcf your_path/exome_calls.vcf.gz --out exome_calls_data`
 
 Next command is build specific
     
     For GRCH37:
 
-    ```plink --bfile exome_calls_data --split-x hg19 --make-bed --out exome_calls_data_split```
+    plink --bfile exome_calls_data --split-x hg19 --make-bed --out exome_calls_data_split
 
     For GRCh38: 
     
-    ```plink --bfile exome_calls_data --split-x hg38 --make-bed --out exome_calls_data_split```
+    plink --bfile exome_calls_data --split-x hg38 --make-bed --out exome_calls_data_split
     
 Finally, run: 
 
-```plink --bfile exome_calls_data_split --impute-sex ycount --make-bed --out exome_calls_out```
+`plink --bfile exome_calls_data_split --impute-sex ycount --make-bed --out exome_calls_out`
 
 
 You should have an output file called `exome_calls_out.sexcheck` in your current directory that contains the gender calls.
