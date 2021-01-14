@@ -70,6 +70,7 @@ Run interactive node in new window with: `srun --pty -t 4:00:00 --mem=8G -p inte
 
 Load Plink: `module load PLINK`
 
+Move to a location where you want to store the plink results: `cd $your_path_here`
 
 ### 2. Run the following commands:
 
@@ -88,3 +89,6 @@ Next command is build specific
 Finally, run: 
 
 ```plink --bfile exome_calls_data_split --impute-sex ycount --make-bed --out exome_calls_out```
+
+
+You should have an output file called `exome_calls_out.sexcheck` in your current directory that contains the gender calls.
