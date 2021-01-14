@@ -75,6 +75,16 @@ Load Plink: `module load PLINK`
 
 ```plink --vcf ../exome_calls.vcf.gz --out exome_calls_data```
 
-```plink --bfile exome_calls_data --split-x b37 --make-bed --out exome_calls_data_split```
+Next command is build specific
+    
+    For GRCH37:
+
+    ```plink --bfile exome_calls_data --split-x hg19 --make-bed --out exome_calls_data_split```
+
+    For GRCh38: 
+    
+    ```plink --bfile exome_calls_data --split-x hg38 --make-bed --out exome_calls_data_split```
+    
+Finally, run: 
 
 ```plink --bfile exome_calls_data_split --impute-sex ycount --make-bed --out exome_calls_out```
