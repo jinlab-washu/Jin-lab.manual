@@ -73,7 +73,7 @@ Load Plink: `module load PLINK`
 
 ### 2. Run the following commands:
 
-```plink --vcf ../exome_calls.vcf --out exome_calls_data```
+```plink --vcf ../exome_calls.vcf.gz --out exome_calls_data```
 
 ```plink --bfile exome_calls_data --split-x b38 --make-bed --out exome_calls_data_split```
 
