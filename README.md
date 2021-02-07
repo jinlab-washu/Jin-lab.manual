@@ -49,6 +49,7 @@
   * [Deleting Analysis Projects and Associated Model Data](./Genome_Modeling_System/delete_model_data.md)
 
 **Yale Ruddle HPC**
+  * [Conda](./yale_ruddle/conda.md)
   * [Install Hail on Ruddle](./yale_ruddle/Hail_Installation.md)
 
 **Hail**
