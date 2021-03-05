@@ -4,6 +4,8 @@
 
 ## GMS on compute0 / compute1
 
+#### Computer0
+
 1. Simply type `gsub` to use GMS docker on compute0 / computer1
 
 > The `gsub` wrapper command is designed to handle the details of loading an appropriate environment
@@ -11,6 +13,10 @@
 > `gsub -h` ("help" option will present various parameters)
 
 2. In GMS enviroment, using `genome -h` to check various parameters.
+
+#### Computer1
+
+[How to use GMS on Computer 1](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/Genome_Modeling_System/HowToUseGMS_Computer1.md)
 
 ### Concept
 
