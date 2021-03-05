@@ -1,4 +1,4 @@
-# How to use GMS on Computer 1
+# How to use GMS on Computer1
 
 Because "WashU RIS uses Docker to manage the containers within compute1." ([RIS doc](https://docs.ris.wustl.edu/doc/compute/compute-quick-start.html#understanding-what-a-container-is))
 We need to do some configuration for using Genome Modeling System (GMS).
@@ -31,7 +31,7 @@ fi
 ### 3. Test command:
 
 ```
-[fup@compute1-client-4 ~]$ gsub
+[WUSTLKEY@compute1-client-4 ~]$ gsub
 Job <386326> is submitted to queue <general-interactive>.
 <<Waiting for dispatch ...>>
 <<Starting on compute1-exec-153.ris.wustl.edu>>
@@ -45,7 +45,7 @@ registry.gsc.wustl.edu/apipe-builder/genome_perl_environment:compute1-10
 Loading LSF_DOCKER_VOLUMES from ~/.bashrc
 Using compute-jin810 as LSF_COMPUTE_GROUP
 
-fup@compute1-exec-177:~$ genome -h
+WUSTLKEY@compute1-exec-177:~$ genome -h
 Sub-commands for genome:
  analysis-project    ...  work with analysis projects                           
  config              ...  work with analysis project configurations             
@@ -77,45 +77,7 @@ Sub-commands for genome:
 
 ```
 
-**NEXT**: [GMS commands](https://github.com/AmberFu/JinLabNote/blob/master/server_GMS_docs/GMS_command.md)
-
 -------------------------------------
-
-**My `.bashrc` file:**
-
-```bash
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-
-# GMS:
-PATH=$PATH:/storage1/fs1/bga/Active/gmsroot/gc2560/core/env/v2/bin
-if [[ -f /gscmnt/gc2560/core/env/v2/bashrc ]]; then
-  source /gscmnt/gc2560/core/env/v2/bashrc
-fi
-
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# User specific aliases and functions
-# Doc: https://confluence.ris.wustl.edu/display/RSUM/Access+Storage+Volumes
-echo "Loading LSF_DOCKER_VOLUMES from ~/.bashrc"
-
-export BGA="/storage1/fs1/bga/Active"
-
-#Use the scratch file system for temp space
-export SCRATCH1="/scratch1/fs1/jin810"
-
-#Use your Active storage for input and output data
-#export JIN="/storage1/fs1/jin810/Active" # same as STORAGE1
-export STORAGE1="/storage1/fs1/jin810/Active"
-
-export LSF_DOCKER_VOLUMES="$SCRATCH1:$SCRATCH1 $STORAGE1:$STORAGE1 $HOME:$HOME $BGA:$BGA"
-
-export LSF_COMPUTE_GROUP="compute-jin810"
-echo "Using compute-jin810 as LSF_COMPUTE_GROUP"
-
-```
-
 
 **What is in `/gscmnt/gc2560/core/env/v2/bashrc`?**
 
