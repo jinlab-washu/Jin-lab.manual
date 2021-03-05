@@ -8,6 +8,8 @@ For an overview of the GMS, see here: https://confluence.ris.wustl.edu/pages/vie
 ## Set-up
 Right now, there are two clusters at Washu that are used for sequencing analysis. The legacy cluster, compute0 , and the new cluster, compute1. Everything on compute0 is slowly being moved to compute1 so that compute0 can be discontinued in a few years.
 
+**[How to set up GMS on Cpmputer1](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/Genome_Modeling_System/HowToUseGMS_Computer1.md)**
+
 1. Log into compute0 using ssh.
 
     Compute 0 has 4 "workstations" you can log into. Below we will use virtual-workstation 1 or "vw1".
