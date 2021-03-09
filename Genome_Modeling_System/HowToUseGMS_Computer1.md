@@ -9,10 +9,10 @@ We need to do some configuration for using Genome Modeling System (GMS).
 
 ### 1. Editing `.bashrc` file:
 
-Add this code to your file:
+Add this code to your `~/.bashrc` file:
 
 ```bash
-PATH=$PATH:/storage1/fs1/bga/Active/gmsroot/gc2560/core/env/v2/bin
+export PATH=$PATH:/storage1/fs1/bga/Active/gmsroot/gc2560/core/env/v2/bin
 if [[ -f /gscmnt/gc2560/core/env/v2/bashrc ]]; then
   source /gscmnt/gc2560/core/env/v2/bashrc
 fi
@@ -26,7 +26,7 @@ fi
 
 ### 2. Activate the setting:
 
-```~$ source .bashrc```
+```~$ source ~/.bashrc```
 
 ### 3. Test command:
 
