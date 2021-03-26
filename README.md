@@ -36,7 +36,8 @@
 **Downstream Variant Analysis**
   * [Variant Visualization using Plot Reads](./downstream_variant_analysis/plot_reads.md)
   * [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)
-
+**Statistical Tests**
+  * [Case Control using GNOMAD] (./stat_tests/case_control_w_gnomad.md)
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
   * [Import of External Data - Automated]
