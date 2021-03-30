@@ -1,16 +1,7 @@
 ## Helpful links:
 (To access confluence pages, you must be connected to washU VPN)
 
- Overview of the GMS: https://confluence.ris.wustl.edu/pages/viewpage.action?pageId=3637349
-
- Setting up gms environment: https://confluence.ris.wustl.edu/display/BIO/GMS+-+Docker+Image+-+gsub
-
- Pipelines: https://confluence.ris.wustl.edu/display/BIO/GMS+-+CWL+Pipeline
-
- Importing Data: https://confluence.ris.wustl.edu/display/BIO/GMS+-+Imported+Instrument+Data
-
- A walk-through of setting up a somatic project (NOTE: skip the subject mapping steps for single-sample, germline):
- https://confluence.ris.wustl.edu/display/CI/CWL+Somatic+Pipeline+Walkthrough
+ Overview of the GMS: https://github.com/genome/genome/wiki
 
  Github pipeline documentation is typically maintained on the github repo where we keep the code (CWL) for each pipeline,
  subworkflow and tool used: https://github.com/genome/analysis-workflows
