@@ -38,7 +38,7 @@
   * [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)  
 
 **Statistical Tests**
-  * [Case Control using GNOMAD](./stat_tests/case_control_GNOMAD/case_control_GNOMAD.md)  
+  * [Case Control using GNOMAD](./stat_tests/case_control_GNOMAD)  
 
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
