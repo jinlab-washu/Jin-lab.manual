@@ -1,0 +1,7 @@
+#### Protocol to convert weilai's gnomad vcfs to matrix tables
+
+## 1. Combine exome and genome vcfs.
+		For a single chromosome vcf, use combine_weilai_table_single.py. Change the chromosome within the script and run using the shell script (combine_weilai_table_single.sh) or in an interactive session. Make sure to use a conda environment with hail installed.
+
+## 2 Format combined matrix table from step 1 for use in the gnomad case control test. Use the script: format_combined_gnomad_mt.py 
+	Note: You will need to change the chromosome to the correct one.  
