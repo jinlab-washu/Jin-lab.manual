@@ -5,7 +5,7 @@
 ##env
 alias pbm="source /home/bioinfo/software/knightlab/bin/pbm.sh"
 
-export REF=/gpfs/ycga/project/kahle/pf374/datasets/human_g1k_v37_decoy.fasta
+export REF=/gpfs/ycga/project/kahle/pf374/datasets/grch38_primary_plus_decoy.fasta
 
 #### ProcessVCF all -
 ##mem=50
