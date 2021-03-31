@@ -1,0 +1,7 @@
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.4.decomposed.normalized.hg19_multianno.hg19_multianno.vcf.gz
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.5.decomposed.normalized.hg19_multianno.hg19_multianno.vcf.gz
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.6.decomposed.normalized.hg19_multianno.hg19_multianno.vcf.gz
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.7.decomposed.normalized.hg19_multianno.hg19_multianno.vcf.gz
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.8.decomposed.normalized.hg19_multianno.hg19_multianno.vcf.gz
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.9.decomposed.normalized.hg19_multianno.hg19_multianno_reheader.vcf.gz
+/gpfs/ycga/scratch60/kahle/sp2349/weilai_gnomad_vcfs/weilai_vcfs/gnomad.genomes.r2.1.1.sites.X.decomposed.normalized.hg19_multianno.hg19_multianno.vcf.gz
