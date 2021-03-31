@@ -1,0 +1,29 @@
+#!/usr/bin/env rms
+
+##argv=vcf
+
+##env
+alias pbm="source /home/bioinfo/software/knightlab/bin/pbm.sh"
+
+export REF=/gpfs/ycga/project/kahle/pf374/datasets/human_g1k_v37_decoy.fasta
+
+#### ProcessVCF all -
+##mem=50
+module load GATK/4.1.9.0-GCCcore-10.2.0-Java-1.8
+echo "Step 1: Select variants that pass GATK QA/QC"
+gatk --java-options "-Xmx64G" SelectVariants -R $REF -V <vcf> -O exome_calls_pass.vcf -select 'vc.isNotFiltered()'
+
+
+module load BCFtools/1.9-foss-2018b
+echo "Step 2: Split multi-allelic calls"
+bcftools norm -m-both -o exome_calls_pass_step1.vcf exome_calls_pass.vcf 
+
+echo "Step 3: Left normalize calls"
+bcftools norm -f $REF -o exome_calls_pass_step2.vcf exome_calls_pass_step1.vcf
+
+pbm vcflib
+echo "Step 4: Downsize the vcf files by only extracting useful metrics"
+vcfkeepgeno exome_calls_pass_step2.vcf GT AD DP GQ PL >  exome_calls_pass_step2_normalized.vcf
+
+echo "Step 5: ANNOVAR annotation"
+perl /gpfs/ycga/project/kahle/pf374/annovar_20191024/table_annovar.pl --vcfinput exome_calls_pass_step2_normalized.vcf /gpfs/ycga/project/kahle/pf374/annovar_20191024/humandb/ -buildver hg38 -out exome_calls_pass_step2_normalized_anno -remove -protocol refGene,genomicSuperDups,clinvar_20190305,avsnp150,esp6500siv2_all,1000g2015aug_all,exac03,exac03nontcga,gnomad_exome,gnomad_genome,cadd16snv,cadd16indel,kaviar_20150923,dbnsfp41a,bravo_v8,mcap,revel,dbscsnv11 -operation g,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f -nastring .
