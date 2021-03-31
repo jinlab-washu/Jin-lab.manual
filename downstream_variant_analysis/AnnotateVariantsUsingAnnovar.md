@@ -55,9 +55,14 @@ Commands:  1 command to be executed.
 ### Output files:
 
 ```
+exome_calls_pass_step1.vcf
 exome_calls_pass_step2_normalized_anno.avinput
 exome_calls_pass_step2_normalized_anno.hg19_multianno.txt
 exome_calls_pass_step2_normalized_anno.hg19_multianno.vcf
+exome_calls_pass_step2_normalized.vcf
+exome_calls_pass_step2.vcf
+exome_calls_pass.vcf
+exome_calls_pass.vcf.idx
 
 ```
 
