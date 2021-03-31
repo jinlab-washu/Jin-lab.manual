@@ -23,7 +23,7 @@ To determine if LoF mutations occur in gene or genes of interest in sample vs co
 ## Run Gene Specific Filtering Program
 **IMPORTANT** Make sure no samples are related in the case control analysis
 1. Filter your cohort vcf for damaging, het variants. Use [case_control_gene_specific_filtering.py](./case_control_programs/case_control_gene_specific_filtering.py)
-2. Check your output. If damaging variants on same gene, only count as 1 allele.
+2. Check your output. If more than 1 damaging variant on same gene, only count as 1 allele.
 3. Grab allele counts. Ex: for 24 probands = 48 alleles. If 3 het variants found for 3 samples, cases = 3. controls = 48 - 3 = 45.
 
 ## Run GNOMAD case control program
