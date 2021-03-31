@@ -38,4 +38,4 @@ gnomad_g = gnomad_g.filter((gnomad_g.filters.contains('AC0')) | (gnomad_g.filter
 
 combined = gnomad_e.join(gnomad_g,how='outer')
 
-combined.write('/gpfs/ycga/project/kahle/sp2349/weilai_gnomad/tables/combined.filtered.gnomad.r2.1.1.sites.{}.ht'.format(chrom),overwrite=True)
+combined.write('/gpfs/ycga/project/kahle/sp2349/weilai_gnomad/tables/combined_filtered/combined.filtered.gnomad.r2.1.1.sites.{}.ht'.format(chrom),overwrite=True)

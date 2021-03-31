@@ -52,4 +52,4 @@ def format_gnomad_mt(chrom,out_dir="/gpfs/ycga/scratch60/kahle/sp2349/datasets/g
 	combined = combined.drop(info_1)
 	
 	# Write to specified directory
-	combined.write('/gpfs/ycga/project/kahle/sp2349/datasets/gnomad/tables/filtered_formatted_final/combined.filtered.formatted.gnomad.r2.1.1.sites.{}.mt'.format(chrom),overwrite=True)
+	combined.write('/gpfs/ycga/project/kahle/sp2349/datasets/gnomad/tables/formatted_final/combined.formatted.final.gnomad.r2.1.1.sites.{}.ht'.format(chrom),overwrite=True)

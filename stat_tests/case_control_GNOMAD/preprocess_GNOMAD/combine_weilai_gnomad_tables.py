@@ -52,5 +52,5 @@ with open("/gpfs/ycga/project/kahle/sp2349/weilai_gnomad/code/weilai_matrix_tabl
 
 
 
-		combined.write('/gpfs/ycga/project/kahle/sp2349/weilai_gnomad/tables/combined.filtered.gnomad.r2.1.1.sites.{}.ht'.format(chrom),overwrite=True)
+		combined.write('/gpfs/ycga/project/kahle/sp2349/weilai_gnomad/tables/combined_filtered/combined.filtered.gnomad.r2.1.1.sites.{}.ht'.format(chrom),overwrite=True)
 
