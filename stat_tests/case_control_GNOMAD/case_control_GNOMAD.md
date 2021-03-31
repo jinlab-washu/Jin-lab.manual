@@ -15,5 +15,5 @@ vcfs converted to matrix tables: `/gpfs/ycga/project/kahle/sp2349/datasets/gnoma
 2. Combine exome and genome matrix tables. 
 ** For a single chromosome, use [combine_weilai_table_single.py](./preprocess_GNOMAD/combine_weilai_table_single.py)
 ** For multiple chromosomes, use [combine_weilai_gnomad_tables.py](./preprocess_GNOMAD/combine_weilai_gnomad_tables.py)
-3. Format combined exome and genome hail table created from step 2 using [format_weilai_combined_mt.py](/preprocess_GNOMAD/format_weilai_combined_mt.py)
+3. Format combined exome and genome hail table created from step 2 using [format_weilai_combined_mt.py](./preprocess_GNOMAD/format_weilai_combined_mt.py)
 4. 
