@@ -83,7 +83,7 @@ Notes:
         
         Example command when you have a list of positions you would like to visualize for several samples
         
-        cat samples.txt | while read sample; do cat pos.txt | while read chr pos; do plotReads $chr:$pos $sample;done; done`
+        cat samples.txt | while read sample; do cat pos.txt | while read chr; do plotReads $chr $sample;done; done
     
     This will output all image plots in the current working directory.
     
