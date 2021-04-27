@@ -71,6 +71,12 @@ NA12878_300X R2 path: `/storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs
 Using seed 200 for both R1 and R2.
 
 ```
+// NA12878 300X file size:
+[fup@compute1-client-3 fup]$ ls -lh /storage1/fs1/jin810/Active/fastq/benchmark/NA12878/wgs/merged_R*.fastq.gz
+-rw-------. 1 s.peters domain users 367G Jan 25 15:56 /storage1/fs1/jin810/Active/fastq/benchmark/NA12878/wgs/merged_R1.fastq.gz
+-rw-------. 1 s.peters domain users 393G Jan 25 15:57 /storage1/fs1/jin810/Active/fastq/benchmark/NA12878/wgs/merged_R2.fastq.gz
+
+
 // R1:
 fup@compute1-exec-195:/storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs_downsample/samples/NA12878_wgs_downsampling$ seqtk sample -s 200 /storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs/samples/NA12878_wgs/merged_R1.fastq.gz 0.1 > NA12878_wgs_downsample_10percent_R1.fastq   
 
