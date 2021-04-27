@@ -21,11 +21,17 @@
 ### Outline:
 
 1. Call variants for gold standard benchmarking samples (As Query VCF) [link](#1-call-variants-for-gold-standard-benchmarking-samples-as-query-vcf)
+    
     1a. Call variants using Parabricks Germline pipeline with NA12878 300X WGS sample [link](#1a-call-variants-using-parabricks-germline-pipeline-with-na12878-300x-wgs-sample)
+    
     1b. Call variants using Parabricks Germline pipeline with NA12878 Downsampled WGS sample [link](#1b-call-variants-using-parabricks-germline-pipeline-with-na12878-downsampled-wgs-sample)
+
 2. Create Regions of Interesting (BED file) [link](#2-create-regions-of-interesting-bed-file)
+    
     2a. High confidence regions Subtract Difficult Regions - Regions of interest [link](#2a-high-confidence-regions-subtract-difficult-regions---regions-of-interest)
+    
     2b. Evaluate the coverage of each BED files [link](#2b-evaluate-the-coverage-of-each-bed-files)
+
 3. Run `hap.py` on compute1 [link](#3-run-happy-on-compute1)
 
 ### Steps:
@@ -169,6 +175,8 @@ genome	1	2102024811	3209302674	0.654979
 
 
 #### 3. Run `hap.py` on compute1
+
+![hap.py](https://camo.githubusercontent.com/44897ee0b0bb921e12898602ccd348b26d40f9a58ecf995baaf7803068679ac9/68747470733a2f2f7777772e6e6362692e6e6c6d2e6e69682e676f762f706d632f61727469636c65732f504d43363639393632372f62696e2f6e69686d732d313533333738332d66303030312e6a7067)
 
 **[Hap.py User's Manual](https://github.com/Illumina/hap.py/blob/master/doc/happy.md)**
 
