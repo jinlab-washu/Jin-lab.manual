@@ -62,4 +62,5 @@
 
 **Other Protocols**
   * [Benchmarking](./other_protocols/benchmarking_WES.md)
+  * [Benchmarking Parabricks WGS pipeline](./other_protocols/benchmarking_WGS_Parabricks_Germline_pipeline.md)
   * [Custom Intervals File Creation](./other_protocols/custom-interval-creation.md)
