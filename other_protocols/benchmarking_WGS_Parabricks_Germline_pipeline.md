@@ -11,7 +11,7 @@
         *  Processing: `cat` all R1/R2 into merged_r1.fq / merged_r2.fq
         *  File saved at compute1: `/storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs/samples/NA12878_wgs`
     *  NA12878 Downsampled WGS:
-        *  Sample processing: Using `seqtk` downsample 300X NA12878 to 10%. [DownSampling_using_seqtk.md]()
+        *  Sample processing: Using `seqtk` downsample 300X NA12878 to 10%. [DownSampling_using_seqtk.md](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/other_protocols/DownSampling_using_seqtk.md)
         *  File saved at compute1: `/storage1/fs1/jin810/Active/fup/NA12878_FQs/NA12878_WGS_downsampling/samples/NA12878_wgs_10persent_downsample_seqtk/`
 * [High Confidence VCF calls and regions (.bed) files - FTP](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/)
 * [GRch38 Difficult Regions - FTP](ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/genome-stratifications/v2.0/GRCh38/union/GRCh38_alldifficultregions.bed.gz)
