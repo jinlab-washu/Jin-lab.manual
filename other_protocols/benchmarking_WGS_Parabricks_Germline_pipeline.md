@@ -20,13 +20,13 @@
 
 ### Outline:
 
-1. Call variants for gold standard benchmarking samples (As Query VCF) [link]()
-    1a. Call variants using Parabricks Germline pipeline with NA12878 300X WGS sample [link]()
-    1b. Call variants using Parabricks Germline pipeline with NA12878 Downsampled WGS sample [link]()
-2. Create Regions of Interesting (BED file) [link]()
-    2a. High confidence regions Subtract Difficult Regions - Regions of interest [link]()
-    2b. Evaluate the coverage of each BED files [link]()
-3. Run `hap.py` on compute1 [link]()
+1. Call variants for gold standard benchmarking samples (As Query VCF) [link](#1-call-variants-for-gold-standard-benchmarking-samples-as-query-vcf)
+    1a. Call variants using Parabricks Germline pipeline with NA12878 300X WGS sample [link](#1a-call-variants-using-parabricks-germline-pipeline-with-na12878-300x-wgs-sample)
+    1b. Call variants using Parabricks Germline pipeline with NA12878 Downsampled WGS sample [link](#1b-call-variants-using-parabricks-germline-pipeline-with-na12878-downsampled-wgs-sample)
+2. Create Regions of Interesting (BED file) [link](#2-create-regions-of-interesting-bed-file)
+    2a. High confidence regions Subtract Difficult Regions - Regions of interest [link](#2a-high-confidence-regions-subtract-difficult-regions---regions-of-interest)
+    2b. Evaluate the coverage of each BED files [link](#2b-evaluate-the-coverage-of-each-bed-files)
+3. Run `hap.py` on compute1 [link](#3-run-happy-on-compute1)
 
 ### Steps:
 
