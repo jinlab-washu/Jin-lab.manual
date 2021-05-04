@@ -26,7 +26,7 @@
     
     1b. [Call variants using Parabricks Germline pipeline with NA12878 Downsampled WGS sample](#1b-call-variants-using-parabricks-germline-pipeline-with-na12878-downsampled-wgs-sample)
 
-2. [Create Regions of Interest (BED file)](#2-create-regions-of-interesting-bed-file)
+2. [Create Regions of Interest (BED file)](#2-create-regions-of-interest-bed-file)
     
     2a. [High confidence regions Subtract Difficult Regions - Regions of interest](#2a-high-confidence-regions-subtract-difficult-regions---regions-of-interest)
     
