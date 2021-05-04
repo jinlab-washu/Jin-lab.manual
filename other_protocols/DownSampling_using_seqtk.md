@@ -18,7 +18,7 @@
 
 ### Steps:
 
-#### 1. Using `biocontainers/seqtk` docker image on compute1:
+#### 1. Load the `biocontainers/seqtk` Docker image on compute1:
 
 ```
 [fup@compute1-client-4 ~]$ bsub -Is -G compute-jin810 -q general-interactive -a 'docker(biocontainers/seqtk:v1.3-1-deb_cv1)' -R "select[mem>16000] rusage[mem=15000]" /bin/bash
@@ -56,19 +56,20 @@ Command: seq       common transformation of FASTA/Q
 
 #### 2. Downsampling using `seqtk`:
 
-Example from Gitbub:
+Follow the example from seqtk's GitHub with your own files:
 
 ```
 seqtk sample -s100 read1.fq 10000 > sub1.fq
 seqtk sample -s100 read2.fq 10000 > sub2.fq
-
 ```
+
+Sample data files can be found at:
 
 NA12878_300X R1 path: `/storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs/samples/NA12878_wgs/merged_R1.fastq.gz`
 
 NA12878_300X R2 path: `/storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs/samples/NA12878_wgs/merged_R2.fastq.gz`
 
-Using seed 200 for both R1 and R2.
+Below are example results using random seed 200 (-s200) for both R1 and R2:
 
 ```
 // NA12878 300X file size:

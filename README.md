@@ -36,10 +36,10 @@
 **Downstream Variant Analysis**
   * [Variant Visualization using Plot Reads](./downstream_variant_analysis/plot_reads.md)
   * [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)  
-  * [Annotate Variants Using Annovar](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/downstream_variant_analysis/AnnotateVariantsUsingAnnovar.md)
+  * [Annotate Variants using Annovar](./downstream_variant_analysis/AnnotateVariantsUsingAnnovar.md)
 
 **Statistical Tests**
-  * [Case Control using GNOMAD](./stat_tests/case_control_GNOMAD)  
+  * [Case Control using GNOMAD](./stat_tests/case_control_GNOMAD)
 
 **Genome Modeling System**
   * [Create and Configure a New Analysis Project](./Genome_Modeling_System/create_analysis_project_GMS.md)
@@ -62,5 +62,5 @@
 
 **Other Protocols**
   * [Benchmarking](./other_protocols/benchmarking_WES.md)
-  * [Benchmarking Parabricks WGS pipeline](./other_protocols/benchmarking_WGS_Parabricks_Germline_pipeline.md)
+  * [Benchmarking Parabricks WGS Pipeline](./other_protocols/benchmarking_WGS_Parabricks_Germline_pipeline.md)
   * [Custom Intervals File Creation](./other_protocols/custom-interval-creation.md)

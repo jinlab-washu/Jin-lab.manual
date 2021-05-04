@@ -11,7 +11,7 @@
         *  Processing: `cat` all R1/R2 into merged_r1.fq / merged_r2.fq
         *  File saved at compute1: `/storage1/fs1/jin810/Active/pb_runs/benchmark_NA12878_wgs/samples/NA12878_wgs`
     *  NA12878 Downsampled WGS:
-        *  Sample processing: Using `seqtk` downsample 300X NA12878 to 10%. [DownSampling_using_seqtk.md](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/other_protocols/DownSampling_using_seqtk.md)
+        *  Sample processing: Using `seqtk` downsample 300X NA12878 to 10%. [DownSampling_using_seqtk.md](./DownSampling_using_seqtk.md)
         *  File saved at compute1: `/storage1/fs1/jin810/Active/fup/NA12878_FQs/NA12878_WGS_downsampling/samples/NA12878_wgs_10persent_downsample_seqtk/`
 * [High Confidence VCF calls and regions (.bed) files - FTP](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/)
 * [GRch38 Difficult Regions - FTP](ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/genome-stratifications/v2.0/GRCh38/union/GRCh38_alldifficultregions.bed.gz)
@@ -20,19 +20,19 @@
 
 ### Outline:
 
-1. Call variants for gold standard benchmarking samples (As Query VCF) [link](#1-call-variants-for-gold-standard-benchmarking-samples-as-query-vcf)
+1. [Call variants for gold standard benchmarking samples (As Query VCF)](#1-call-variants-for-gold-standard-benchmarking-samples-as-query-vcf)
     
-    1a. Call variants using Parabricks Germline pipeline with NA12878 300X WGS sample [link](#1a-call-variants-using-parabricks-germline-pipeline-with-na12878-300x-wgs-sample)
+    1a. [Call variants using Parabricks Germline pipeline with NA12878 300X WGS sample](#1a-call-variants-using-parabricks-germline-pipeline-with-na12878-300x-wgs-sample)
     
-    1b. Call variants using Parabricks Germline pipeline with NA12878 Downsampled WGS sample [link](#1b-call-variants-using-parabricks-germline-pipeline-with-na12878-downsampled-wgs-sample)
+    1b. [Call variants using Parabricks Germline pipeline with NA12878 Downsampled WGS sample](#1b-call-variants-using-parabricks-germline-pipeline-with-na12878-downsampled-wgs-sample)
 
-2. Create Regions of Interesting (BED file) [link](#2-create-regions-of-interesting-bed-file)
+2. [Create Regions of Interest (BED file)](#2-create-regions-of-interesting-bed-file)
     
-    2a. High confidence regions Subtract Difficult Regions - Regions of interest [link](#2a-high-confidence-regions-subtract-difficult-regions---regions-of-interest)
+    2a. [High confidence regions Subtract Difficult Regions - Regions of interest](#2a-high-confidence-regions-subtract-difficult-regions---regions-of-interest)
     
-    2b. Evaluate the coverage of each BED files [link](#2b-evaluate-the-coverage-of-each-bed-files)
+    2b. [Evaluate the coverage of each BED files](#2b-evaluate-the-coverage-of-each-bed-files)
 
-3. Run `hap.py` on compute1 [link](#3-run-happy-on-compute1)
+3. [Run `hap.py` on compute1](#3-run-happy-on-compute1)
 
 ### Steps:
 
@@ -104,7 +104,7 @@ drwx------. 2 fup domain users 8.0K Apr  9 18:55 temp
 ```
 
 
-#### 2. Create Regions of Interesting (BED file)
+#### 2. Create Regions of Interest (BED file)
 
 Docker images: `bsub -Is -G compute-jin810 -q general-interactive -a 'docker(spashleyfu/bedtools)' -R "select[mem>16000] rusage[mem=15000]" /bin/bash`
 

@@ -6,7 +6,7 @@ If you want to download Annovar yourself, please see the link above! For more de
 
 ### Requirement:
 
-1. Variant call file (vcf): ie, `exome_calls.vcf.gz`
+1. Variant call file (vcf): e.g. `exome_calls.vcf.gz`
 2. RMS and RMS file:
     **For hg19:**
     
@@ -43,14 +43,11 @@ Commands:  1 command to be executed.
 ### Steps of processing:
 
 1. Start a new interactive session on Ruddle `[netid@ruddle1 ~]$ srun --pty -p interactive --mem=8g bash`
-2. Create a new folder annotation
-3. `ln -s` the VCF file into the new folder: 
+2. Create a new folder for the results
+3. Softlink the VCF file into the new folder using `ln -s`
+4. Use the RMS script `Preprocessing_hg[19|38].rms` to process the VCF file: 
 
-    ie, `exome_calls.vcf.gz`
-    
-4. Using RMS script `Preprocessing_hg[19|38].rms` to process VCF file: 
-
-    ie, `rms Preprocessing_hg19.rms exome_calls.vcf.gz`
+    `rms Preprocessing_hg19.rms exome_calls.vcf.gz`
 
 ### Output files:
 
@@ -78,7 +75,7 @@ If you don't want to download Annovar, here is the ready-to-use program on Ruddl
 
 > humandb path: `/gpfs/ycga/project/kahle/pf374/annovar_20191024/humandb/`
 
-1. An example of using hg19 database to annotate:
+1. An example of using the hg19 database to annotate:
 
 ```
 
@@ -86,7 +83,7 @@ $ perl /gpfs/ycga/project/kahle/pf374/annovar_20191024/table_annovar.pl --vcfinp
 
 ```
 
-2. An example of hg38 database to annotate:
+2. An example of using the hg38 database to annotate:
 
 ```
 
@@ -94,7 +91,7 @@ $ perl /gpfs/ycga/project/kahle/pf374/annovar_20191024/table_annovar.pl --vcfinp
 
 ```
 
-### How to download annotate database?
+### How to download annotation databases?
 
 **Usage: `perl /gpfs/ycga/project/kahle/pf374/annovar_20191024/annotate_variation.pl --help`**
 
