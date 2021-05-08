@@ -11,6 +11,8 @@
 **Transferring Files**
   * [Globus](./transferring_files/Globus.md "Globus")
     * Large File Transfers from compute0 to compute1 or compute0/1 to external clusters
+  * [Globus CLI](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/transferring_files/Globus_CLI.md)
+    * Transfer data using Globus command line
   * [SCP](./transferring_files/SCP.md "SCP")
     * Command line file transfers from local computer to compute0/1
   * [Box-lftp](./transferring_files/box_lftp.md)
