@@ -64,3 +64,6 @@ After, mount Storage1 to your Mac desktop, you can use `rsync` to transfer files
 ie, `$ rsync theFileYouWantToTransfer.txt /Volumes/jin810/thePathYouWantToSaveTheData`
 
 ![storage1 path list in Ternminal](images/storage1_terminal.png?raw=true)
+
+
+To see more details - [WUSTL RIS Doc](https://docs.ris.wustl.edu/doc/storage/macos/index.html)
