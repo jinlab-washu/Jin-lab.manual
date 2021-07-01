@@ -49,16 +49,18 @@ Use the “Connect to Server” option on the menu drop-down.
 
 7. Once the network folder interface pops up use `smb://storage1.ris.wustl.edu/jin810` as the server address:
 
-![network interface]()
+![network interface](images/connect2server.png?raw=true)
 
 8. You will be prompted for your WUSTL Key credentials (you will enter your WUSTL Key ID and password)
 
 9. Once you have completed these steps you will be presented with a finder window showing the Research Drive and all the folders you have access to:
 
-![successed folder]()
+![successed folder](images/storage1_finder.png?raw=true)
+
+## How to transfer files:
 
 After, mount Storage1 to your Mac desktop, you can use `rsync` to transfer files to Compute1.
 
 ie, `$ rsync theFileYouWantToTransfer.txt /Volumes/jin810/thePathYouWantToSaveTheData`
 
-![storage1 path list in Ternminal]()
+![storage1 path list in Ternminal](images/storage1_terminal.png?raw=true)
