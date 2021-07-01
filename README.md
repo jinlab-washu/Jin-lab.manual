@@ -19,6 +19,8 @@
     * Command line file transfers from wustl BOX to compute0/1
   * [rclone](./transferring_files/rclone.md)
     * Command line file transfers from google Drive to computing cluster
+  * [Connect Storage1 to Mac](./transferring_files/connect_Storage1_to_Mac.md)
+    * Mount Storage1 to your local Mac computer, and using `rsync` transfer file to Compute1.
 
 **Software**
   * [Docker](./tools/Docker.md "Docker")
