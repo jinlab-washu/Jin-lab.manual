@@ -2,6 +2,8 @@
 
 WUSTL RIS Doc: https://docs.ris.wustl.edu/doc/storage/macos/index.html
 
+**Noticed: After you mount Storage1 to your local computer, please use `rsync` transfer file to ACTIVE space. If you want to ARCHIVE your data/results, please using `tar` to generate one tar files for all files of your project, then using `rsync` from your Mac terminal MOVE the tar file to Archive space.**
+
 ## Pre-requirement:
 
 1. MacOS 10.10 and newer
