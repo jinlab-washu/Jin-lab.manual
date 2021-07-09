@@ -13,3 +13,4 @@ to transfer data, which using different compute system to do the transfering.
 Also, When we get the raw data from sequencing center, we shoulde put our data to Active space, then `tar` the folder to one TAR file, then transfer it to Archive.
 
 
+For example, if you already have some files in Archive space, please COPY file from Archive to Active using GLOBUS, then `tar zcvf yourTarFileName.tar.gz theFolderName1 [theFolderNameN...]`. After you got the tar file, you can use GLOBUS COPY the tar file to Archive.
