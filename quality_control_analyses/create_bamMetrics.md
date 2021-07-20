@@ -63,7 +63,9 @@ You have TWO ways to do it:
   Example:
   
   ```
+  // Request a interactive job:
   $ bsub -Is -G compute-jin810 -q general-interactive -a 'docker(spashleyfu/knight_bam_metrics:py38_pandas)' -n 2 -R "select[mem>16000] rusage[mem=15000]" /bin/bash
+  
   // Generate sample.list
   $ ls -d $PWD/data/TWHJ-PNRR-10* > sample.list
   
