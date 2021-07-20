@@ -31,6 +31,7 @@
   * [Kinship, Relatedness, and Sex-Check using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md)
   * [Kinship, Relatedness, and Sex-Check using PLINK](./quality_control_analyses/plink_analysis.md)
   * [Coverage Metrics with statsmergev2](./quality_control_analyses/statsmerge_v2.md)
+  * [Generate bamMetrics](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/create_bamMetrics.md)
 
 **Sequencing Analysis Protocols (Upstream Processing)**  
   * [Whole Exome Sequencing with alignment to hg38 - Compute0](./seq_analysis_protocols/whole_exome_compute0.md)
