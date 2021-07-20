@@ -10,6 +10,7 @@
 > [Github Doc](https://github.com/jinlab-washu/bamMetrics)
 > 
 > Script: 
+> 
 > [01 - Peter Jin's statsmerge.v2.py program (Python v2.7)](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/statsmerge_v2.md)
 > 
 > [02 - mergebammetrics.py](#mergebammetricspy)
@@ -70,8 +71,8 @@ Example:
   // Request a interactive job:
   $ bsub -Is -G compute-jin810 -q general-interactive -a 'docker(spashleyfu/knight_bam_metrics:py38_pandas)' -n 2 -R "select[mem>16000] rusage[mem=15000]" /bin/bash
   
-  // Generate sample.list
-  $ ls -d $PWD/data/TWHJ-PNRR-10* > sample.list
+  // Generate sample.list with file name pattern:
+  $ ls -d $PWD/data/*_bam_metrics.txt > sample.list
   
   // Run the program:
   $ python3 mergeBamMetrics.py sample.list 
