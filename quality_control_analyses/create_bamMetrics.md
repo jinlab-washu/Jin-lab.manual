@@ -50,17 +50,21 @@ You have TWO ways to do it:
 
 ##### `statsmerge.v2_washu.py`
   
-    * program: `/storage1/fs1/jin810/Active/programs/statsmerge.v2_washu.py`
-    * Docker: `sam16711/bam_metrics:v1`
-    * Detail Please See Doc: [statsmerge_v2](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/statsmerge_v2.md) 
+> program: `/storage1/fs1/jin810/Active/programs/statsmerge.v2_washu.py`
+> 
+> Docker: `sam16711/bam_metrics:v1`
+> 
+> Detail Please See Doc: [statsmerge_v2](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/statsmerge_v2.md) 
   
 ##### `mergeBamMetrics.py`
 
-    * program: `/storage1/fs1/jin810/Active/programs/mergeBamMetrics.py`
-    * Docker: `spashleyfu/knight_bam_metrics:py38_pandas`
-    * Usage: `$ python3 mergeBamMetrics.py sample_list_file`
+> program: `/storage1/fs1/jin810/Active/programs/mergeBamMetrics.py`
+> 
+> Docker: `spashleyfu/knight_bam_metrics:py38_pandas`
+> 
+> Usage: `$ python3 mergeBamMetrics.py sample_list_file`
 
-  Example:
+Example:
   
   ```
   // Request a interactive job:
