@@ -11,7 +11,8 @@
 > 
 > Script: 
 > [01 - Peter Jin's statsmerge.v2.py program (Python v2.7)](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/statsmerge_v2.md)
-> [02 - ]()
+> 
+> [02 - mergebammetrics.py](#mergebammetricspy)
 
 ### How to use it on WUSTL Compute1?
 
@@ -59,6 +60,8 @@ You have TWO ways to do it:
     * Docker: `spashleyfu/knight_bam_metrics:py38_pandas`
     * Usage: `$ python3 mergeBamMetrics.py sample_list_file`
 
+  Example:
+  
   ```
   $ bsub -Is -G compute-jin810 -q general-interactive -a 'docker(spashleyfu/knight_bam_metrics:py38_pandas)' -n 2 -R "select[mem>16000] rusage[mem=15000]" /bin/bash
   // Generate sample.list
