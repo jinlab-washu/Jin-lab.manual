@@ -11,8 +11,8 @@ Notes:
 ## Outline:
 
 1. [WashU Rclone - BOX](#wustl-compute1)
-2. [Yale Rclone - BOX](#yale-ruddle-protocol)
-3. [Yale Rclone - Google Drive]()
+2. [Yale Rclone - BOX](#yale-ruddle-protocol-box)
+3. [Yale Rclone - Google Drive](#yale-ruddle-protocol-google-drive)
 
 # WUSTL Compute1:
 
