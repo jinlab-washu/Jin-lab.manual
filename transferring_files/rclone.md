@@ -10,8 +10,8 @@ Notes:
 
 ## Outline:
 
-1. [WashU Rclone]()
-2. [Yale Rclone]()
+1. [WashU Rclone](#wustl-compute1)
+2. [Yale Rclone](#yale-ruddle-protocol)
 
 # WUSTL Compute1:
 
