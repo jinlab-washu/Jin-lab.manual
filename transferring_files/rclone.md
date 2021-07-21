@@ -10,8 +10,9 @@ Notes:
 
 ## Outline:
 
-1. [WashU Rclone](#wustl-compute1)
-2. [Yale Rclone](#yale-ruddle-protocol)
+1. [WashU Rclone - BOX](#wustl-compute1)
+2. [Yale Rclone - BOX](#yale-ruddle-protocol)
+3. [Yale Rclone - Google Drive]()
 
 # WUSTL Compute1:
 
@@ -188,11 +189,137 @@ RIS Doc: https://docs.ris.wustl.edu/doc/storage/rclone.html
         ```
         ~ $ cd /cache2/fs1/jin810/Active/CAKUT_2021Jun/MGI_kidney_CAKUT_exome_sequencing_072021
         /cache2/fs1/jin810/Active/CAKUT_2021Jun/MGI_kidney_CAKUT_exome_sequencing_072021 $ rclone copy Box:/"MGI exome sequencing 072021" .
-        
         ```
+# Yale Ruddle Protocol (BOX)
+
+1. SSH into Yale Ruddle server.
+2. Load the Rclone module
+
+    ```
+    $ module load Rclone
+    ```
+
+3. Create a new rclone config for BOX
+
+    ```
+    $ rclone config
+    2021/07/21 17:33:49 NOTICE: Config file "/home/pf374/.config/rclone/rclone.conf" not found - using defaults
+    No remotes found - make a new one
+    n) New remote
+    s) Set configuration password
+    q) Quit config
+    n/s/q> n
+    name> WUSTLBOX         
+    Type of storage to configure.
+    Enter a string value. Press Enter for the default ("").
+    Choose a number from below, or type in your own value
+     1 / 1Fichier
+       \ "fichier"
+     2 / Alias for an existing remote
+       \ "alias"
+     3 / Amazon Drive
+       \ "amazon cloud drive"
+     4 / Amazon S3 Compliant Storage Provider (AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, etc)
+       \ "s3"
+     5 / Backblaze B2
+       \ "b2"
+     6 / Box
+       \ "box"
+    ...
+    Storage> box
+    ** See help for box backend at: https://rclone.org/box/ **
+
+    Box App Client Id.
+    Leave blank normally.
+    Enter a string value. Press Enter for the default ("").
+    client_id> 
+    Box App Client Secret
+    Leave blank normally.
+    Enter a string value. Press Enter for the default ("").
+    client_secret> 
+    Box App config.json location
+    Leave blank normally.
+    Enter a string value. Press Enter for the default ("").
+    box_config_file> 
+
+    Enter a string value. Press Enter for the default ("user").
+    Choose a number from below, or type in your own value
+     1 / Rclone should act on behalf of a user
+       \ "user"
+     2 / Rclone should act on behalf of a service account
+       \ "enterprise"
+    box_sub_type> user
+    Edit advanced config? (y/n)
+    y) Yes
+    n) No (default)
+    y/n> 
+    Remote config
+    Use auto config?
+     * Say Y if not sure
+     * Say N if you are working on a remote or headless machine
+    y) Yes (default)
+    n) No
+    y/n> n
+    For this to work, you will need rclone available on a machine that has a web browser available.
+    Execute the following on your machine (same rclone version recommended) :
+        rclone authorize "box"
+    Then paste the result below:
+    result> {"access_token":"##############","token_type":"bearer","refresh_token":"###############","expiry":"2021-07-21T17:39:21.870127571-05:00"}
+    --------------------
+    [WUSTLBOX]
+    type = box
+    box_sub_type = user
+    token = {"access_token":"##############","token_type":"bearer","refresh_token":"###############","expiry":"2021-07-21T17:39:21.870127571-05:00"}
+    --------------------
+    y) Yes this is OK (default)
+    e) Edit this remote
+    d) Delete this remote
+    y/e/d> 
+    Current remotes:
+
+    Name                 Type
+    ====                 ====
+    WUSTLBOX             box
+
+    e) Edit existing remote
+    n) New remote
+    d) Delete remote
+    r) Rename remote
+    c) Copy remote
+    s) Set configuration password
+    q) Quit config
+    e/n/d/r/c/s/q> q
+    ```
+
+4. Find the config file:
+
+    ```
+    $ rclone config file
+    Configuration file is stored at:
+    /home/pf374/.config/rclone/rclone.conf
+    ```
+
+5. Listing the directories:
+
+    ```
+    $ rclone lsd WUSTLBOX:/
+              -1 2020-05-21 16:52:37        -1 Box Notes Images
+              -1 2021-06-01 16:13:59        -1 Exome sequencing for analysis
+              -1 2021-06-17 17:29:51        -1 Jin Lab Files
+              -1 2020-05-21 13:09:26        -1 LabScript
+              -1 2021-07-20 18:20:43        -1 MGI exome sequencing 072021
+              ...
+
+    ```
+
+6. COPY files/Folder to Scratch60:
+
+    ```
+    $ rclone copy WUSTLBOX:/"MGI exome sequencing 072021" scratch60/MGI_CAKUT_2021Jul_rawdata/
+    ```
 
 
-# Yale Ruddle Protocol
+# Yale Ruddle Protocol (Google Drive)
 
 1. ssh into the yale ruddle hpc
     
