@@ -201,7 +201,7 @@ RIS Doc: https://docs.ris.wustl.edu/doc/storage/rclone.html
     
 2. Load the Rclone module
 
-    Command: ```module load rclone```
+    Command: ```module load Rclone```
   
 3. Create a new rclone config for your google drive account
 
