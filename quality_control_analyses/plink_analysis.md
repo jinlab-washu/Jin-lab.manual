@@ -29,7 +29,7 @@ Move to a location where you want to store the plink kinship: `cd $your_path_her
 
 ```
 plink --geno 0.01 --hwe 0.001 --maf 0.05 --genome --snps-only --allow-extra-chr \
---vcf *_vqsr.vcf
+--vcf *_vqsr.vcf \
 --out {file_name} #----no need to indicate file type, but may use .txt or .tsv
 ```
 
