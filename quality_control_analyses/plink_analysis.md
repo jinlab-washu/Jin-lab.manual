@@ -10,7 +10,7 @@
 
 Use Docker image: `sam16711/plink:latest`
 
-``` bsub -Is -q general-interactive -a 'docker(sam16711/plink:latest)' -R "select[mem>15000] rusage[mem=15000]" /bin/bash ```
+``` bsub -Is -q general-interactive -a 'docker(sam16711/plink:latest)' -R "select[mem>15000] rusage[mem=15000]" /bin/bash ``` <br>
 ``` /bin/plink --help ```
 
 #### Yale Ruddle:
@@ -91,18 +91,14 @@ plink --double-id --allow-extra-chr --vcf-half-call m \
 ```
 Next command is build specific
     
-  -For GRCH37:
+  -For GRCH37: <br>
     ```
-    plink --split-x hg19 --make-bed --allow-extra-chr \ 
-    --bfile exome_calls_data \
-    --out exome_calls_data_split
+    plink --split-x hg19 --make-bed --allow-extra-chr --bfile exome_calls_data --out exome_calls_data_split
+    ``` <br>
+  -For GRCh38: <br>
     ```
-  -For GRCh38: 
-    ```
-    plink --split-x hg38 --make-bed --allow-extra-chr \ 
-    --bfile exome_calls_data \
-    --out exome_calls_data_split
-    ```
+    plink --split-x hg38 --make-bed --allow-extra-chr --bfile exome_calls_data --out exome_calls_data_split
+    ``` <br>
 Finally, run: 
 
 ```
