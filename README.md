@@ -65,6 +65,7 @@
 **Hail**
   * [Examples](./hail/examples)
   * [Hail Workflows Repo](https://github.com/jinlab-washu/Yale.CMG.workflows)
+  * [Using Hail on Compute1](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/hail/Using_Hail_on_Compute1.md)
 
 **Other Protocols**
   * [Benchmarking](./other_protocols/benchmarking_WES.md)
