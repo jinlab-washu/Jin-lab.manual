@@ -19,7 +19,7 @@ This steps follow Sam Peter's document, try to replicate each steps.
 * Testing output folder (scratch60): `/gpfs/ycga/scratch60/kahle/pf374/CaseControlAnalysis/preprocessGenomadVcfs/gnomad/MetricsTable`
 * Final folder: `/gpfs/ycga/project/kahle/pf374/projects/CaseControl_PreprocessGnomadVCFs`
 
-#### step1 - CONVERT Weilai gnomad2.1.1 vcfs to hail tables
+#### step1 - CONVERT Weilai gnomad2.1.1 vcfs to matrics tables
 
 > `preprocessGenomadVcfs/CaseControl_Preprocess_01_gnomAD_vcf2ht.py`
 
