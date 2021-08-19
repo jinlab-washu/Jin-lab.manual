@@ -40,6 +40,7 @@
 
 **Downstream Variant Analysis**
   * [Variant Visualization using Plot Reads](./downstream_variant_analysis/plot_reads.md)
+  * [Variant Visualization using Plot Reads on Compute1](./downstream_variant_analysis/plotRead_on_compute1.md)
   * [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)  
   * [Annotate Variants using Annovar - Yale](./downstream_variant_analysis/AnnotateVariantsUsingAnnovar.md)
   * [Annotate Variants using Annovar - WUSTL](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/downstream_variant_analysis/AnnovarOnCompute1.md)
