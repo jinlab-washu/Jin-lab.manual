@@ -20,3 +20,8 @@ Choose **computer**, then choose **Map network drive**
 
 ### Enter your WUSTL account
 **Make sure that you add accounts\ before your WUSTL Key.**
+![Picture4](https://user-images.githubusercontent.com/86803803/135338160-9a1ceed4-33ef-4ee1-9564-458b3cc065c6.png)
+
+### Here you goes
+If your login information is successfully validated, your storage drive will open in File Explorer.
+![Picture5](https://user-images.githubusercontent.com/86803803/135338266-626af9dd-67a3-49e6-8645-6c4236d3c2ae.png)
