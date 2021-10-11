@@ -1,4 +1,23 @@
-# The Docker Image collection for Compute1
+# Useful resources collection for WUSTL Compute1
+
+## Reference files
+
+| Desc | File Type | Path | Details |
+| ---- | --------- | ---- | ------- |
+| GRCh38 REF (Jin's Lab) | FASTA | `/storage1/fs1/bga/Active/gmsroot/gc2560/core/model_data/2887491634/build21f22873ebe0486c8e6f69c15435aa96/all_sequences.fa` | All WGS projects in Jin's Lab |
+| GRCh38 REF (broad REF) | FASTA | `/storage1/fs1/jin810/Active/references/Homo_sapiens_assembly38.fasta` | For UDN's bam files and gnomAD v3 |
+| Coding Region from Yale | BED | `/storage1/fs1/jin810/Active/references/Yale_knightlab/knightlab_genomes_hs38DH_bed_files/hg38_coding_padded15_Sep2020.bed` | for extracting coding regions from WGS |
+
+* Information of Lab's REF (Copied from MGI Slack)
+
+  ```
+  This later version added the alternate HLA haplotypes back in: GRC-human-build38_GRCh38_full_analysis_set_plus_decoy_hla_fix_FP236240_8 (21f22873ebe0486c8e6f69c15435aa96)
+  FASTA path: /gscmnt/gc2560/core/model_data/2887491634/build21f22873ebe0486c8e6f69c15435aa96/all_sequences.fa
+  ```
+
+* [Broad Institute - GATK Resources Bundle](https://gatk.broadinstitute.org/hc/en-us/articles/360035890811-Resource-bundle)
+
+## The Docker Image collection for Compute1
 
 It's the Docker Images I used for my projects. Feel free to add more information on it.
 
