@@ -8,7 +8,7 @@
   * [Set up Ruddle .bashrc File](./getting_started/set_up_ruddle_bashrc.md)
   * [Running your first whole exome sequencing](./getting_started/first_exome_run.md)
   * [Running your first WGS sequencing](./getting_started/compute1_WGS_first_run.md)
-  * [Docker Images List for Compute1](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/getting_started/Docker_Image_collection_for_Compute1.md)
+  * [Resources List for Compute1 - Docker Images, REF](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/getting_started/resources_collection_for_Compute1.md)
 
 **Transferring Files**
   * [Globus](./transferring_files/Globus.md "Globus")
