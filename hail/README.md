@@ -5,13 +5,17 @@
 
 You can follow the document to run Hail with Jupyter Notebook - [Using Hail with Jupyter Lab on Compute1](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/hail/Using_Hail_with_JupyterLab_on_Compute1.md).
 
+If you want to use Hail on the basic purpose or to annotate VCF, please use `spashleyfu/ubuntu18_vep104:hail_gsutil`.
+
+If you want to use newer version of Hail, please use `spashleyfu/hail_0.2.78:notebook_6.4.6`.
+
 ### Docker collection
 
 | Docker Images | Hail version | JAVA_HOME | Details |
 | ------------- | ------------ | --------- | ------- |
 | `spashleyfu/ubuntu20_pyspark:hail_gsuit` | version 0.2.61-3c86d3ba497a | `/opt/conda` | [go to detail section](#ubuntu20_pysparkhail_gsuit) |
-| `spashleyfu/ubuntu18_vep104:hail_gsutil` | version 0.2.61-3c86d3ba497a | `/opt/conda` | VEP, [go to detail section](#spashleyfuubuntu18_vep104hail_gsutil) |
-| `spashleyfu/hail_0.2.78:notebook_6.4.6` | version 0.2.78-b17627756568 |  `/usr/lib/jvm/java-8-openjdk-amd64/jre` | [go to detail section](#spashleyfuhail_0278notebook_646) |
+| **`spashleyfu/ubuntu18_vep104:hail_gsutil`** | version 0.2.61-3c86d3ba497a | `/opt/conda` | VEP, [go to detail section](#spashleyfuubuntu18_vep104hail_gsutil) |
+| `spashleyfu/hail_0.2.78:notebook_6.4.6` | **version 0.2.78-b17627756568** |  `/usr/lib/jvm/java-8-openjdk-amd64/jre` | [go to detail section](#spashleyfuhail_0278notebook_646) |
 
 
 | Docker | Hail | Java | Python | Conda/Pip | PySpark |
