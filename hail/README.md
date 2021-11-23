@@ -9,6 +9,8 @@ If you want to use Hail on the basic purpose or to annotate VCF, please use `spa
 
 If you want to use newer version of Hail, please use `spashleyfu/hail_0.2.78:notebook_6.4.6`.
 
+For more detail, please see the section below. (You can find it in the table below)
+
 ### Docker collection
 
 | Docker Images | Hail version | JAVA_HOME | Details |
@@ -39,7 +41,7 @@ If you want to use newer version of Hail, please use `spashleyfu/hail_0.2.78:not
 
 1. If you want to use this Docker to sent out the jobs to run Hail, please include two more lines below:
 
-```
+```bash
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
@@ -238,7 +240,7 @@ Versions:
 
 1. If you want to use this Docker to sent out the jobs to run Hail, please include two more lines below:
 
-```
+```bash
 export JAVA_HOME=/opt/conda
 ```
 
