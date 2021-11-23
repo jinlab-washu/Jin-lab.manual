@@ -259,7 +259,6 @@ So, As an example, your bsub file will look like this:
 #BSUB -R 'rusage[mem=24GB] span[hosts=1]'
 #BSUB -a 'docker(spashleyfu/ubuntu20_pyspark:hail_gsuit)'
 
-export SPARK_HOME=/opt/conda/lib/python3.7/site-packages/pyspark
 export JAVA_HOME=/opt/conda
 /bin/sh the_hail_script_you_want_to_run.sh
 ```
