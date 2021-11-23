@@ -1,4 +1,4 @@
-# Using Hail on WashU cluster Compute1
+# Using Hail with Jupyter Lab on Compute1
 
 
 ### How to run Hail with Jupyter Lab:
