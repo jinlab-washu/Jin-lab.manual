@@ -34,6 +34,8 @@ If you want to use newer version of Hail, please use `spashleyfu/hail_0.2.78:not
 | ------ | ---- | ---- | ------ | --------- | ------- | 
 | `spashleyfu/hail_0.2.78:notebook_6.4.6` | version 0.2.78-b17627756568 | openjdk version "1.8.0_292" | Python 3.6.9 | pip 9.0.1 | Apache Spark version 3.1.2 |
 
+**Docker Image detail:**
+
 ```
 // JAVA
 fup@compute1-exec-135:/storage1/fs1/jin810/Active/Neuropathy_WGS_2021May$ java -version
@@ -100,6 +102,8 @@ LOGGING: writing to /storage1/fs1/jin810/Active/Neuropathy_WGS_2021May/hail-2021
 | Docker | Hail | Java | Python | Conda/Pip | PySpark | VEP |
 | ------ | ---- | ---- | ------ | --------- | ------- | --- |
 | `spashleyfu/ubuntu18_vep104:hail_gsutil` | version 0.2.61-3c86d3ba497a | openjdk version "1.8.0_282" | Python 3.7.10 | conda 4.10.3 | Apache Spark version 2.4.0 | v104 |
+
+**Docker Image detail:**
 
 ```
 [fup@compute1-client-3 Neuropathy_WGS_2021May]$ bsub -Is -G compute-jin810 -q general-interactive -a 'docker(spashleyfu/ubuntu18_vep104:hail_gsutil)' /bin/bash
@@ -183,6 +187,39 @@ Versions:
 | Docker | Hail | Java | Python | Conda/Pip | PySpark |
 | ------ | ---- | ---- | ------ | --------- | ------- | 
 | `spashleyfu/ubuntu20_pyspark:hail_gsuit` | version 0.2.61-3c86d3ba497a | openjdk version "1.8.0_282" | Python 3.7.10 | conda 4.10.3 | Apache Spark version 2.4.1 |
+
+#### Notice:
+
+1. If you want to use this Docker to sent out the jobs to run Hail, please include two more lines below:
+
+```
+export SPARK_HOME=/opt/conda/lib/python3.7/site-packages/pyspark
+export JAVA_HOME=/opt/conda
+```
+
+So, As an example, your bsub file will look like this:
+
+```bash
+#!/bin/bash
+
+#BSUB -n 4
+#BSUB -q general
+#BSUB -G compute-jin810
+#BSUB -J PROJECT_NAME
+#BSUB -M 24GB
+#BSUB -N
+#BSUB -u WUSTL_KEY@wustl.edu
+#BSUB -o out.txt
+#BSUB -e err.txt
+#BSUB -R 'rusage[mem=24GB] span[hosts=1]'
+#BSUB -a 'docker(spashleyfu/ubuntu20_pyspark:hail_gsuit)'
+
+export SPARK_HOME=/opt/conda/lib/python3.7/site-packages/pyspark
+export JAVA_HOME=/opt/conda
+/bin/sh the_hail_script_you_want_to_run.sh
+```
+
+**Docker Image detail:**
 
 ```
 [fup@compute1-client-3 ~]$ bsub -Is -G compute-jin810 -q general-interactive -a 'docker(spashleyfu/ubuntu20_pyspark:hail_gsuit)' /bin/bash
