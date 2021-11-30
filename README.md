@@ -13,7 +13,7 @@
 **Transferring Files**
   * [Globus](./transferring_files/Globus.md "Globus")
     * Large File Transfers from compute0 to compute1 or compute0/1 to external clusters
-  * [Globus CLI](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/transferring_files/Globus_CLI.md)
+  * [Globus CLI](./transferring_files/Globus_CLI.md)
     * Transfer data using Globus command line
   * [SCP](./transferring_files/SCP.md "SCP")
     * Command line file transfers from local computer to compute0/1
@@ -33,7 +33,8 @@
   * [Kinship, Relatedness, and Sex-Check using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/qc_analyses.md)
   * [Kinship, Relatedness, and Sex-Check using PLINK](./quality_control_analyses/plink_analysis.md)
   * [Coverage Metrics with statsmergev2](./quality_control_analyses/statsmerge_v2.md)
-  * [Generate bamMetrics](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/create_bamMetrics.md)
+  * [Generate bamMetrics](./quality_control_analyses/create_bamMetrics.md)
+  * [Check contamination using VerifyBamID](./quality_control_analyses/check_contamination_using_verifyBamID.md)
 
 **Sequencing Analysis Protocols (Upstream Processing)**  
   * [Whole Exome Sequencing with alignment to hg38 - Compute0](./seq_analysis_protocols/whole_exome_compute0.md)
@@ -45,7 +46,7 @@
   * [Variant Visualization using Plot Reads on Compute1](./downstream_variant_analysis/plotRead_on_compute1.md)
   * [Annotate Variants using Hail](https://github.com/jinlab-washu/Yale.CMG.workflows/blob/master/hail_pipeline/generate_mt_generic.md)  
   * [Annotate Variants using Annovar - Yale](./downstream_variant_analysis/AnnotateVariantsUsingAnnovar.md)
-  * [Annotate Variants using Annovar - WUSTL](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/downstream_variant_analysis/AnnovarOnCompute1.md)
+  * [Annotate Variants using Annovar - WUSTL](./downstream_variant_analysis/AnnovarOnCompute1.md)
 
 **Statistical Tests**
   * [Case Control using GNOMAD](./stat_tests/case_control_GNOMAD)
