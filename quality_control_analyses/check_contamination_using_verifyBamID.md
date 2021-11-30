@@ -4,7 +4,7 @@ We used VerifyBamID tool to check sample contamination.
 
 Basically most of people use "VerifyBamID" (Jun et al. 2012) as main tool, but in 2020, the same group published [the paper](https://doi.org/10.1101/gr.246934.118) whichshown that "verifyBamID can underestimate DNA contamination rates if the assumed population allele frequencies are inaccurate (Jun et al. 2012)." So, they provided a novel method to detect and estimate DNA contamination called "VerifyBamID2" (Zhang et al. 2020). 
 
-![verifyBamID vs verifyBamID2](https://genome.cshlp.org/content/30/2/185/F1.medium.gif)
+[![verifyBamID vs verifyBamID2](https://genome.cshlp.org/content/30/2/185/F1.large.jpg)](https://genome.cshlp.org/content/30/2/185.full)
 
 Althought, it's quite new for many of pipelines, but the way to run it is almost the same.
 
