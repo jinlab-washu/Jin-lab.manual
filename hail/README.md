@@ -15,9 +15,9 @@ For more detail, please see the section below. (You can find it in the table bel
 
 | Docker Images | Hail version | JAVA_HOME | Details |
 | ------------- | ------------ | --------- | ------- |
+| `spashleyfu/hail_vep_gnomad:0.2.79_104_0.6.0` | version 0.2.79-f141af259254 | `/usr/lib/jvm/java-8-openjdk-amd64/jre` | Image size: 5.34GB, with VEP104, [Details]() |
+| `spashleyfu/hail_0.2.79:jupyterlab` | version 0.2.79-f141af259254 |  `/usr/lib/jvm/java-8-openjdk-amd64/jre` | Image size: 2.01GB, [Details]() |
 | `spashleyfu/ubuntu20_pyspark:hail_gsuit` | version 0.2.61-3c86d3ba497a | `/opt/conda` | [go to detail section](#ubuntu20_pysparkhail_gsuit) |
-| **`spashleyfu/ubuntu18_vep104:hail_gsutil`** | version 0.2.61-3c86d3ba497a | `/opt/conda` | VEP, [go to detail section](#spashleyfuubuntu18_vep104hail_gsutil) |
-| `spashleyfu/hail_0.2.78:notebook_6.4.6` | **version 0.2.78-b17627756568** |  `/usr/lib/jvm/java-8-openjdk-amd64/jre` | [go to detail section](#spashleyfuhail_0278notebook_646) |
 
 
 | Docker | Hail | Java | Python | Conda/Pip | PySpark |
