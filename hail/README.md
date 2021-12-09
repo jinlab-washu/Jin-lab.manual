@@ -148,7 +148,7 @@ Out[6]:
 
 -------------------------------
 
-### spashleyfu/hail_vep_gnomad:0.2.79_104_0.6.0
+### spashleyfu/hail_vep_gnomad
 
 > JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64/jre"
 > 
