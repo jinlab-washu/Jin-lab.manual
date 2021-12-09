@@ -5,9 +5,9 @@
 
 You can follow the document to run Hail with Jupyter Notebook - [Using Hail with Jupyter Lab on Compute1](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/hail/Using_Hail_with_JupyterLab_on_Compute1.md).
 
-If you want to use Hail on the basic purpose or to annotate VCF, please use `spashleyfu/ubuntu18_vep104:hail_gsutil`.
+If you want to use Hail on the basic purpose or to annotate VCF, please use `spashleyfu/hail_vep_gnomad`.
 
-If you want to use newer version of Hail, please use `spashleyfu/hail_0.2.78:notebook_6.4.6`.
+If you want to use newer version of Hail, please use `spashleyfu/hail_0.2.79:jupyterlab`.
 
 For more detail, please see the section below. (You can find it in the table below)
 
@@ -15,7 +15,7 @@ For more detail, please see the section below. (You can find it in the table bel
 
 | Docker Images | Hail version | JAVA_HOME | Details |
 | ------------- | ------------ | --------- | ------- |
-| `spashleyfu/hail_vep_gnomad:0.2.79_104_0.6.0` | version 0.2.79-f141af259254 | `/usr/lib/jvm/java-8-openjdk-amd64/jre` | Image size: 5.34GB, with VEP104, [Details on Docker Hub](https://hub.docker.com/repository/docker/spashleyfu/hail_vep_gnomad) |
+| `spashleyfu/hail_vep_gnomad` | version 0.2.79-f141af259254 | `/usr/lib/jvm/java-8-openjdk-amd64/jre` | Image size: 5.34GB, with VEP104, [Details on Docker Hub](https://hub.docker.com/repository/docker/spashleyfu/hail_vep_gnomad) |
 | `spashleyfu/hail_0.2.79:jupyterlab` | version 0.2.79-f141af259254 |  `/usr/lib/jvm/java-8-openjdk-amd64/jre` | Image size: 2.01GB, [Details on Docker Hub](https://hub.docker.com/repository/docker/spashleyfu/hail_0.2.79) |
 | `spashleyfu/ubuntu20_pyspark:hail_gsuit` | version 0.2.61-3c86d3ba497a | `/opt/conda` | [go to detail section](#ubuntu20_pysparkhail_gsuit) |
 
@@ -24,7 +24,7 @@ For more detail, please see the section below. (You can find it in the table bel
 | ------ | ---- | ---- | ------ | --------- | ------- | --- |
 | `spashleyfu/ubuntu20_pyspark:hail_gsuit` | version 0.2.61-3c86d3ba497a | openjdk version "1.8.0_282" | Python 3.7.10 | conda 4.10.3 | Apache Spark version 2.4.1 | - |
 | `spashleyfu/hail_0.2.79:jupyterlab` | version 0.2.79-f141af259254 | openjdk version "1.8.0_282" | Python 3.8.10 | pip 20.0.2 | Apache Spark version 3.1.2 | - |
-| `spashleyfu/hail_vep_gnomad:0.2.79_104_0.6.0` | version 0.2.79-f141af259254 | openjdk version "1.8.0_292" | Python 3.7.7 | conda 4.11.0, and pip 21.3.1 | Apache Spark version 3.1.2 | 104 |
+| `spashleyfu/hail_vep_gnomad` | version 0.2.79-f141af259254 | openjdk version "1.8.0_292" | Python 3.7.7 | conda 4.11.0, and pip 21.3.1 | Apache Spark version 3.1.2 | 104 |
 
 ---------------
 
@@ -155,6 +155,7 @@ Out[6]:
 
 | Docker | Hail | Java | Python | Conda/Pip | PySpark | VEP |
 | ------ | ---- | ---- | ------ | --------- | ------- | --- |
+| `spashleyfu/hail_vep_gnomad` | version 0.2.79-f141af259254 | openjdk version "1.8.0_292" | Python 3.7.7 | conda 4.11.0, and pip 21.3.1 | Apache Spark version 3.1.2 | 104 |
 | `spashleyfu/hail_vep_gnomad:0.2.79_104_0.6.0` | version 0.2.79-f141af259254 | openjdk version "1.8.0_292" | Python 3.7.7 | conda 4.11.0, and pip 21.3.1 | Apache Spark version 3.1.2 | 104 |
 
 #### Notice:
