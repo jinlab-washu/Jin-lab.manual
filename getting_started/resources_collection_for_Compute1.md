@@ -25,7 +25,8 @@ It's the Docker Images I used for my projects. Feel free to add more information
 | ---------- | ------------- | ------------------ | --------- | ---------- | ----------- |
 | **Parabricks** | `us.gcr.io/ris-appeng-shared-dev/parabricks:v3.5.0.1` | 2 GPU with 256GB MEM | - | 3.78 GB | v3.5.0.1, [RIS doc](https://docs.ris.wustl.edu/doc/compute/recipes/tools/parabricks-quickstart.html) |
 | **GATK**4 | `broadinstitute/gatk:latest` | 16GB MEM | [broadinstitute/gatk](https://hub.docker.com/r/broadinstitute/gatk/) | 1.64 GB | GATK 4.x and Picard, September 16, 2021 latest version is v4.2.2.0 |
-| **Hail** + **VEP** | `spashleyfu/ubuntu18_vep104:hail_gsutil` | 32 CPU with 128GB MEM | [spashleyfu/ubuntu18_vep104](https://hub.docker.com/repository/docker/spashleyfu/ubuntu18_vep104) | 1.93 GB | Hail with VEP and JupyterLab, bgzip |
+| **Hail** + **VEP** | `spashleyfu/hail_vep_gnomad` | 24 CPU with 96GB MEM | [spashleyfu/hail_vep_gnomad](https://hub.docker.com/repository/docker/spashleyfu/hail_vep_gnomad) | 5.34GB | Hail with VEP and JupyterLab, bgzip |
+| **Hail** | `spashleyfu/hail_0.2.79:jupyterlab` | 24 CPU with 96GB MEM | [spashleyfu/hail_0.2.79](https://hub.docker.com/repository/docker/spashleyfu/hail_0.2.79) | 2.01GB | Hail 0.2.79, JupyterLab, bgzip |
 | **PlotRead** | `spashleyfu/plotreads` | 16GB MEM | [spashleyfu/plotreads](https://hub.docker.com/repository/docker/spashleyfu/plotreads) | 1.02 GB | plotRead with Python 2.7 && conda 4.8.4 && samtools 1.11 |
 | Knight's **bamMetrics** | `sam16711/bam_metrics:v1` | - | [sam16711/bam_metrics](https://hub.docker.com/r/sam16711/bam_metrics) | 113.43 MB | Python 2.7; Suit for run bamMetrics alone |
 | Knight's **bamMetrics** | `spashleyfu/knight_bam_metrics:py38_pandas` | - | [sam16711/bam_metrics](https://hub.docker.com/r/sam16711/bam_metrics) | 113.43 MB | with Python 3.8 and Pandas; Suit for running [mergeBamMetrics.py](https://github.com/jinlab-washu/Jin-lab.manual/blob/master/quality_control_analyses/create_bamMetrics.md#mergebammetricspy) |
@@ -35,6 +36,7 @@ It's the Docker Images I used for my projects. Feel free to add more information
 | **bcftools** | `spashleyfu/bcftools_snakemake` | - | [spashleyfu/bcftools_snakemake](https://hub.docker.com/repository/docker/spashleyfu/bcftools_snakemake) | 928.23 MB | bcftools 1.12 with Sankemake |
 | **verifyBamID** | `spashleyfu/bcftools_snakemake` | - | [spashleyfu/bcftools_snakemake](https://hub.docker.com/repository/docker/spashleyfu/bcftools_snakemake) | 1.19 GB | |
 | **verifyBamID2** | `spashleyfu/ubuntu20_snakemake:verifyBamID2` | - | [spashleyfu/ubuntu20_snakemake](https://hub.docker.com/repository/docker/spashleyfu/ubuntu20_snakemake) | 1.01 GB | |
+| **LEASER TRACE (PCA)** | `spashleyfu/laser_trace_v2.04` | - | [spashleyfu/laser_trace_v2.04](https://hub.docker.com/repository/docker/spashleyfu/laser_trace_v2.04) | 492.42 MB | [LASER server](https://laser.sph.umich.edu/index.html#!) |
 | **Triodenovo** | `spashleyfu/ubuntu20_triodenovo:0.0.4` | - | [spashleyfu/ubuntu20_triodenovo](https://hub.docker.com/repository/docker/spashleyfu/ubuntu20_triodenovo) | 174.39 MB | Triodenovo v0.0.4 |
 | **Triodenovo** | `spashleyfu/ubuntu20_triodenovo:0.0.6` | - | [spashleyfu/ubuntu20_triodenovo](https://hub.docker.com/repository/docker/spashleyfu/ubuntu20_triodenovo) | 172.88 MB | Triodenovo v0.0.6 |
 | **GLnexus** CLI | `atgenomix/glnexus_cli` | 500GB+ MEM | [atgenomix/glnexus_cli](https://hub.docker.com/r/atgenomix/glnexus_cli) | 107.51 MB | |
