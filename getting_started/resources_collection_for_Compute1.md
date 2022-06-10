@@ -34,7 +34,8 @@ It's the Docker Images I used for my projects. Feel free to add more information
 | **PLINK** 2 | `spashleyfu/ubuntu20_snakemake:plink2` | - | [spashleyfu/ubuntu20_snakemake](https://hub.docker.com/repository/docker/spashleyfu/ubuntu20_snakemake) | 1014.88 MB | PLINK 2.0 with Sankemake |
 | **samtools** | `biocontainers/samtools:v1.9-4-deb_cv1` | - | [biocontainers/samtools](https://hub.docker.com/r/biocontainers/samtools) | 244.41 MB | v1.9 |
 | **bcftools** | `spashleyfu/bcftools_snakemake` | - | [spashleyfu/bcftools_snakemake](https://hub.docker.com/repository/docker/spashleyfu/bcftools_snakemake) | 928.23 MB | bcftools 1.12 with Sankemake |
-| **verifyBamID** | `spashleyfu/bcftools_snakemake` | - | [spashleyfu/bcftools_snakemake](https://hub.docker.com/repository/docker/spashleyfu/bcftools_snakemake) | 1.19 GB | |
+| **BGZIP** and **TABIX** | `spashleyfu/bcftools_snakemake` | - | [spashleyfu/bcftools_snakemake](https://hub.docker.com/repository/docker/spashleyfu/bcftools_snakemake) | 928.23 MB | bgzip and tzbix v1.12 with Sankemake |
+| **verifyBamID** | `spashleyfu/ubuntu20_snakemake:verifyBamID` | - | [spashleyfu/ubuntu20_snakemake](https://hub.docker.com/repository/docker/spashleyfu/bcftools_snakemake) | 1.19 GB | |
 | **verifyBamID2** | `spashleyfu/ubuntu20_snakemake:verifyBamID2` | - | [spashleyfu/ubuntu20_snakemake](https://hub.docker.com/repository/docker/spashleyfu/ubuntu20_snakemake) | 1.01 GB | |
 | **LEASER TRACE (PCA)** | `spashleyfu/laser_trace_v2.04` | - | [spashleyfu/laser_trace_v2.04](https://hub.docker.com/repository/docker/spashleyfu/laser_trace_v2.04) | 492.42 MB | [LASER server](https://laser.sph.umich.edu/index.html#!) |
 | **Triodenovo** | `spashleyfu/ubuntu20_triodenovo:0.0.4` | - | [spashleyfu/ubuntu20_triodenovo](https://hub.docker.com/repository/docker/spashleyfu/ubuntu20_triodenovo) | 174.39 MB | Triodenovo v0.0.4 |
