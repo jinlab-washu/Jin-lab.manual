@@ -23,6 +23,7 @@ It's the Docker Images I used for my projects. Feel free to add more information
 
 | Main tools | Docker Images | Required Resources | dockerhub | Image size | Detail/Note |
 | ---------- | ------------- | ------------------ | --------- | ---------- | ----------- |
+| **Parabricks** | `gcr.io/ris-registry-shared/parabricks` | 2 GPU with 256GB MEM | - | ? | v3.6.0, [RIS doc](https://docs.ris.wustl.edu/doc/compute/recipes/tools/parabricks-quickstart.html) |
 | **Parabricks** | `us.gcr.io/ris-appeng-shared-dev/parabricks:v3.5.0.1` | 2 GPU with 256GB MEM | - | 3.78 GB | v3.5.0.1, [RIS doc](https://docs.ris.wustl.edu/doc/compute/recipes/tools/parabricks-quickstart.html) |
 | **GATK**4 | `broadinstitute/gatk:latest` | 16GB MEM | [broadinstitute/gatk](https://hub.docker.com/r/broadinstitute/gatk/) | 1.64 GB | GATK 4.x and Picard, September 16, 2021 latest version is v4.2.2.0 |
 | **Hail** + **VEP** | `spashleyfu/hail_vep_gnomad` | 24 CPU with 96GB MEM | [spashleyfu/hail_vep_gnomad](https://hub.docker.com/repository/docker/spashleyfu/hail_vep_gnomad) | 5.34GB | Hail with VEP and JupyterLab, bgzip |
