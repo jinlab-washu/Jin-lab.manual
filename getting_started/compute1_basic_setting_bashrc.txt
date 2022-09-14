@@ -1,0 +1,59 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# GMS: (https://github.com/genome/genome/wiki/Docker#compute1-setup)
+export PATH=$PATH:/storage1/fs1/bga/Active/gmsroot/gc2560/core/env/v2/bin
+if [[ -f /gscmnt/gc2560/core/env/v2/bashrc ]]; then
+  echo "In GMS env: source /gscmnt/gc2560/core/env/v2/bashrc"
+  source /gscmnt/gc2560/core/env/v2/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# User specific aliases and functions
+# Doc: https://confluence.ris.wustl.edu/display/RSUM/Access+Storage+Volumes
+echo "Loading LSF_DOCKER_VOLUMES from ~/.bashrc"
+
+### CONDA setting:
+# https://docs.ris.wustl.edu/doc/compute/recipes/tools/conda-environment-tutorial.html#defining-environment-variables
+export CONDA_ENVS_DIRS="/storage1/fs1/jin810/Active/conda/envs/"
+export CONDA_PKGS_DIRS="/storage1/fs1/jin810/Active/conda/pkgs/"
+export PATH="/opt/conda/bin:$PATH"
+
+#Use the scratch file system for temp space
+export SCRATCH1="/scratch1/fs1/jin810"
+
+#Use your Active storage for input and output data
+export STORAGE1="/storage1/fs1/jin810/Active"
+export ARCHIVE1="/storage1/fs1/jin810/Archive"
+export BGA="/storage1/fs1/bga/Active"
+
+### Parabricks v3.5.1:
+#export LSF_DOCKER_VOLUMES="$SCRATCH1:$SCRATCH1 $STORAGE1:$STORAGE1 $HOME:$HOME $BGA:$BGA $LSF_DOCKER_VOLUMES"
+### Without Archive Disk:
+#export LSF_DOCKER_VOLUMES="/scratch1/fs1/ris/application/parabricks:/INSTALL $BGA:$BGA $SCRATCH1:$SCRATCH1 $STORAGE1:$STORAGE1 $HOME:$HOME"
+
+### Parabricks v3.6.0:
+export LSF_DOCKER_VOLUMES="/scratch1/fs1/ris/application/parabricks-license:/opt/parabricks $BGA:$BGA $SCRATCH1:$SCRATCH1 $STORAGE1:$STORAGE1 $HOME:$HOME"
+export PATH="/opt/miniconda/bin:$PATH"
+
+echo "### For Parabricks v3.6.0:"
+echo "export LSF_DOCKER_VOLUMES = $LSF_DOCKER_VOLUMES"
+echo "export PATH=$PATH"
+echo ""
+
+# use host level communications for the GPUs
+export LSF_DOCKER_NETWORK=host
+# use the debug flag when trying to figure out why your job failed to launch on the cluster
+export LSF_DOCKER_RUN_LOGLEVEL=DEBUG
+# use the entry point because the parabricks container has other entrypoints but our cluster requires /bin/sh
+export LSF_DOCKER_ENTRYPOINT=/bin/sh
+#export LSF_DOCKER_ENTRYPOINT=/bin/bash
+
+export LSF_DOCKER_IPC=host
+
+export LSF_COMPUTE_GROUP="compute-jin810"
+echo "Using $LSF_COMPUTE_GROUP as LSF_COMPUTE_GROUP"
